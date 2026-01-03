@@ -183,44 +183,5 @@ public class AgentWiringConfig {
     
     // ====== LEGACY BEANS (Forward Compatibility) ======
     
-    @Bean
-    public IntentClassifierAgent intentClassifierAgent(
-            @Qualifier("workerModel") ChatModel baseModel
-    ){
-        return AgenticServices.agentBuilder(IntentClassifierAgent.class)
-                .chatModel(baseModel)
-                .outputKey("category")
-                .build();
-    }
-    
-    @Bean
-    public IntentRouter intentRouter(IntentClassifierAgent intentClassifierAgent) {
-        return (context, message) -> intentClassifierAgent.classify(context, message);
-    }
-    
-    @Bean
-    public ProductExpertAgent productExpertAgent(ProductConsultantAgent productConsultantAgent) {
-        return (memoryId, userId, context, message) -> productConsultantAgent.advise(memoryId, userId, context, message);
-    }
-    
-    @Bean
-    public OrderExpertAgent orderExpertAgent(OrderServiceAgent orderServiceAgent) {
-        return (memoryId, context, message) -> orderServiceAgent.handle(memoryId, context, message);
-    }
-    
-    @Bean
-    public PolicyExpertAgent policyExpertAgent(PolicyAdvisorAgent policyAdvisorAgent) {
-        return (memoryId, context, message) -> policyAdvisorAgent.answer(memoryId, context, message);
-    }
-    
-    @Bean
-    public SmallTalkAgent smallTalkAgent(GreetingAgent greetingAgent) {
-        return (memoryId, context, message) -> greetingAgent.respond(memoryId, context, message);
-    }
-    
-    // THIS IS THE MISSING BEAN
-    @Bean
-    public ShopChatAgent shopChatAgent(ShopAssistantAgent shopAssistantAgent) {
-        return (sessionId, userId, request, context) -> shopAssistantAgent.chat(sessionId, userId, request, context);
-    }
+
 }

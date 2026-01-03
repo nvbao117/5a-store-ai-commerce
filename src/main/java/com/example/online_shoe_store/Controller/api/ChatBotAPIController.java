@@ -5,7 +5,6 @@ import com.example.online_shoe_store.dto.response.ChatResponse;
 import com.example.online_shoe_store.Service.ChatBotService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,10 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 public class ChatBotAPIController {
 
     private final ChatBotService chatBotService;
-    
-    /**
-     * Traditional synchronous endpoint
-     */
+
     @PostMapping("/send")
     public ResponseEntity<ChatResponse> sendMessage(@RequestBody ApiChatRequest request) {
         log.info("Received chat request: message='{}', sessionId='{}'",
@@ -30,9 +26,6 @@ public class ChatBotAPIController {
         return ResponseEntity.ok(response);
     }
 
-    /**
-     * Streaming endpoint
-     */
     @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public SseEmitter streamMessage(
            @RequestParam String message,
@@ -40,12 +33,10 @@ public class ChatBotAPIController {
         
         log.info("Received streaming chat request: message='{}', sessionId='{}'", message, sessionId);
         
-        SseEmitter emitter = new SseEmitter(60000L); // 60 second timeout
+        SseEmitter emitter = new SseEmitter(60000L);
         
-        // Use pseudo-streaming (token-by-token simulation)
-        // Pass null for streamingModel as we are using the fake streaming implementation
-        chatBotService.processMessageStreaming(message, sessionId, emitter, null);
-        
+        chatBotService.processMessageStreaming(message, sessionId, emitter);
+
         return emitter;
     }
 }

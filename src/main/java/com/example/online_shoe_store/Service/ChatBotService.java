@@ -7,7 +7,7 @@ import com.example.online_shoe_store.Entity.enums.MessageRole;
 import com.example.online_shoe_store.Repository.ConversationMessageRepository;
 import com.example.online_shoe_store.Repository.ConversationRepository;
 import com.example.online_shoe_store.Repository.UserRepository;
-import com.example.online_shoe_store.Service.ai.agent.ShopChatAgent;
+import com.example.online_shoe_store.Service.ai.agent.ShopAssistantAgent;
 import com.example.online_shoe_store.Service.ai.context.DirectContextService;
 import com.example.online_shoe_store.Service.ai.context.ProductJsonHolder;
 import com.example.online_shoe_store.Service.ai.monitoring.AgentFileLogger;
@@ -30,7 +30,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class ChatBotService {
 
-    private final ShopChatAgent shopChatAgent;
+    private final ShopAssistantAgent shopAssistantAgent;
     private final UserRepository userRepository;
     private final ConversationRepository conversationRepository;
     private final ConversationMessageRepository messageRepository;
@@ -86,7 +86,7 @@ public class ChatBotService {
         // 4. Call agent with pre-fetched context
         String answer;
         try {
-            answer = shopChatAgent.chat(sessionId, userId, userMessage, context);
+            answer = shopAssistantAgent.chat(sessionId, userId, userMessage, context);
             
             // Post-process: Ensure JSON block is in response (inject if LLM forgot)
             answer = productJsonHolder.ensureJsonBlock(sessionId, answer);
@@ -146,8 +146,7 @@ public class ChatBotService {
      * Guaranteed to work regardless of library versions.
      */
     public void processMessageStreaming(String message, String sessionId,
-                                       org.springframework.web.servlet.mvc.method.annotation.SseEmitter emitter,
-                                       Object streamingModel) { // Keeping signature to avoid Controller change
+                                       org.springframework.web.servlet.mvc.method.annotation.SseEmitter emitter) {
         final String finalMessage = message;
         final String initialSessionId = sessionId;
         
@@ -168,7 +167,7 @@ public class ChatBotService {
                     .data("AI đang suy nghĩ..."));
                 
                 // Get full response from agent (Synchronous)
-                String fullResponse = shopChatAgent.chat(currentSessionId, userId, finalMessage, context);
+                String fullResponse = shopAssistantAgent.chat(currentSessionId, userId, finalMessage, context);
                 
                 // Stream word by word for better UX (Fake Streaming)
                 String[] words = fullResponse.split(" ");

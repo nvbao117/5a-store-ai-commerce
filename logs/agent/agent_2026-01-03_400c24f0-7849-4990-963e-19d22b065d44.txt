@@ -1,0 +1,75 @@
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 👟 [PRODUCT] advise                                                    ┃
+┃   ID: advise$0                                                             ┃
+┃   ⏰ Started: 23:16:18.260                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     cho tôi 2 đôi giày tùy ý
+┃
+┃ 📌 context:
+┃     d7d59fc6-ee11-4fb2-90ad-89378c803bb6
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 13195ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Tôi có 3 đôi giày để bạn lựa chọn:
+┃  
+┃  1. KAMITO ARTISTA KL TF - Trắng/Đỏ
+┃     - Loại: Giày bóng đá
+┃     - Giá: 499.000đ
+┃     - Màu sắc: Trắng/Đỏ
+┃  
+┃  2. KAMITO ARTISTA KL TF - Đỏ
+┃     - Loại: Giày bóng đá
+┃     - Giá: 499.000đ
+┃     - Màu sắc: Đỏ
+┃  
+┃  3. NIKE TIEMPO LEGEND 10 PRO TF - Vàng Chanh/Đen
+┃     - Loại: Giày bóng đá
+┃     - Giá: 2.790.000đ
+┃     - Màu sắc: Vàng Chanh/Đen
+┃  
+┃  Bạn thích đôi nào nhất? Muốn xem chi tiết hay thử size nào không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ⚙️ [AGENT] handle                                                    ┃
+┃   ID: handle$1                                                             ┃
+┃   ⏰ Started: 23:16:33.669                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Tôi muốn mua 2 đôi giày KAMITO ARTISTA KL TF - Trắng/Đỏ và NIKE TIEMPO L
+┃     EGEND 10 PRO TF - Vàng Chanh/Đen
+┃
+┃ 📌 context:
+┃     d7d59fc6-ee11-4fb2-90ad-89378c803bb6
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [✅ OK] Duration: 4941ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Xin chào! Hiện tại, tôi là nhân viên chăm sóc khách hàng của 5A Store. T
+┃  ôi có thể hỗ trợ bạn với việc mua 2 đôi giày:
+┃  
+┃  1. KAMITO ARTISTA KL TF - Trắng/Đỏ
+┃  2. NIKE TIEMPO LEGEND 10 PRO TF - Vàng Chanh/Đen
+┃  
+┃  Để giúp bạn đặt hàng thuận tiện, tôi khuyến nghị bạn:
+┃  - Truy cập website 5A Store
+┃  - Chọn size và số lượng cho từng đôi giày
+┃  - Tiến hành thanh toán 
+┃  
+┃  Nếu bạn cần hỗ trợ thêm về sản phẩm, size, hoặc có bất kỳ câu hỏi nào, m
+┃  ình rất sẵn lòng hướng dẫn chi tiết. Bạn có muốn được tư vấn thêm không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
