@@ -12,7 +12,7 @@ import com.example.online_shoe_store.Service.ai.context.DirectContextService;
 import com.example.online_shoe_store.Service.ai.context.ProductJsonHolder;
 import com.example.online_shoe_store.Service.ai.monitoring.AgentFileLogger;
 import com.example.online_shoe_store.Service.ai.monitoring.ToolLoggingChatModelListener;
-import com.example.online_shoe_store.dto.request.ChatRequest;
+import com.example.online_shoe_store.dto.request.ApiChatRequest;
 import com.example.online_shoe_store.dto.response.ChatResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -22,6 +22,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Map;
 import java.util.UUID;
 
 @Slf4j
@@ -34,11 +35,11 @@ public class ChatBotService {
     private final ConversationRepository conversationRepository;
     private final ConversationMessageRepository messageRepository;
     private final AgentFileLogger agentFileLogger;
-    private final DirectContextService directContextService;
+    private final com.example.online_shoe_store.Service.ai.context.DirectContextService directContextService;
     private final ProductJsonHolder productJsonHolder;
 
     @Transactional
-    public ChatResponse processMessage(ChatRequest request) {
+    public ChatResponse processMessage(ApiChatRequest request) {
         long startTime = System.currentTimeMillis();
 
         String userId = getAuthenticatedUserId();
@@ -136,5 +137,67 @@ public class ChatBotService {
         return userRepository.findByUsername(username)
                 .map(user -> user.getUserId())
                 .orElse("guest");
+    }
+
+
+    /**
+     * NEW: Streaming chat response
+     * NOTE: Currently uses word-by-word fake streaming.
+     * Guaranteed to work regardless of library versions.
+     */
+    public void processMessageStreaming(String message, String sessionId,
+                                       org.springframework.web.servlet.mvc.method.annotation.SseEmitter emitter,
+                                       Object streamingModel) { // Keeping signature to avoid Controller change
+        final String finalMessage = message;
+        final String initialSessionId = sessionId;
+        
+        java.util.concurrent.CompletableFuture.runAsync(() -> {
+            try {
+                String userId = getAuthenticatedUserId();
+                String currentSessionId = (initialSessionId != null && !initialSessionId.isBlank())
+                    ? initialSessionId
+                    : UUID.randomUUID().toString();
+                
+                long contextStart = System.currentTimeMillis();
+                String context = directContextService.prepareContext(currentSessionId, userId, finalMessage);
+                log.info("Context prepared in {}ms", System.currentTimeMillis() - contextStart);
+                
+                emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
+                    .event()
+                    .name("thinking")
+                    .data("AI đang suy nghĩ..."));
+                
+                // Get full response from agent (Synchronous)
+                String fullResponse = shopChatAgent.chat(currentSessionId, userId, finalMessage, context);
+                
+                // Stream word by word for better UX (Fake Streaming)
+                String[] words = fullResponse.split(" ");
+                for (String word : words) {
+                    emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
+                        .event()
+                        .name("message")
+                        .data(word + " "));
+                    Thread.sleep(15); // Fast typing 15ms
+                }
+                
+                emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
+                    .event()
+                    .name("done")
+                    .data(Map.of("sessionId", currentSessionId)));
+                
+                emitter.complete();
+                log.info("Streaming completed for session: {}", currentSessionId);
+                
+            } catch (Exception e) {
+                log.error("Streaming error: {}", e.getMessage(), e);
+                try {
+                    emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
+                        .event()
+                        .name("error")
+                        .data("Xin lỗi, có lỗi xảy ra: " + e.getMessage()));
+                } catch (Exception ignored) {}
+                emitter.completeWithError(e);
+            }
+        });
     }
 }

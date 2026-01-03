@@ -1,0 +1,69 @@
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ ⚙️ [AGENT] handle                                                    ┃
+┃   ID: handle$1                                                             ┃
+┃   ⏰ Started: 22:09:45.362                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Tôi muốn mua đôi giày ADIDAS PREDATOR 25 LEAGUE LƯỠI GÀ LẬT TF - JS0385 
+┃     - TRẮNG/HỒNG giá 2.790.000đ
+┃
+┃ 📌 context:
+┃     [CONTEXT] SessionId: cadf82a7-be9e-426b-be43-a951edb53b90, UserId: 298e3
+┃     3a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 5577ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Xin chào! Mình rất vui được hỗ trợ bạn mua đôi giày ADIDAS PREDATOR 25 L
+┃  EAGUE LƯỠI GÀ LẬT TF - JS0385 - TRẮNG/HỒNG.
+┃  
+┃  Hiện tại, để mua giày, bạn có thể thực hiện các bước sau:
+┃  1. Chọn size phù hợp
+┃  2. Kiểm tra số lượng tồn kho
+┃  3. Thêm sản phẩm vào giỏ hàng
+┃  4. Tiến hành thanh toán
+┃  
+┃  Giá của đôi giày là 2.790.000đ như bạn đã nói. Bạn có muốn mình hỗ trợ k
+┃  iểm tra thêm thông tin về sản phẩm này không? Ví dụ như size, màu sắc, h
+┃  oặc phí vận chuyển?
+┃  
+┃  Nếu bạn muốn tính phí vận chuyển, mình có thể giúp bạn nếu bạn cung cấp 
+┃  địa chỉ giao hàng cụ thể.
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 👟 [PRODUCT] advise                                                    ┃
+┃   ID: advise$0                                                             ┃
+┃   ⏰ Started: 22:09:54.785                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Tôi muốn biết thêm chi tiết về giày ADIDAS PREDATOR 25 LEAGUE LƯỠI GÀ LẬ
+┃     T TF - JS0385 - TRẮNG/HỒNG, đặc biệt là size và màu sắc
+┃
+┃ 📌 context:
+┃     [CONTEXT] SessionId: cadf82a7-be9e-426b-be43-a951edb53b90
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 12723ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Thông tin chi tiết về đôi giày ADIDAS PREDATOR 25 LEAGUE:
+┃  - Giá: 2.790.000đ
+┃  - Màu sắc: Trắng/Hồng
+┃  - Loại: Giày đá bóng sân cỏ nhân tạo
+┃  - Size còn hàng: 38, 39, 40, 41, 42, 43, 44, 45
+┃  
+┃  Bạn thích size nào? Tôi có thể giúp bạn kiểm tra số lượng và thêm vào gi
+┃  ỏ hàng ngay.
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛

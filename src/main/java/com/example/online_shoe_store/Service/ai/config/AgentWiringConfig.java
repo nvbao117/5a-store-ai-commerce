@@ -1,13 +1,15 @@
 package com.example.online_shoe_store.Service.ai.config;
 
 import com.example.online_shoe_store.Service.ai.agent.*;
+import com.example.online_shoe_store.Service.ai.agent.quality.ResponseReviewerAgent;
+import com.example.online_shoe_store.Service.ai.memory.ContextSummarizerAgent;
 import com.example.online_shoe_store.Service.ai.monitoring.EventLoggingAgentListener;
 import com.example.online_shoe_store.Service.ai.tool.*;
-import com.example.online_shoe_store.dto.agent.IntentCategory;
 import dev.langchain4j.agentic.AgenticServices;
-import dev.langchain4j.agentic.UntypedAgent;
+import dev.langchain4j.agentic.supervisor.SupervisorAgent;
+import dev.langchain4j.agentic.supervisor.SupervisorContextStrategy;
+import dev.langchain4j.agentic.supervisor.SupervisorResponseStrategy;
 import dev.langchain4j.data.segment.TextSegment;
-import dev.langchain4j.memory.chat.ChatMemoryProvider;
 import dev.langchain4j.memory.chat.MessageWindowChatMemory;
 import dev.langchain4j.model.chat.ChatModel;
 import dev.langchain4j.model.embedding.EmbeddingModel;
@@ -20,8 +22,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Objects;
-
 @Configuration
 @Slf4j
 @RequiredArgsConstructor
@@ -29,12 +29,7 @@ public class AgentWiringConfig {
 
     private final EventLoggingAgentListener eventLoggingAgentListener;
 
-    @Bean
-    public ChatMemoryProvider chatMemoryProvider() {
-        return id -> MessageWindowChatMemory.withMaxMessages(10);
-    }
-
-    // ====== RAG cho policy (nếu cần) ======
+    // ====== RAG cho policy ======
 
     @Bean
     public ContentRetriever policyRetriever(
@@ -49,26 +44,16 @@ public class AgentWiringConfig {
                 .build();
     }
 
-    // ====== SHOP AGENTIC SYSTEM ======
+    // ====== EXPERT AGENTS ======
 
     @Bean
-    public IntentRouter intentRouter(
-            @Qualifier("workerModel") ChatModel baseModel
-    ){
-        return AgenticServices.agentBuilder(IntentRouter.class)
-                .chatModel(baseModel)
-                .outputKey("category")
-                .build();
-    }
-
-    @Bean
-    public ProductExpertAgent productExpertAgent(
+    public ProductConsultantAgent productConsultantAgent(
                 @Qualifier("workerModel") ChatModel baseModel,
                 ProductSearchTools productSearchTools,
                 InventoryTools inventoryTools,
                 CartTools cartTools
         ) {
-        return AgenticServices.agentBuilder(ProductExpertAgent.class)
+        return AgenticServices.agentBuilder(ProductConsultantAgent.class)
                 .chatModel(baseModel)
                 .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(8))
                 .tools(productSearchTools, inventoryTools, cartTools)
@@ -78,11 +63,11 @@ public class AgentWiringConfig {
     }
 
     @Bean
-    public OrderExpertAgent orderExpertAgent(
+    public OrderServiceAgent orderServiceAgent(
             @Qualifier("workerModel") ChatModel baseModel,
             OrderTools orderTools
     ) {
-        return AgenticServices.agentBuilder(OrderExpertAgent.class)
+        return AgenticServices.agentBuilder(OrderServiceAgent.class)
                 .chatModel(baseModel)
                 .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(8))
                 .tools(orderTools)
@@ -90,12 +75,13 @@ public class AgentWiringConfig {
                 .listener(eventLoggingAgentListener)
                 .build();
     }
+    
     @Bean
-    public PolicyExpertAgent policyExpertAgent(
+    public PolicyAdvisorAgent policyAdvisorAgent(
             @Qualifier("workerModel") ChatModel baseModel,
             ContentRetriever policyRetriever
     ) {
-        return AgenticServices.agentBuilder(PolicyExpertAgent.class)
+        return AgenticServices.agentBuilder(PolicyAdvisorAgent.class)
                 .chatModel(baseModel)
                 .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(4))
                 .contentRetriever(policyRetriever)
@@ -105,10 +91,10 @@ public class AgentWiringConfig {
     }
 
     @Bean
-    public SmallTalkAgent smallTalkAgent(
+    public GreetingAgent greetingAgent(
             @Qualifier("workerModel") ChatModel baseModel
     ) {
-        return AgenticServices.agentBuilder(SmallTalkAgent.class)
+        return AgenticServices.agentBuilder(GreetingAgent.class)
                 .chatModel(baseModel)
                 .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(4))
                 .outputKey("response")
@@ -116,42 +102,125 @@ public class AgentWiringConfig {
                 .build();
     }
 
+    // ====== SUPERVISOR ORCHESTRATOR ======
+    
     @Bean
-    public ShopChatAgent shopChatAgent(
-            IntentRouter intentRouter,
-            ProductExpertAgent productExpertAgent,
-            OrderExpertAgent orderExpertAgent,
-            PolicyExpertAgent policyExpertAgent,
-            SmallTalkAgent smallTalkAgent
+    public SupervisorAgent shopSupervisorAgent(
+            @Qualifier("workerModel") ChatModel supervisorModel,
+            ProductConsultantAgent productConsultantAgent,
+            OrderServiceAgent orderServiceAgent,
+            PolicyAdvisorAgent policyAdvisorAgent,
+            GreetingAgent greetingAgent
     ) {
-        UntypedAgent expertsAgent = AgenticServices.conditionalBuilder()
+        return AgenticServices.supervisorBuilder()
+                .chatModel(supervisorModel)
                 .subAgents(
-                        scope -> Objects.equals(scope.readState("category"), IntentCategory.PRODUCT),
-                        productExpertAgent
+                    productConsultantAgent,
+                    orderServiceAgent,
+                    policyAdvisorAgent,
+                    greetingAgent
                 )
-                .subAgents(
-                        scope -> Objects.equals(scope.readState("category"), IntentCategory.ORDER),
-                        orderExpertAgent
-                )
-                .subAgents(
-                        scope -> Objects.equals(scope.readState("category"), IntentCategory.POLICY),
-                        policyExpertAgent
-                )
-                .subAgents(
-                        scope -> Objects.equals(scope.readState("category"), IntentCategory.SMALL_TALK),
-                        smallTalkAgent
-                )
-                .subAgents(
-                        scope -> scope.readState("category", IntentCategory.UNKNOWN) == IntentCategory.UNKNOWN,
-                        policyExpertAgent
-                )
+                .supervisorContext("""
+                    OUTPUT FORMAT: MUST be valid JSON ONLY.
+                    
+                    ROUTING RULES:
+                    1. Greetings -> GreetingAgent
+                    2. Product -> ProductConsultantAgent
+                    3. Order -> OrderServiceAgent
+                    4. Policy -> PolicyAdvisorAgent
+                    """)
+                .maxAgentsInvocations(2)
+                .responseStrategy(SupervisorResponseStrategy.LAST)
+                .contextGenerationStrategy(SupervisorContextStrategy.CHAT_MEMORY)
                 .build();
+    }
 
-        // Context is now pre-fetched in ChatBotService - no longer need contextManagerAgent here
-        return AgenticServices.sequenceBuilder(ShopChatAgent.class)
-                .subAgents(intentRouter, expertsAgent)
-                .listener(eventLoggingAgentListener)
-                .outputKey("response")
+    @Bean
+    public ShopAssistantAgent shopAssistantAgent(
+            SupervisorAgent shopSupervisorAgent
+    ) {
+        return (sessionId, userId, request, context) -> {
+            String enrichedRequest = String.format("""
+                [CONTEXT]
+                SessionId: %s
+                UserId: %s
+                Context: %s
+                [/CONTEXT]
+                
+                User Request: %s
+                """, 
+                sessionId, 
+                userId != null ? userId : "guest",
+                context != null ? context : "",
+                request
+            );
+            
+            String result = shopSupervisorAgent.invoke(enrichedRequest);
+            return result != null ? result : "Xin lỗi, có lỗi xảy ra.";
+        };
+    }
+    
+    // ====== QUALITY AGENTS ======
+    
+    @Bean
+    public ResponseReviewerAgent responseReviewerAgent(
+            @Qualifier("workerModel") ChatModel baseModel
+    ) {
+        return AgenticServices.agentBuilder(ResponseReviewerAgent.class)
+                .chatModel(baseModel)
+                .outputKey("reviewResult")
                 .build();
+    }
+    
+    @Bean
+    public ContextSummarizerAgent contextSummarizerAgent(
+            @Qualifier("workerModel") ChatModel baseModel
+    ) {
+        return AgenticServices.agentBuilder(ContextSummarizerAgent.class)
+                .chatModel(baseModel)
+                .build();
+    }
+    
+    // ====== LEGACY BEANS (Forward Compatibility) ======
+    
+    @Bean
+    public IntentClassifierAgent intentClassifierAgent(
+            @Qualifier("workerModel") ChatModel baseModel
+    ){
+        return AgenticServices.agentBuilder(IntentClassifierAgent.class)
+                .chatModel(baseModel)
+                .outputKey("category")
+                .build();
+    }
+    
+    @Bean
+    public IntentRouter intentRouter(IntentClassifierAgent intentClassifierAgent) {
+        return (context, message) -> intentClassifierAgent.classify(context, message);
+    }
+    
+    @Bean
+    public ProductExpertAgent productExpertAgent(ProductConsultantAgent productConsultantAgent) {
+        return (memoryId, userId, context, message) -> productConsultantAgent.advise(memoryId, userId, context, message);
+    }
+    
+    @Bean
+    public OrderExpertAgent orderExpertAgent(OrderServiceAgent orderServiceAgent) {
+        return (memoryId, context, message) -> orderServiceAgent.handle(memoryId, context, message);
+    }
+    
+    @Bean
+    public PolicyExpertAgent policyExpertAgent(PolicyAdvisorAgent policyAdvisorAgent) {
+        return (memoryId, context, message) -> policyAdvisorAgent.answer(memoryId, context, message);
+    }
+    
+    @Bean
+    public SmallTalkAgent smallTalkAgent(GreetingAgent greetingAgent) {
+        return (memoryId, context, message) -> greetingAgent.respond(memoryId, context, message);
+    }
+    
+    // THIS IS THE MISSING BEAN
+    @Bean
+    public ShopChatAgent shopChatAgent(ShopAssistantAgent shopAssistantAgent) {
+        return (sessionId, userId, request, context) -> shopAssistantAgent.chat(sessionId, userId, request, context);
     }
 }

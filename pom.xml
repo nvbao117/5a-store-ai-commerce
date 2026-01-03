@@ -42,8 +42,8 @@
         <!-- Spring Boot starter cho Anthropic Chat Model -->
         <dependency>
             <groupId>dev.langchain4j</groupId>
-            <artifactId>langchain4j-anthropic-spring-boot-starter</artifactId>
-            <version>1.9.1-beta17</version>
+            <artifactId>langchain4j-anthropic</artifactId>
+            <version>1.10.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>dev.langchain4j</groupId>

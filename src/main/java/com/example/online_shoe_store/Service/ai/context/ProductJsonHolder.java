@@ -86,4 +86,8 @@ public class ProductJsonHolder {
             jsonBlocks.remove(sessionId);
         }
     }
+
+    public String getJsonForSession(String sessionId) {
+        return sessionId != null ? jsonBlocks.get(sessionId) : null;
+    }
 }

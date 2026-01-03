@@ -31,7 +31,7 @@ public class EventLoggingAgentListener implements AgentListener {
 
     @Override
     public boolean inheritedBySubagents() {
-        return false; // Không inherit để tránh duplicate logs
+        return true; // Enable để track tất cả subagents
     }
 
     @Override
