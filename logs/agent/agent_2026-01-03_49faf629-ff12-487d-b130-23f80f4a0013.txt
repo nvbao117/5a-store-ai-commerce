@@ -1,0 +1,1158 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:00:13.668]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  trong giỏ hàng của tôi có những đôi giày nào ?
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 NEW CHAT SESSION                                ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  📋 Session : 49faf629-ff12-487d-b130-23f80f4a0013                           ║
+║  👤 User    : unknown                                                        ║
+║  🕐 Time    : 2026-01-03T14:00:13.711168100                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:00:13.711                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     trong giỏ hàng của tôi có những đôi giày nào ?
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     49faf629-ff12-487d-b130-23f80f4a0013
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:00:14.977]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 1262ms                                                       │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: trong giỏ hàng của tôi có những đôi giày n
+  │ ào ?
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ trong giỏ hàng của tôi có những đôi giày nào ?
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ ORDER
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:00:14.979]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 246        tokens                                        │
+  │  Output    : 4          tokens                                        │
+  │  Total     : 250        tokens                                        │
+  │  Duration  : 1262       ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ ⚙️ [AGENT] handle                                                    ┃
+  ┃   ID: handle$1$1                                                           ┃
+  ┃   ⏰ Started: 14:00:14.994                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     trong giỏ hàng của tôi có những đôi giày nào ?
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:00:20.046]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 5043ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên CSKH của shop giày 5A Store, chuyên xử lý đơn hàng.
+    │ 
+    │ TOOLS CÓ SẴN:
+    │ - trackOrder(orderId): Tra cứu trạng thái đơn hàng
+    │ - checkCancelEligibility(orderId): Kiểm tra điều kiện hủy đơn
+    │ - checkRefundEligibility(orderId): Kiểm tra điều kiện hoàn tiền
+    │ - getOrderHistory(email): Lấy lịch sử đơn hàng
+    │ - calculateShipping(address): Tính phí vận chuyển
+    │ 
+    │ NHIỆM VỤ:
+    │ 1. Đọc yêu cầu khách hàng
+    │ 2. Sử dụng tool phù hợp để thực hiện thao tác
+    │ 3. Trả lời bằng tiếng Việt, ngắn gọn, đúng thực tế
+    │ 
+    │ QUY TẮC:
+    │ - Tra cứu đơn: PHẢI có mã đơn hàng. Nếu chưa có, hỏi lại khách.
+    │ - Hủy đơn/Hoàn tiền: Kiểm tra điều kiện trước khi xác nhận.
+    │ - KHÔNG được tự bịa kết quả, chỉ trả lời dựa trên tool.
+    │ - Giọng điệu: Thân thiện, dùng "Mình/Bạn"
+    │ 
+    │ CONTEXT TỪ HỆ THỐNG:
+    │ {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ 
+    │ Đây là câu hỏi người dùng:
+    │ trong giỏ hàng của tôi có những đôi giày nào ?
+    │ 👤 [USER MESSAGE]
+    │ trong giỏ hàng của tôi có những đôi giày nào ?
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! 
+    │ 
+    │ Rất tiếc, hiện tại với các công cụ sẵn có, mình không thể trực tiếp tra 
+    │ cứu giỏ hàng của bạn. Để kiểm tra chi tiết giỏ hàng, bạn có thể:
+    │ 
+    │ 1. Đăng nhập vào tài khoản trên website 5A Store
+    │ 2. Kiểm tra trực tiếp mục giỏ hàng
+    │ 3. Liên hệ trực tiếp nhân viên CSKH để được hỗ trợ chi tiết
+    │ 
+    │ Mình có thể giúp bạn tra cứu đơn hàng nếu bạn cung cấp mã đơn. Bạn cần h
+    │ ỗ trợ gì thêm không?
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:00:20.048]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 1205       tokens                                        │
+    │  Output    : 227        tokens                                        │
+    │  Total     : 1432       tokens                                        │
+    │  Duration  : 5043       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 5059ms                                        ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Xin chào Bảo! 
+  ┃  
+  ┃  Rất tiếc, hiện tại với các công cụ sẵn có, mình không thể trực tiếp tra 
+  ┃  cứu giỏ hàng của bạn. Để kiểm tra chi tiết giỏ hàng, bạn có thể:
+  ┃  
+  ┃  1. Đăng nhập vào tài khoản trên website 5A Store
+  ┃  2. Kiểm tra trực tiếp mục giỏ hàng
+  ┃  3. Liên hệ trực tiếp nhân viên CSKH để được hỗ trợ chi tiết
+  ┃  
+  ┃  Mình có thể giúp bạn tra cứu đơn hàng nếu bạn cung cấp mã đơn. Bạn cần h
+  ┃  ỗ trợ gì thêm không?
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 6343ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Xin chào Bảo! 
+┃  
+┃  Rất tiếc, hiện tại với các công cụ sẵn có, mình không thể trực tiếp tra 
+┃  cứu giỏ hàng của bạn. Để kiểm tra chi tiết giỏ hàng, bạn có thể:
+┃  
+┃  1. Đăng nhập vào tài khoản trên website 5A Store
+┃  2. Kiểm tra trực tiếp mục giỏ hàng
+┃  3. Liên hệ trực tiếp nhân viên CSKH để được hỗ trợ chi tiết
+┃  
+┃  Mình có thể giúp bạn tra cứu đơn hàng nếu bạn cung cấp mã đơn. Bạn cần h
+┃  ỗ trợ gì thêm không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:00:20.057]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Xin chào Bảo! 
+║  
+║  Rất tiếc, hiện tại với các công cụ sẵn có, mình không thể trực tiếp tra cứ
+║  u giỏ hàng của bạn. Để kiểm tra chi tiết giỏ hàng, bạn có thể:
+║  
+║  1. Đăng nhập vào tài khoản trên website 5A Store
+║  2. Kiểm tra trực tiếp mục giỏ hàng
+║  3. Liên hệ trực tiếp nhân viên CSKH để được hỗ trợ chi tiết
+║  
+║  Mình có thể giúp bạn tra cứu đơn hàng nếu bạn cung cấp mã đơn. Bạn cần hỗ 
+║  trợ gì thêm không?
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 6400ms                                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:19:43.369]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:19:43.391                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! \n\nRất tiếc, hiện tại với 
+┃     các công cụ... | trong giỏ hàng của tôi có những đôi giày nào ?","userId
+┃     ":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     49faf629-ff12-487d-b130-23f80f4a0013
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:19:44.243]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 849ms                                                        │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: Thêm cho tôi đôi giày cầu lông beyono wind
+  │  vào giỏ hàng
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:19:44.243]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 262        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 267        tokens                                        │
+  │  Duration  : 849        ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:19:44.246                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! \n\nRất tiếc, hiện tại với 
+  ┃     các công cụ... | trong giỏ hàng của tôi có những đôi giày nào ?","userId
+  ┃     ":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:19:47.429]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3183ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! \n\nRất tiếc, hiện
+    │  tại với các công cụ... | trong giỏ hàng của tôi có những đôi giày nào ?
+    │ ","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+    │ 🤖 [AI MESSAGE]
+    │ Tôi sẽ giúp bạn thêm đôi giày cầu lông Beyono Wind vào giỏ hàng. Trước t
+    │ iên, tôi sẽ tìm kiếm sản phẩm để xác định chính xác product ID.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày cầu lông beyono wind",
+    │   "maxResults" : 1
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:19:47.430]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4036       tokens                                        │
+    │  Output    : 158        tokens                                        │
+    │  Total     : 4194       tokens                                        │
+    │  Duration  : 3183       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:19:49.170 | Duration: 1739ms                                ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "query" : "giày cầu lông beyono wind",
+    ┊     "maxResults" : 1
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 1 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:19:52.312]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3142ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! \n\nRất tiếc, hiện
+    │  tại với các công cụ... | trong giỏ hàng của tôi có những đôi giày nào ?
+    │ ","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+    │ 🤖 [AI MESSAGE]
+    │ Tôi sẽ giúp bạn thêm đôi giày cầu lông Beyono Wind vào giỏ hàng. Trước t
+    │ iên, tôi sẽ tìm kiếm sản phẩm để xác định chính xác product ID.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày cầu lông beyono wind",
+    │   "maxResults" : 1
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 1 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày b
+    │ óng chuyền","price":790000,"priceFormatted":"790.000đ","productId":"023e
+    │ 5efb-de5f-4eac-a8eb-8687fcfae8a3","imageUrl":"/images/products/main_8a35
+    │ 7382.jpg"}]
+    │ [/PRODUCTS_JSON]
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi đã tìm thấy sản phẩm. Tuy nhiên, tôi cần hỏi bạn size già
+    │ y để thêm vào giỏ hàng.
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3"
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:19:52.313]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4343       tokens                                        │
+    │  Output    : 146        tokens                                        │
+    │  Total     : 4489       tokens                                        │
+    │  Duration  : 3142       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:19:52.320 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 1 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getAvailableSizes                                                ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:19:52.321 | Duration: 8ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3"
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size còn hàng: 39 (10), 38 (10), 42 (10), 43 (10), 44 (10), 40 (10), 4...
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:19:55.751]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3431ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! \n\nRất tiếc, hiện
+    │  tại với các công cụ... | trong giỏ hàng của tôi có những đôi giày nào ?
+    │ ","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+    │ 🤖 [AI MESSAGE]
+    │ Tôi sẽ giúp bạn thêm đôi giày cầu lông Beyono Wind vào giỏ hàng. Trước t
+    │ iên, tôi sẽ tìm kiếm sản phẩm để xác định chính xác product ID.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày cầu lông beyono wind",
+    │   "maxResults" : 1
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 1 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày b
+    │ óng chuyền","price":790000,"priceFormatted":"790.000đ","productId":"023e
+    │ 5efb-de5f-4eac-a8eb-8687fcfae8a3","imageUrl":"/images/products/main_8a35
+    │ 7382.jpg"}]
+    │ [/PRODUCTS_JSON]
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi đã tìm thấy sản phẩm. Tuy nhiên, tôi cần hỏi bạn size già
+    │ y để thêm vào giỏ hàng.
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3"
+    │ })
+    │ 🔧 [TOOL RESULT: getAvailableSizes]
+    │ Size còn hàng: 39 (10), 38 (10), 42 (10), 43 (10), 44 (10), 40 (10), 45 
+    │ (10), 41 (10)
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào! Tôi thấy bạn muốn mua giày cầu lông Beyono Wind. Hiện tại sản 
+    │ phẩm này có các size: 38, 39, 40, 41, 42, 43, 44, 45. 
+    │ 
+    │ Bạn vui lòng cho mình biết size giày bạn muốn chọn được không? Sau khi c
+    │ ó size, tôi sẽ giúp bạn thêm ngay vào giỏ hàng.
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:19:55.752]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4554       tokens                                        │
+    │  Output    : 143        tokens                                        │
+    │  Total     : 4697       tokens                                        │
+    │  Duration  : 3431       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 11507ms                                       ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Xin chào! Tôi thấy bạn muốn mua giày cầu lông Beyono Wind. Hiện tại sản 
+  ┃  phẩm này có các size: 38, 39, 40, 41, 42, 43, 44, 45. 
+  ┃  
+  ┃  Bạn vui lòng cho mình biết size giày bạn muốn chọn được không? Sau khi c
+  ┃  ó size, tôi sẽ giúp bạn thêm ngay vào giỏ hàng.
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 12363ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Xin chào! Tôi thấy bạn muốn mua giày cầu lông Beyono Wind. Hiện tại sản 
+┃  phẩm này có các size: 38, 39, 40, 41, 42, 43, 44, 45. 
+┃  
+┃  Bạn vui lòng cho mình biết size giày bạn muốn chọn được không? Sau khi c
+┃  ó size, tôi sẽ giúp bạn thêm ngay vào giỏ hàng.
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:19:55.758]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Xin chào! Tôi thấy bạn muốn mua giày cầu lông Beyono Wind. Hiện tại sản ph
+║  ẩm này có các size: 38, 39, 40, 41, 42, 43, 44, 45. 
+║  
+║  [PRODUCTS_JSON]
+║  [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày bón
+║  g chuyền","price":790000,"priceFormatted":"790.000đ","productId":"023e5efb
+║  -de5f-4eac-a8eb-8687fcfae8a3","imageUrl":"/images/products/main_8a357382.j
+║  pg"}]
+║  [/PRODUCTS_JSON]
+║  
+║  Bạn vui lòng cho mình biết size giày bạn muốn chọn được không? Sau khi có 
+║  size, tôi sẽ giúp bạn thêm ngay vào giỏ hàng.
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 12391ms                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:21:28.843]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  size 40
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:21:28.860                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     size 40
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo. Lịch sử: Xin chào! Tôi thấy bạn muốn mua giày cầu 
+┃     lông Beyo... | Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ... | X
+┃     in chào Bảo! \n\nRất tiếc, hiện tại với các công cụ...","userId":"298e33
+┃     a3-68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     49faf629-ff12-487d-b130-23f80f4a0013
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:21:29.839]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 977ms                                                        │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: size 40
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ size 40
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:21:29.841]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 208        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 213        tokens                                        │
+  │  Duration  : 977        ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:21:29.846                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     size 40
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo. Lịch sử: Xin chào! Tôi thấy bạn muốn mua giày cầu 
+  ┃     lông Beyo... | Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ... | X
+  ┃     in chào Bảo! \n\nRất tiếc, hiện tại với các công cụ...","userId":"298e33
+  ┃     a3-68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:21:29.855 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 1 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getAvailableSizes                                                ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:21:29.860 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size còn hàng: 39 (10), 38 (10), 42 (10), 43 (10), 44 (10), 40 (10), 4...
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:21:33.101]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3246ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 👤 [USER MESSAGE]
+    │ Thêm cho tôi đôi giày cầu lông beyono wind vào giỏ hàng
+    │ 🤖 [AI MESSAGE]
+    │ Tôi sẽ giúp bạn thêm đôi giày cầu lông Beyono Wind vào giỏ hàng. Trước t
+    │ iên, tôi sẽ tìm kiếm sản phẩm để xác định chính xác product ID.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày cầu lông beyono wind",
+    │   "maxResults" : 1
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 1 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày b
+    │ óng chuyền","price":790000,"priceFormatted":"790.000đ","productId":"023e
+    │ 5efb-de5f-4eac-a8eb-8687fcfae8a3","imageUrl":"/images/products/main_8a35
+    │ 7382.jpg"}]
+    │ [/PRODUCTS_JSON]
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi đã tìm thấy sản phẩm. Tuy nhiên, tôi cần hỏi bạn size già
+    │ y để thêm vào giỏ hàng.
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3"
+    │ })
+    │ 🔧 [TOOL RESULT: getAvailableSizes]
+    │ Size còn hàng: 39 (10), 38 (10), 42 (10), 43 (10), 44 (10), 40 (10), 45 
+    │ (10), 41 (10)
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào! Tôi thấy bạn muốn mua giày cầu lông Beyono Wind. Hiện tại sản 
+    │ phẩm này có các size: 38, 39, 40, 41, 42, 43, 44, 45. 
+    │ 
+    │ Bạn vui lòng cho mình biết size giày bạn muốn chọn được không? Sau khi c
+    │ ó size, tôi sẽ giúp bạn thêm ngay vào giỏ hàng.
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào! Tôi thấy bạn muốn mua 
+    │ giày cầu lông Beyo... | Thêm cho tôi đôi giày cầu lông beyono wind vào g
+    │ iỏ... | Xin chào Bảo! \n\nRất tiếc, hiện tại với các công cụ...","userId
+    │ ":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ size 40
+    │ 🤖 [AI MESSAGE]
+    │ Tốt rồi! Tôi sẽ giúp bạn thêm ngay đôi giày Beyono Wind size 40 vào giỏ 
+    │ hàng.
+    │ 📞 Tool Calls:
+    │   → checkStock({
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3",
+    │   "size" : "40"
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:21:33.105]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4742       tokens                                        │
+    │  Output    : 146        tokens                                        │
+    │  Total     : 4888       tokens                                        │
+    │  Duration  : 3246       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getAvailableSizes                                                ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:21:33.139 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size còn hàng: 39 (10), 38 (10), 42 (10), 43 (10), 44 (10), 40 (10), 4...
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: checkStock                                                       ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:21:33.143 | Duration: 33ms                                  ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3",
+    ┊     "size" : "40"
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size 40 chỉ còn 10 đôi. Đặt ngay!
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:21:36.604]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3465ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi đã tìm thấy sản phẩm. Tuy nhiên, tôi cần hỏi bạn size già
+    │ y để thêm vào giỏ hàng.
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3"
+    │ })
+    │ 🔧 [TOOL RESULT: getAvailableSizes]
+    │ Size còn hàng: 39 (10), 38 (10), 42 (10), 43 (10), 44 (10), 40 (10), 45 
+    │ (10), 41 (10)
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào! Tôi thấy bạn muốn mua giày cầu lông Beyono Wind. Hiện tại sản 
+    │ phẩm này có các size: 38, 39, 40, 41, 42, 43, 44, 45. 
+    │ 
+    │ Bạn vui lòng cho mình biết size giày bạn muốn chọn được không? Sau khi c
+    │ ó size, tôi sẽ giúp bạn thêm ngay vào giỏ hàng.
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào! Tôi thấy bạn muốn mua 
+    │ giày cầu lông Beyo... | Thêm cho tôi đôi giày cầu lông beyono wind vào g
+    │ iỏ... | Xin chào Bảo! \n\nRất tiếc, hiện tại với các công cụ...","userId
+    │ ":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ size 40
+    │ 🤖 [AI MESSAGE]
+    │ Tốt rồi! Tôi sẽ giúp bạn thêm ngay đôi giày Beyono Wind size 40 vào giỏ 
+    │ hàng.
+    │ 📞 Tool Calls:
+    │   → checkStock({
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3",
+    │   "size" : "40"
+    │ })
+    │ 🔧 [TOOL RESULT: checkStock]
+    │ Size 40 chỉ còn 10 đôi. Đặt ngay!
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → addToCart({
+    │   "userId" : "298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-86...[truncated])
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:21:36.607]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4593       tokens                                        │
+    │  Output    : 153        tokens                                        │
+    │  Total     : 4746       tokens                                        │
+    │  Duration  : 3465       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: checkStock                                                       ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:21:36.643 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size 40 chỉ còn 10 đôi. Đặt ngay!
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: addToCart                                                        ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:21:36.646 | Duration: 33ms                                  ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "userId" : "298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+    ┊     "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3",
+    ┊     "size" : "40",
+    ┊     "quantity" : 1
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Thành công! Đã thêm sản phẩm vào giỏ hàng với size 40.
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:21:39.547]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2903ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào! Tôi thấy bạn muốn mua giày cầu lông Beyono Wind. Hiện tại sản 
+    │ phẩm này có các size: 38, 39, 40, 41, 42, 43, 44, 45. 
+    │ 
+    │ Bạn vui lòng cho mình biết size giày bạn muốn chọn được không? Sau khi c
+    │ ó size, tôi sẽ giúp bạn thêm ngay vào giỏ hàng.
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào! Tôi thấy bạn muốn mua 
+    │ giày cầu lông Beyo... | Thêm cho tôi đôi giày cầu lông beyono wind vào g
+    │ iỏ... | Xin chào Bảo! \n\nRất tiếc, hiện tại với các công cụ...","userId
+    │ ":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ size 40
+    │ 🤖 [AI MESSAGE]
+    │ Tốt rồi! Tôi sẽ giúp bạn thêm ngay đôi giày Beyono Wind size 40 vào giỏ 
+    │ hàng.
+    │ 📞 Tool Calls:
+    │   → checkStock({
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-8687fcfae8a3",
+    │   "size" : "40"
+    │ })
+    │ 🔧 [TOOL RESULT: checkStock]
+    │ Size 40 chỉ còn 10 đôi. Đặt ngay!
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → addToCart({
+    │   "userId" : "298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+    │   "productId" : "023e5efb-de5f-4eac-a8eb-86...[truncated])
+    │ 🔧 [TOOL RESULT: addToCart]
+    │ Thành công! Đã thêm sản phẩm vào giỏ hàng với size 40.
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Mình đã thêm giày Beyono Wind size 40 vào giỏ hàng cho bạn.
+    │ 
+    │ [REDIRECT]/checkout[/REDIRECT]
+    │ 
+    │ Bạn có muốn tiếp tục mua sắm hoặc cần hỗ trợ gì thêm không?
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:21:39.547]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4576       tokens                                        │
+    │  Output    : 93         tokens                                        │
+    │  Total     : 4669       tokens                                        │
+    │  Duration  : 2903       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 9705ms                                        ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Tuyệt vời! Mình đã thêm giày Beyono Wind size 40 vào giỏ hàng cho bạn.
+  ┃  
+  ┃  [REDIRECT]/checkout[/REDIRECT]
+  ┃  
+  ┃  Bạn có muốn tiếp tục mua sắm hoặc cần hỗ trợ gì thêm không?
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 10693ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Tuyệt vời! Mình đã thêm giày Beyono Wind size 40 vào giỏ hàng cho bạn.
+┃  
+┃  [REDIRECT]/checkout[/REDIRECT]
+┃  
+┃  Bạn có muốn tiếp tục mua sắm hoặc cần hỗ trợ gì thêm không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:21:39.555]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Tuyệt vời! Mình đã thêm giày Beyono Wind size 40 vào giỏ hàng cho bạn.
+║  
+║  [PRODUCTS_JSON]
+║  [{"name":"Giày cầu lông Beyono Wind","brand":"BEYONO","category":"Giày bón
+║  g chuyền","price":790000,"priceFormatted":"790.000đ","productId":"023e5efb
+║  -de5f-4eac-a8eb-8687fcfae8a3","imageUrl":"/images/products/main_8a357382.j
+║  pg"}]
+║  [/PRODUCTS_JSON]
+║  
+║  [REDIRECT]/checkout[/REDIRECT]
+║  
+║  Bạn có muốn tiếp tục mua sắm hoặc cần hỗ trợ gì thêm không?
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 10720ms                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+

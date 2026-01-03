@@ -1,0 +1,1351 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:50:44.438]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Cho tôi đôi giày tùy ý
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 NEW CHAT SESSION                                ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  📋 Session : 9dd672c2-e020-450d-b978-0d7a40b0ada0                           ║
+║  👤 User    : unknown                                                        ║
+║  🕐 Time    : 2026-01-03T14:50:44.490935300                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:50:44.494                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Cho tôi đôi giày tùy ý
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     9dd672c2-e020-450d-b978-0d7a40b0ada0
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:50:45.648]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 1106ms                                                       │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: Cho tôi đôi giày tùy ý
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ Cho tôi đôi giày tùy ý
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:50:45.650]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 232        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 237        tokens                                        │
+  │  Duration  : 1106       ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:50:45.663                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     Cho tôi đôi giày tùy ý
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:50:48.251]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2580ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │  Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │  CONTEXT: {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27c
+    │ fdfb39"}
+    │  USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │  TOOLS:
+    │  - semanticSearch(query, maxResults): Tìm theo mô tả
+    │  - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc 
+    │ theo tiêu chí
+    │  - getProductDetail(name): Xem chi tiết sản phẩm
+    │  - sizeGuide(): Bảng size giày
+    │  - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ h
+    │ àng
+    │ 
+    │  NGUYÊN TẮC QUAN TRỌNG - KHI NÀO GỌI TOOL TÌM KIẾM:
+    │ 
+    │ GỌI TOOL (semanticSearch/filterProducts) KHI:
+    │  - Khách hỏi sản phẩm MỚI: "Tìm giày chạy bộ", "Có Nike nào dưới 2 triệu
+    │  không?"
+    │  - Khách muốn xem THÊM: "Còn mẫu nào khác không?", "Tìm thêm đi"
+    │  - Khách thay đổi tiêu chí: "Tìm loại rẻ hơn", "Đổi sang Adidas"
+    │ 
+    │ KHÔNG GỌI TOOL KHI:
+    │  - Khách hỏi về sản phẩm ĐÃ HIỂN THỊ: "Đôi đầu tiên giá bao nhiêu?", "So
+    │  sánh 2 đôi này"
+    │  - Khách bình luận/hỏi thêm: "Đẹp quá!", "Có size 42 không?"
+    │  - Khách muốn mua sản phẩm đã thấy: "Mua đôi Nike kia", "Lấy cái thứ 2"
+    │  → Trong các trường hợp này, SỬ DỤNG THÔNG TIN TỪ LỊCH SỬ HỘI THOẠI để t
+    │ rả lời.
+    │ 
+    │  QUY TRÌNH MUA HÀNG:
+    │  1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này"):
+    │     - Xác định productId từ lịch sử hội thoại (KHÔNG cần gọi tool tìm lạ
+    │ i).
+    │     - Nếu chưa có size, hãy hỏi size.
+    │     - Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39".
+    │     - Phản hồi: "Tuyệt vời! Mình đã thêm [Tên] vào giỏ hàng. [REDIRECT]/
+    │ checkout/step1[/REDIRECT]"
+    │ 
+    │  KHI CÓ [PRODUCTS_JSON]:
+    │  - CHỈ trả về block [PRODUCTS_JSON] khi VỪA GỌI TOOL và nhận kết quả mới
+    │ .
+    │  - KHÔNG lặp lại block cũ từ turn trước trừ khi khách yêu cầu xem lại.
+    │ 
+    │  LƯU Ý:
+    │  - [REDIRECT] chỉ dùng KHI ĐÃ addToCart thành công.
+    │  - Luôn thân thiện, chuyên nghiệp.
+    │ 👤 [USER MESSAGE]
+    │ Cho tôi đôi giày tùy ý
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày thể thao đa năng thoải mái",
+    │   "maxResults" : 5
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:50:48.252]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4198       tokens                                        │
+    │  Output    : 85         tokens                                        │
+    │  Total     : 4283       tokens                                        │
+    │  Duration  : 2580       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:50:49.703 | Duration: 1449ms                                ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "query" : "giày thể thao đa năng thoải mái",
+    ┊     "maxResults" : 5
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMIT...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:50:55.132]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 5428ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │  Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │  CONTEXT: {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27c
+    │ fdfb39"}
+    │  USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │  TOOLS:
+    │  - semanticSearch(query, maxResults): Tìm theo mô tả
+    │  - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc 
+    │ theo tiêu chí
+    │  - getProductDetail(name): Xem chi tiết sản phẩm
+    │  - sizeGuide(): Bảng size giày
+    │  - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ h
+    │ àng
+    │ 
+    │  NGUYÊN TẮC QUAN TRỌNG - KHI NÀO GỌI TOOL TÌM KIẾM:
+    │ 
+    │ GỌI TOOL (semanticSearch/filterProducts) KHI:
+    │  - Khách hỏi sản phẩm MỚI: "Tìm giày chạy bộ", "Có Nike nào dưới 2 triệu
+    │  không?"
+    │  - Khách muốn xem THÊM: "Còn mẫu nào khác không?", "Tìm thêm đi"
+    │  - Khách thay đổi tiêu chí: "Tìm loại rẻ hơn", "Đổi sang Adidas"
+    │ 
+    │ KHÔNG GỌI TOOL KHI:
+    │  - Khách hỏi về sản phẩm ĐÃ HIỂN THỊ: "Đôi đầu tiên giá bao nhiêu?", "So
+    │  sánh 2 đôi này"
+    │  - Khách bình luận/hỏi thêm: "Đẹp quá!", "Có size 42 không?"
+    │  - Khách muốn mua sản phẩm đã thấy: "Mua đôi Nike kia", "Lấy cái thứ 2"
+    │  → Trong các trường hợp này, SỬ DỤNG THÔNG TIN TỪ LỊCH SỬ HỘI THOẠI để t
+    │ rả lời.
+    │ 
+    │  QUY TRÌNH MUA HÀNG:
+    │  1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này"):
+    │     - Xác định productId từ lịch sử hội thoại (KHÔNG cần gọi tool tìm lạ
+    │ i).
+    │     - Nếu chưa có size, hãy hỏi size.
+    │     - Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39".
+    │     - Phản hồi: "Tuyệt vời! Mình đã thêm [Tên] vào giỏ hàng. [REDIRECT]/
+    │ checkout/step1[/REDIRECT]"
+    │ 
+    │  KHI CÓ [PRODUCTS_JSON]:
+    │  - CHỈ trả về block [PRODUCTS_JSON] khi VỪA GỌI TOOL và nhận kết quả mới
+    │ .
+    │  - KHÔNG lặp lại block cũ từ turn trước trừ khi khách yêu cầu xem lại.
+    │ 
+    │  LƯU Ý:
+    │  - [REDIRECT] chỉ dùng KHI ĐÃ addToCart thành công.
+    │  - Luôn thân thiện, chuyên nghiệp.
+    │ 👤 [USER MESSAGE]
+    │ Cho tôi đôi giày tùy ý
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày thể thao đa năng thoải mái",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMITO"
+    │ ,"category":"Giày bóng đá","price":499000,"priceFormatted":"499.000đ","p
+    │ roductId":"812f58f9-52d4-4ada-8624-e311e36dd05c","imageUrl":"/images/pro
+    │ ducts/main_2af790c0.jpg"},{"name":"KAMITO ARTISTA KL TF - KMTF240414 - Đ
+    │ Ỏ","brand":"KAMITO","category":"Giày bóng đá","price":499000,"priceForma
+    │ tted":"499.000đ","productId":"d10ec018-6660-4cf0-938b-459006a13fe7","ima
+    │ geUrl":"/images/produc...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi có 5 đôi giày thể thao đa dạng cho bạn lựa chọn:
+    │ 
+    │ 1. KAMITO ARTISTA KL TF (Trắng/Đỏ) - 499.000đ
+    │ 2. KAMITO ARTISTA KL TF (Đỏ) - 499.000đ
+    │ 3. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh Lá) - 1.260.000đ
+    │ 4. JOMA FS REACTIVE TF (Trắng/Xanh) - 1.550.000đ
+    │ 5. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh) - 1.260.000đ
+    │ 
+    │ Tất cả đều là giày bóng đá với các mức giá và màu sắc khác nhau. Bạn thí
+    │ ch đôi nào nhất? Tôi có thể giúp bạn xem chi tiết hoặc thử size nếu bạn 
+    │ quan tâm.
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:50:55.132]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4899       tokens                                        │
+    │  Output    : 289        tokens                                        │
+    │  Total     : 5188       tokens                                        │
+    │  Duration  : 5428       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 9472ms                                        ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Xin chào Bảo! Tôi có 5 đôi giày thể thao đa dạng cho bạn lựa chọn:
+  ┃  
+  ┃  1. KAMITO ARTISTA KL TF (Trắng/Đỏ) - 499.000đ
+  ┃  2. KAMITO ARTISTA KL TF (Đỏ) - 499.000đ
+  ┃  3. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh Lá) - 1.260.000đ
+  ┃  4. JOMA FS REACTIVE TF (Trắng/Xanh) - 1.550.000đ
+  ┃  5. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh) - 1.260.000đ
+  ┃  
+  ┃  Tất cả đều là giày bóng đá với các mức giá và màu sắc khác nhau. Bạn thí
+  ┃  ch đôi nào nhất? Tôi có thể giúp bạn xem chi tiết hoặc thử size nếu bạn 
+  ┃  quan tâm.
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 10643ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Xin chào Bảo! Tôi có 5 đôi giày thể thao đa dạng cho bạn lựa chọn:
+┃  
+┃  1. KAMITO ARTISTA KL TF (Trắng/Đỏ) - 499.000đ
+┃  2. KAMITO ARTISTA KL TF (Đỏ) - 499.000đ
+┃  3. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh Lá) - 1.260.000đ
+┃  4. JOMA FS REACTIVE TF (Trắng/Xanh) - 1.550.000đ
+┃  5. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh) - 1.260.000đ
+┃  
+┃  Tất cả đều là giày bóng đá với các mức giá và màu sắc khác nhau. Bạn thí
+┃  ch đôi nào nhất? Tôi có thể giúp bạn xem chi tiết hoặc thử size nếu bạn 
+┃  quan tâm.
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:50:55.141]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Xin chào Bảo! Tôi có 5 đôi giày thể thao đa dạng cho bạn lựa chọn:
+║  
+║  [PRODUCTS_JSON]
+║  [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMITO","
+║  category":"Giày bóng đá","price":499000,"priceFormatted":"499.000đ","produ
+║  ctId":"812f58f9-52d4-4ada-8624-e311e36dd05c","imageUrl":"/images/products/
+║  main_2af790c0.jpg"},{"name":"KAMITO ARTISTA KL TF - KMTF240414 - ĐỎ","bran
+║  d":"KAMITO","category":"Giày bóng đá","price":499000,"priceFormatted":"499
+║  .000đ","productId":"d10ec018-6660-4cf0-938b-459006a13fe7","imageUrl":"/ima
+║  ges/products/main_a857ceae.jpg"},{"name":"NIKE PHANTOM GX ACADEMY TF - DD9
+║  477-705 - TRẮNG/XANH LÁ MẠ","brand":"NIKE","category":"Giày bóng đá","pric
+║  e":1260000,"priceFormatted":"1.260.000đ","productId":"7c34c988-e9f7-4671-9
+║  384-44a191050e25","imageUrl":"/images/products/main_6869e792.jpg"},{"name"
+║  :"JOMA FS REACTIVE TF 2432 - TRẮNG/XANH","brand":"JOMA","category":"Giày b
+║  óng đá","price":1550000,"priceFormatted":"1.550.000đ","productId":"4a5c4f4
+║  5-f8a9-4c8b-aa05-5e5bb961b87a","imageUrl":"/images/products/main_4b4850d8.
+║  jpg"},{"name":"NIKE PHANTOM GX ACADEMY TF - DD9477-446 - TRẮNG/XANH","bran
+║  d":"NIKE","category":"Giày bóng đá","price":1260000,"priceFormatted":"1.26
+║  0.000đ","productId":"39ad98bb-8195-41b3-b39c-7de750d5fb07","imageUrl":"/im
+║  ages/products/main_d927b648.jpg"}]
+║  [/PRODUCTS_JSON]
+║  
+║  1. KAMITO ARTISTA KL TF (Trắng/Đỏ) - 499.000đ
+║  2. KAMITO ARTISTA KL TF (Đỏ) - 499.000đ
+║  3. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh Lá) - 1.260.000đ
+║  4. JOMA FS REACTIVE TF (Trắng/Xanh) - 1.550.000đ
+║  5. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh) - 1.260.000đ
+║  
+║  Tất cả đều là giày bóng đá với các mức giá và màu sắc khác nhau. Bạn thích
+║   đôi nào nhất? Tôi có thể giúp bạn xem chi tiết hoặc thử size nếu bạn quan
+║   tâm.
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 10725ms                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:51:03.885]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Gaify nào đẹp hả ?
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:51:03.921                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Gaify nào đẹp hả ?
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi có 5 đôi giày thể thao 
+┃     đa dạng c... | Cho tôi đôi giày tùy ý","userId":"298e33a3-68ac-4d39-94fb
+┃     -cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     9dd672c2-e020-450d-b978-0d7a40b0ada0
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:51:04.799]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 872ms                                                        │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: Gaify nào đẹp hả ?
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ Gaify nào đẹp hả ?
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:51:04.800]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 226        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 231        tokens                                        │
+  │  Duration  : 872        ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:51:04.801                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     Gaify nào đẹp hả ?
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi có 5 đôi giày thể thao 
+  ┃     đa dạng c... | Cho tôi đôi giày tùy ý","userId":"298e33a3-68ac-4d39-94fb
+  ┃     -cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:51:04.805 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMIT...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:51:08.140]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3335ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 👤 [USER MESSAGE]
+    │ Cho tôi đôi giày tùy ý
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày thể thao đa năng thoải mái",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMITO"
+    │ ,"category":"Giày bóng đá","price":499000,"priceFormatted":"499.000đ","p
+    │ roductId":"812f58f9-52d4-4ada-8624-e311e36dd05c","imageUrl":"/images/pro
+    │ ducts/main_2af790c0.jpg"},{"name":"KAMITO ARTISTA KL TF - KMTF240414 - Đ
+    │ Ỏ","brand":"KAMITO","category":"Giày bóng đá","price":499000,"priceForma
+    │ tted":"499.000đ","productId":"d10ec018-6660-4cf0-938b-459006a13fe7","ima
+    │ geUrl":"/images/produc...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi có 5 đôi giày thể thao đa dạng cho bạn lựa chọn:
+    │ 
+    │ 1. KAMITO ARTISTA KL TF (Trắng/Đỏ) - 499.000đ
+    │ 2. KAMITO ARTISTA KL TF (Đỏ) - 499.000đ
+    │ 3. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh Lá) - 1.260.000đ
+    │ 4. JOMA FS REACTIVE TF (Trắng/Xanh) - 1.550.000đ
+    │ 5. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh) - 1.260.000đ
+    │ 
+    │ Tất cả đều là giày bóng đá với các mức giá và màu sắc khác nhau. Bạn thí
+    │ ch đôi nào nhất? Tôi có thể giúp bạn xem chi tiết hoặc thử size nếu bạn 
+    │ quan tâm.
+    │ 📋 [SYSTEM MESSAGE]
+    │  Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │  CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi có 5 đôi giày
+    │  thể thao đa dạng c... | Cho tôi đôi giày tùy ý","userId":"298e33a3-68ac
+    │ -4d39-94fb-cdc27cfdfb39"}
+    │  USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │  TOOLS:
+    │  - semanticSearch(query, maxResults): Tìm theo mô tả
+    │  - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc 
+    │ theo tiêu chí
+    │  - getProductDetail(name): Xem chi tiết sản phẩm
+    │  - sizeGuide(): Bảng size giày
+    │  - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ h
+    │ àng
+    │ 
+    │  NGUYÊN TẮC QUAN TRỌNG - KHI NÀO GỌI TOOL TÌM KIẾM:
+    │ 
+    │ GỌI TOOL (semanticSearch/filterProducts) KHI:
+    │  - Khách hỏi sản phẩm MỚI: "Tìm giày chạy bộ", "Có Nike nào dưới 2 triệu
+    │  không?"
+    │  - Khách muốn xem THÊM: "Còn mẫu nào khác không?", "Tìm thêm đi"
+    │  - Khách thay đổi tiêu chí: "Tìm loại rẻ hơn", "Đổi sang Adidas"
+    │ 
+    │ KHÔNG GỌI TOOL KHI:
+    │  - Khách hỏi về sản phẩm ĐÃ HIỂN THỊ: "Đôi đầu tiên giá bao nhiêu?", "So
+    │  sánh 2 đôi này"
+    │  - Khách bình luận/hỏi thêm: "Đẹp quá!", "Có size 42 không?"
+    │  - Khách muốn mua sản phẩm đã thấy: "Mua đôi Nike kia", "Lấy cái thứ 2"
+    │  → Trong các trường hợp này, SỬ DỤNG THÔNG TIN TỪ LỊCH SỬ HỘI THOẠI để t
+    │ rả lời.
+    │ 
+    │  QUY TRÌNH MUA HÀNG:
+    │  1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này"):
+    │     - Xác định productId từ lịch sử hội thoại (KHÔNG cần gọi tool tìm lạ
+    │ i).
+    │     - Nếu chưa có size, hãy hỏi size.
+    │     - Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39".
+    │     - Phản hồi: "Tuyệt vời! Mình đã thêm [Tên] vào giỏ hàng. [REDIRECT]/
+    │ checkout/step1[/REDIRECT]"
+    │ 
+    │  KHI CÓ [PRODUCTS_JSON]:
+    │  - CHỈ trả về block [PRODUCTS_JSON] khi VỪA GỌI TOOL và nhận kết quả mới
+    │ .
+    │  - KHÔNG lặp lại block cũ từ turn trước trừ khi khách yêu cầu xem lại.
+    │ 
+    │  LƯU Ý:
+    │  - [REDIRECT] chỉ dùng KHI ĐÃ addToCart thành công.
+    │  - Luôn thân thiện, chuyên nghiệp.
+    │ 👤 [USER MESSAGE]
+    │ Gaify nào đẹp hả ?
+    │ 🤖 [AI MESSAGE]
+    │ Để tìm giày đẹp, tôi sẽ thực hiện tìm kiếm các mẫu giày sneaker và thể t
+    │ hao đẹp nhất:
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày sneaker đẹp nhất thời trang",
+    │   "maxResults" : 5
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:51:08.141]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 5261       tokens                                        │
+    │  Output    : 135        tokens                                        │
+    │  Total     : 5396       tokens                                        │
+    │  Duration  : 3335       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:51:09.193 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMIT...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:51:09.196 | Duration: 1054ms                                ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "query" : "giày sneaker đẹp nhất thời trang",
+    ┊     "maxResults" : 5
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"A...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:51:14.660]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 5467ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 👤 [USER MESSAGE]
+    │ Cho tôi đôi giày tùy ý
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày thể thao đa năng thoải mái",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMITO"
+    │ ,"category":"Giày bóng đá","price":499000,"priceFormatted":"499.000đ","p
+    │ roductId":"812f58f9-52d4-4ada-8624-e311e36dd05c","imageUrl":"/images/pro
+    │ ducts/main_2af790c0.jpg"},{"name":"KAMITO ARTISTA KL TF - KMTF240414 - Đ
+    │ Ỏ","brand":"KAMITO","category":"Giày bóng đá","price":499000,"priceForma
+    │ tted":"499.000đ","productId":"d10ec018-6660-4cf0-938b-459006a13fe7","ima
+    │ geUrl":"/images/produc...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi có 5 đôi giày thể thao đa dạng cho bạn lựa chọn:
+    │ 
+    │ 1. KAMITO ARTISTA KL TF (Trắng/Đỏ) - 499.000đ
+    │ 2. KAMITO ARTISTA KL TF (Đỏ) - 499.000đ
+    │ 3. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh Lá) - 1.260.000đ
+    │ 4. JOMA FS REACTIVE TF (Trắng/Xanh) - 1.550.000đ
+    │ 5. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh) - 1.260.000đ
+    │ 
+    │ Tất cả đều là giày bóng đá với các mức giá và màu sắc khác nhau. Bạn thí
+    │ ch đôi nào nhất? Tôi có thể giúp bạn xem chi tiết hoặc thử size nếu bạn 
+    │ quan tâm.
+    │ 📋 [SYSTEM MESSAGE]
+    │  Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │  CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi có 5 đôi giày
+    │  thể thao đa dạng c... | Cho tôi đôi giày tùy ý","userId":"298e33a3-68ac
+    │ -4d39-94fb-cdc27cfdfb39"}
+    │  USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │  TOOLS:
+    │  - semanticSearch(query, maxResults): Tìm theo mô tả
+    │  - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc 
+    │ theo tiêu chí
+    │  - getProductDetail(name): Xem chi tiết sản phẩm
+    │  - sizeGuide(): Bảng size giày
+    │  - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ h
+    │ àng
+    │ 
+    │  NGUYÊN TẮC QUAN TRỌNG - KHI NÀO GỌI TOOL TÌM KIẾM:
+    │ 
+    │ GỌI TOOL (semanticSearch/filterProducts) KHI:
+    │  - Khách hỏi sản phẩm MỚI: "Tìm giày chạy bộ", "Có Nike nào dưới 2 triệu
+    │  không?"
+    │  - Khách muốn xem THÊM: "Còn mẫu nào khác không?", "Tìm thêm đi"
+    │  - Khách thay đổi tiêu chí: "Tìm loại rẻ hơn", "Đổi sang Adidas"
+    │ 
+    │ KHÔNG GỌI TOOL KHI:
+    │  - Khách hỏi về sản phẩm ĐÃ HIỂN THỊ: "Đôi đầu tiên giá bao nhiêu?", "So
+    │  sánh 2 đôi này"
+    │  - Khách bình luận/hỏi thêm: "Đẹp quá!", "Có size 42 không?"
+    │  - Khách muốn mua sản phẩm đã thấy: "Mua đôi Nike kia", "Lấy cái thứ 2"
+    │  → Trong các trường hợp này, SỬ DỤNG THÔNG TIN TỪ LỊCH SỬ HỘI THOẠI để t
+    │ rả lời.
+    │ 
+    │  QUY TRÌNH MUA HÀNG:
+    │  1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này"):
+    │     - Xác định productId từ lịch sử hội thoại (KHÔNG cần gọi tool tìm lạ
+    │ i).
+    │     - Nếu chưa có size, hãy hỏi size.
+    │     - Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39".
+    │     - Phản hồi: "Tuyệt vời! Mình đã thêm [Tên] vào giỏ hàng. [REDIRECT]/
+    │ checkout/step1[/REDIRECT]"
+    │ 
+    │  KHI CÓ [PRODUCTS_JSON]:
+    │  - CHỈ trả về block [PRODUCTS_JSON] khi VỪA GỌI TOOL và nhận kết quả mới
+    │ .
+    │  - KHÔNG lặp lại block cũ từ turn trước trừ khi khách yêu cầu xem lại.
+    │ 
+    │  LƯU Ý:
+    │  - [REDIRECT] chỉ dùng KHI ĐÃ addToCart thành công.
+    │  - Luôn thân thiện, chuyên nghiệp.
+    │ 👤 [USER MESSAGE]
+    │ Gaify nào đẹp hả ?
+    │ 🤖 [AI MESSAGE]
+    │ Để tìm giày đẹp, tôi sẽ thực hiện tìm kiếm các mẫu giày sneaker và thể t
+    │ hao đẹp nhất:
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày sneaker đẹp nhất thời trang",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"ADI
+    │ DAS","category":"Giày bóng đá","price":1750000,"priceFormatted":"1.750.0
+    │ 00đ","productId":"066685e7-f927-48f8-855e-646373d387f0","imageUrl":"/ima
+    │ ges/products/main_356427eb.jpg"},{"name":"ADIDAS PREDATOR 25 LEAGUE LƯỠI
+    │  GÀ LẬT TF - JS0384 - ĐỎ/TRẮNG","brand":"ADIDAS","category":"Giày bóng đ
+    │ á","price":1750000,"priceFormatted":"1.750.000đ","productId":"4a44d3a9-0
+    │ 24e-46df-94df-801163aa...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Theo đánh giá của tôi, những đôi giày đẹp nhất là:
+    │ 
+    │ 1. ADIDAS X CRAZYFAST LEAGUE TF (Vàng Neon/Đen) - 1.260.000đ: Màu sắc nổ
+    │ i bật, trẻ trung
+    │ 2. NIKE ZOOM MERCURIAL SUPERFLY (Đỏ/Trắng) - 1.750.000đ: Thiết kế hiện đ
+    │ ại, sang trọng
+    │ 3. ADIDAS PREDATOR 25 LEAGUE (Trắng/Đen/Vàng) - 1.750.000đ: Phối màu tin
+    │ h tế
+    │ 
+    │ Riêng cá nhân tôi thấy đôi ADIDAS X CRAZYFAST Vàng Neon/Đen là đẹp nhất 
+    │ - màu sắc nổi bật, trẻ trung và giá cũng hợp lý nhất. Bạn thấy thế nào? 
+    │ Muốn xem chi tiết hay thử size của đôi nào không?
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:51:14.661]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 6054       tokens                                        │
+    │  Output    : 293        tokens                                        │
+    │  Total     : 6347       tokens                                        │
+    │  Duration  : 5467       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 9861ms                                        ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Theo đánh giá của tôi, những đôi giày đẹp nhất là:
+  ┃  
+  ┃  1. ADIDAS X CRAZYFAST LEAGUE TF (Vàng Neon/Đen) - 1.260.000đ: Màu sắc nổ
+  ┃  i bật, trẻ trung
+  ┃  2. NIKE ZOOM MERCURIAL SUPERFLY (Đỏ/Trắng) - 1.750.000đ: Thiết kế hiện đ
+  ┃  ại, sang trọng
+  ┃  3. ADIDAS PREDATOR 25 LEAGUE (Trắng/Đen/Vàng) - 1.750.000đ: Phối màu tin
+  ┃  h tế
+  ┃  
+  ┃  Riêng cá nhân tôi thấy đôi ADIDAS X CRAZYFAST Vàng Neon/Đen là đẹp nhất 
+  ┃  - màu sắc nổi bật, trẻ trung và giá cũng hợp lý nhất. Bạn thấy thế nào? 
+  ┃  Muốn xem chi tiết hay thử size của đôi nào không?
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 10742ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Theo đánh giá của tôi, những đôi giày đẹp nhất là:
+┃  
+┃  1. ADIDAS X CRAZYFAST LEAGUE TF (Vàng Neon/Đen) - 1.260.000đ: Màu sắc nổ
+┃  i bật, trẻ trung
+┃  2. NIKE ZOOM MERCURIAL SUPERFLY (Đỏ/Trắng) - 1.750.000đ: Thiết kế hiện đ
+┃  ại, sang trọng
+┃  3. ADIDAS PREDATOR 25 LEAGUE (Trắng/Đen/Vàng) - 1.750.000đ: Phối màu tin
+┃  h tế
+┃  
+┃  Riêng cá nhân tôi thấy đôi ADIDAS X CRAZYFAST Vàng Neon/Đen là đẹp nhất 
+┃  - màu sắc nổi bật, trẻ trung và giá cũng hợp lý nhất. Bạn thấy thế nào? 
+┃  Muốn xem chi tiết hay thử size của đôi nào không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:51:14.666]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Theo đánh giá của tôi, những đôi giày đẹp nhất là:
+║  
+║  [PRODUCTS_JSON]
+║  [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"ADIDA
+║  S","category":"Giày bóng đá","price":1750000,"priceFormatted":"1.750.000đ"
+║  ,"productId":"066685e7-f927-48f8-855e-646373d387f0","imageUrl":"/images/pr
+║  oducts/main_356427eb.jpg"},{"name":"ADIDAS PREDATOR 25 LEAGUE LƯỠI GÀ LẬT 
+║  TF - JS0384 - ĐỎ/TRẮNG","brand":"ADIDAS","category":"Giày bóng đá","price"
+║  :1750000,"priceFormatted":"1.750.000đ","productId":"4a44d3a9-024e-46df-94d
+║  f-801163aa1952","imageUrl":"/images/products/main_9266b7e5.jpg"},{"name":"
+║  ADIDAS X CRAZYFAST LEAGUE TF - IF0698 - VÀNG NEON/ĐEN","brand":"ADIDAS","c
+║  ategory":"Giày bóng đá","price":1260000,"priceFormatted":"1.260.000đ","pro
+║  ductId":"ae19a2e1-1c76-4cc3-8883-5462748f347a","imageUrl":"/images/product
+║  s/main_31aa37f2.jpg"},{"name":"NIKE ZOOM MERCURIAL SUPERFLY 10 ACADEMY TF 
+║  - FQ8331-800 - ĐỎ/TRẮNG","brand":"NIKE","category":"Giày bóng đá","price":
+║  1750000,"priceFormatted":"1.750.000đ","productId":"a5251601-73e3-49f9-9f0a
+║  -c28f1da55a25","imageUrl":"/images/products/main_be145f8a.jpg"},{"name":"A
+║  DIDAS PREDATOR 25 LEAGUE L TF - JI1134 - TRẮNG/ĐEN/VÀNG","brand":"ADIDAS",
+║  "category":"Giày bóng đá","price":1750000,"priceFormatted":"1.750.000đ","p
+║  roductId":"e98e6963-e311-4aee-9676-e9cf9a6f340b","imageUrl":"/images/produ
+║  cts/main_e50a683e.jpg"}]
+║  [/PRODUCTS_JSON]
+║  
+║  1. ADIDAS X CRAZYFAST LEAGUE TF (Vàng Neon/Đen) - 1.260.000đ: Màu sắc nổi 
+║  bật, trẻ trung
+║  2. NIKE ZOOM MERCURIAL SUPERFLY (Đỏ/Trắng) - 1.750.000đ: Thiết kế hiện đại
+║  , sang trọng
+║  3. ADIDAS PREDATOR 25 LEAGUE (Trắng/Đen/Vàng) - 1.750.000đ: Phối màu tinh 
+║  tế
+║  
+║  Riêng cá nhân tôi thấy đôi ADIDAS X CRAZYFAST Vàng Neon/Đen là đẹp nhất - 
+║  màu sắc nổi bật, trẻ trung và giá cũng hợp lý nhất. Bạn thấy thế nào? Muốn
+║   xem chi tiết hay thử size của đôi nào không?
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 10788ms                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:51:47.459]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  cho tôi xem bảng size đi để tôi dễ lựa chọn
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:51:47.476                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     cho tôi xem bảng size đi để tôi dễ lựa chọn
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo. Lịch sử: Theo đánh giá của tôi, những đôi giày đẹp
+┃      nhất là:... | Gaify nào đẹp hả ? | Xin chào Bảo! Tôi có 5 đôi giày thể 
+┃     thao đa dạng c...","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     9dd672c2-e020-450d-b978-0d7a40b0ada0
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:51:48.396]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 919ms                                                        │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: cho tôi xem bảng size đi để tôi dễ lựa chọ
+  │ n
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ cho tôi xem bảng size đi để tôi dễ lựa chọn
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:51:48.397]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 252        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 257        tokens                                        │
+  │  Duration  : 919        ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:51:48.400                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     cho tôi xem bảng size đi để tôi dễ lựa chọn
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo. Lịch sử: Theo đánh giá của tôi, những đôi giày đẹp
+  ┃      nhất là:... | Gaify nào đẹp hả ? | Xin chào Bảo! Tôi có 5 đôi giày thể 
+  ┃     thao đa dạng c...","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:51:48.402 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMIT...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:51:48.403 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"A...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:51:50.842]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2440ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày thể thao đa năng thoải mái",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"KAMITO ARTISTA KL TF - KMTF240255 - TRẮNG/ĐỎ","brand":"KAMITO"
+    │ ,"category":"Giày bóng đá","price":499000,"priceFormatted":"499.000đ","p
+    │ roductId":"812f58f9-52d4-4ada-8624-e311e36dd05c","imageUrl":"/images/pro
+    │ ducts/main_2af790c0.jpg"},{"name":"KAMITO ARTISTA KL TF - KMTF240414 - Đ
+    │ Ỏ","brand":"KAMITO","category":"Giày bóng đá","price":499000,"priceForma
+    │ tted":"499.000đ","productId":"d10ec018-6660-4cf0-938b-459006a13fe7","ima
+    │ geUrl":"/images/produc...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi có 5 đôi giày thể thao đa dạng cho bạn lựa chọn:
+    │ 
+    │ 1. KAMITO ARTISTA KL TF (Trắng/Đỏ) - 499.000đ
+    │ 2. KAMITO ARTISTA KL TF (Đỏ) - 499.000đ
+    │ 3. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh Lá) - 1.260.000đ
+    │ 4. JOMA FS REACTIVE TF (Trắng/Xanh) - 1.550.000đ
+    │ 5. NIKE PHANTOM GX ACADEMY TF (Trắng/Xanh) - 1.260.000đ
+    │ 
+    │ Tất cả đều là giày bóng đá với các mức giá và màu sắc khác nhau. Bạn thí
+    │ ch đôi nào nhất? Tôi có thể giúp bạn xem chi tiết hoặc thử size nếu bạn 
+    │ quan tâm.
+    │ 👤 [USER MESSAGE]
+    │ Gaify nào đẹp hả ?
+    │ 🤖 [AI MESSAGE]
+    │ Để tìm giày đẹp, tôi sẽ thực hiện tìm kiếm các mẫu giày sneaker và thể t
+    │ hao đẹp nhất:
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày sneaker đẹp nhất thời trang",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"ADI
+    │ DAS","category":"Giày bóng đá","price":1750000,"priceFormatted":"1.750.0
+    │ 00đ","productId":"066685e7-f927-48f8-855e-646373d387f0","imageUrl":"/ima
+    │ ges/products/main_356427eb.jpg"},{"name":"ADIDAS PREDATOR 25 LEAGUE LƯỠI
+    │  GÀ LẬT TF - JS0384 - ĐỎ/TRẮNG","brand":"ADIDAS","category":"Giày bóng đ
+    │ á","price":1750000,"priceFormatted":"1.750.000đ","productId":"4a44d3a9-0
+    │ 24e-46df-94df-801163aa...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Theo đánh giá của tôi, những đôi giày đẹp nhất là:
+    │ 
+    │ 1. ADIDAS X CRAZYFAST LEAGUE TF (Vàng Neon/Đen) - 1.260.000đ: Màu sắc nổ
+    │ i bật, trẻ trung
+    │ 2. NIKE ZOOM MERCURIAL SUPERFLY (Đỏ/Trắng) - 1.750.000đ: Thiết kế hiện đ
+    │ ại, sang trọng
+    │ 3. ADIDAS PREDATOR 25 LEAGUE (Trắng/Đen/Vàng) - 1.750.000đ: Phối màu tin
+    │ h tế
+    │ 
+    │ Riêng cá nhân tôi thấy đôi ADIDAS X CRAZYFAST Vàng Neon/Đen là đẹp nhất 
+    │ - màu sắc nổi bật, trẻ trung và giá cũng hợp lý nhất. Bạn thấy thế nào? 
+    │ Muốn xem chi tiết hay thử size của đôi nào không?
+    │ 📋 [SYSTEM MESSAGE]
+    │  Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │  CONTEXT: {"context":"Tên: Bảo. Lịch sử: Theo đánh giá của tôi, những đô
+    │ i giày đẹp nhất là:... | Gaify nào đẹp hả ? | Xin chào Bảo! Tôi có 5 đôi
+    │  giày thể thao đa dạng c...","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39"}
+    │  USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │  TOOLS:
+    │  - semanticSearch(query, maxResults): Tìm theo mô tả
+    │  - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc 
+    │ theo tiêu chí
+    │  - getProductDetail(name): Xem chi tiết sản phẩm
+    │  - sizeGuide(): Bảng size giày
+    │  - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ h
+    │ àng
+    │ 
+    │  NGUYÊN TẮC QUAN TRỌNG - KHI NÀO GỌI TOOL TÌM KIẾM:
+    │ 
+    │ GỌI TOOL (semanticSearch/filterProducts) KHI:
+    │  - Khách hỏi sản phẩm MỚI: "Tìm giày chạy bộ", "Có Nike nào dưới 2 triệu
+    │  không?"
+    │  - Khách muốn xem THÊM: "Còn mẫu nào khác không?", "Tìm thêm đi"
+    │  - Khách thay đổi tiêu chí: "Tìm loại rẻ hơn", "Đổi sang Adidas"
+    │ 
+    │ KHÔNG GỌI TOOL KHI:
+    │  - Khách hỏi về sản phẩm ĐÃ HIỂN THỊ: "Đôi đầu tiên giá bao nhiêu?", "So
+    │  sánh 2 đôi này"
+    │  - Khách bình luận/hỏi thêm: "Đẹp quá!", "Có size 42 không?"
+    │  - Khách muốn mua sản phẩm đã thấy: "Mua đôi Nike kia", "Lấy cái thứ 2"
+    │  → Trong các trường hợp này, SỬ DỤNG THÔNG TIN TỪ LỊCH SỬ HỘI THOẠI để t
+    │ rả lời.
+    │ 
+    │  QUY TRÌNH MUA HÀNG:
+    │  1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này"):
+    │     - Xác định productId từ lịch sử hội thoại (KHÔNG cần gọi tool tìm lạ
+    │ i).
+    │     - Nếu chưa có size, hãy hỏi size.
+    │     - Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39".
+    │     - Phản hồi: "Tuyệt vời! Mình đã thêm [Tên] vào giỏ hàng. [REDIRECT]/
+    │ checkout/step1[/REDIRECT]"
+    │ 
+    │  KHI CÓ [PRODUCTS_JSON]:
+    │  - CHỈ trả về block [PRODUCTS_JSON] khi VỪA GỌI TOOL và nhận kết quả mới
+    │ .
+    │  - KHÔNG lặp lại block cũ từ turn trước trừ khi khách yêu cầu xem lại.
+    │ 
+    │  LƯU Ý:
+    │  - [REDIRECT] chỉ dùng KHI ĐÃ addToCart thành công.
+    │  - Luôn thân thiện, chuyên nghiệp.
+    │ 👤 [USER MESSAGE]
+    │ cho tôi xem bảng size đi để tôi dễ lựa chọn
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → sizeGuide({ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:51:50.843]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 6394       tokens                                        │
+    │  Output    : 37         tokens                                        │
+    │  Total     : 6431       tokens                                        │
+    │  Duration  : 2440       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:51:50.845 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"A...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: sizeGuide                                                        ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:51:50.846 | Duration: 2ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   { }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   # Bảng Size Giày Chuẩn Việt Nam
+    ┊   
+    ┊   ## 👨 Nam
+    ┊   | Chân(CM) | VN | US | EU   | UK  |
+    ┊   |----------|----|----|------|-----|
+    ┊   | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    ┊   | 25.0     | 40 | 7  | 40   | 6½  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    ┊   | 27.0     | 42 | 9  | 42   | 8½  |
+    ┊   | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    ┊   
+    ┊   ## 👩 Nữ
+    ┊   | Chân(CM) | VN | US | EU   | UK |
+    ┊   |----------|----|----|------|----|
+    ┊   | 23.0     | 36 | 5½ | 36   | 3  |
+    ┊   | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    ┊   | 25.0     | 39 | 7  | 39   | 5½ |
+    ┊   | 25.5     | 40 | 7½ | 40   | 6  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7  |
+    ┊   
+    ┊   **📏 Đo chân: Chiều dài gót→mũi + 1.5cm**
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:51:55.861]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 5017ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 👤 [USER MESSAGE]
+    │ Gaify nào đẹp hả ?
+    │ 🤖 [AI MESSAGE]
+    │ Để tìm giày đẹp, tôi sẽ thực hiện tìm kiếm các mẫu giày sneaker và thể t
+    │ hao đẹp nhất:
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày sneaker đẹp nhất thời trang",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"ADI
+    │ DAS","category":"Giày bóng đá","price":1750000,"priceFormatted":"1.750.0
+    │ 00đ","productId":"066685e7-f927-48f8-855e-646373d387f0","imageUrl":"/ima
+    │ ges/products/main_356427eb.jpg"},{"name":"ADIDAS PREDATOR 25 LEAGUE LƯỠI
+    │  GÀ LẬT TF - JS0384 - ĐỎ/TRẮNG","brand":"ADIDAS","category":"Giày bóng đ
+    │ á","price":1750000,"priceFormatted":"1.750.000đ","productId":"4a44d3a9-0
+    │ 24e-46df-94df-801163aa...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Theo đánh giá của tôi, những đôi giày đẹp nhất là:
+    │ 
+    │ 1. ADIDAS X CRAZYFAST LEAGUE TF (Vàng Neon/Đen) - 1.260.000đ: Màu sắc nổ
+    │ i bật, trẻ trung
+    │ 2. NIKE ZOOM MERCURIAL SUPERFLY (Đỏ/Trắng) - 1.750.000đ: Thiết kế hiện đ
+    │ ại, sang trọng
+    │ 3. ADIDAS PREDATOR 25 LEAGUE (Trắng/Đen/Vàng) - 1.750.000đ: Phối màu tin
+    │ h tế
+    │ 
+    │ Riêng cá nhân tôi thấy đôi ADIDAS X CRAZYFAST Vàng Neon/Đen là đẹp nhất 
+    │ - màu sắc nổi bật, trẻ trung và giá cũng hợp lý nhất. Bạn thấy thế nào? 
+    │ Muốn xem chi tiết hay thử size của đôi nào không?
+    │ 📋 [SYSTEM MESSAGE]
+    │  Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │  CONTEXT: {"context":"Tên: Bảo. Lịch sử: Theo đánh giá của tôi, những đô
+    │ i giày đẹp nhất là:... | Gaify nào đẹp hả ? | Xin chào Bảo! Tôi có 5 đôi
+    │  giày thể thao đa dạng c...","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39"}
+    │  USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │  TOOLS:
+    │  - semanticSearch(query, maxResults): Tìm theo mô tả
+    │  - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc 
+    │ theo tiêu chí
+    │  - getProductDetail(name): Xem chi tiết sản phẩm
+    │  - sizeGuide(): Bảng size giày
+    │  - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ h
+    │ àng
+    │ 
+    │  NGUYÊN TẮC QUAN TRỌNG - KHI NÀO GỌI TOOL TÌM KIẾM:
+    │ 
+    │ GỌI TOOL (semanticSearch/filterProducts) KHI:
+    │  - Khách hỏi sản phẩm MỚI: "Tìm giày chạy bộ", "Có Nike nào dưới 2 triệu
+    │  không?"
+    │  - Khách muốn xem THÊM: "Còn mẫu nào khác không?", "Tìm thêm đi"
+    │  - Khách thay đổi tiêu chí: "Tìm loại rẻ hơn", "Đổi sang Adidas"
+    │ 
+    │ KHÔNG GỌI TOOL KHI:
+    │  - Khách hỏi về sản phẩm ĐÃ HIỂN THỊ: "Đôi đầu tiên giá bao nhiêu?", "So
+    │  sánh 2 đôi này"
+    │  - Khách bình luận/hỏi thêm: "Đẹp quá!", "Có size 42 không?"
+    │  - Khách muốn mua sản phẩm đã thấy: "Mua đôi Nike kia", "Lấy cái thứ 2"
+    │  → Trong các trường hợp này, SỬ DỤNG THÔNG TIN TỪ LỊCH SỬ HỘI THOẠI để t
+    │ rả lời.
+    │ 
+    │  QUY TRÌNH MUA HÀNG:
+    │  1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này"):
+    │     - Xác định productId từ lịch sử hội thoại (KHÔNG cần gọi tool tìm lạ
+    │ i).
+    │     - Nếu chưa có size, hãy hỏi size.
+    │     - Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cdc27cfdf
+    │ b39".
+    │     - Phản hồi: "Tuyệt vời! Mình đã thêm [Tên] vào giỏ hàng. [REDIRECT]/
+    │ checkout/step1[/REDIRECT]"
+    │ 
+    │  KHI CÓ [PRODUCTS_JSON]:
+    │  - CHỈ trả về block [PRODUCTS_JSON] khi VỪA GỌI TOOL và nhận kết quả mới
+    │ .
+    │  - KHÔNG lặp lại block cũ từ turn trước trừ khi khách yêu cầu xem lại.
+    │ 
+    │  LƯU Ý:
+    │  - [REDIRECT] chỉ dùng KHI ĐÃ addToCart thành công.
+    │  - Luôn thân thiện, chuyên nghiệp.
+    │ 👤 [USER MESSAGE]
+    │ cho tôi xem bảng size đi để tôi dễ lựa chọn
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → sizeGuide({ })
+    │ 🔧 [TOOL RESULT: sizeGuide]
+    │ # Bảng Size Giày Chuẩn Việt Nam
+    │ 
+    │ ## 👨 Nam
+    │ | Chân(CM) | VN | US | EU   | UK  |
+    │ |----------|----|----|------|-----|
+    │ | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    │ | 25.0     | 40 | 7  | 40   | 6½  |
+    │ | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    │ | 27.0     | 42 | 9  | 42   | 8½  |
+    │ | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    │ 
+    │ ## 👩 Nữ
+    │ | Chân(CM) | VN | US | EU   | UK |
+    │ |----------|----|----|------|----|
+    │ | 23.0     | 36 | 5½ | 36   | 3  |
+    │ | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    │ | 25.0     | 39 | 7  | 39   | 5½ |
+    │ | 25.5     | 40 | 7½...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Đây là bảng size chuẩn để bạn dễ dàng chọn size phù hợp. Một số lưu ý:
+    │ - Đo chiều dài bàn chân từ gót đến mũi
+    │ - Thêm 1.5cm để chọn size vừa vặn
+    │ - Nam và nữ có bảng size khác nhau
+    │ 
+    │ Ví dụ:
+    │ - Bàn chân 27cm sẽ vào size 42 (Nam)
+    │ - Bàn chân 25cm sẽ vào size 39-40 (Nữ)
+    │ 
+    │ Bạn muốn thử size của đôi giày nào trong danh sách vừa rồi không? Hoặc c
+    │ ần hỗ trợ đo size chính xác?
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:51:55.863]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 5831       tokens                                        │
+    │  Output    : 221        tokens                                        │
+    │  Total     : 6052       tokens                                        │
+    │  Duration  : 5017       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 7465ms                                        ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Đây là bảng size chuẩn để bạn dễ dàng chọn size phù hợp. Một số lưu ý:
+  ┃  - Đo chiều dài bàn chân từ gót đến mũi
+  ┃  - Thêm 1.5cm để chọn size vừa vặn
+  ┃  - Nam và nữ có bảng size khác nhau
+  ┃  
+  ┃  Ví dụ:
+  ┃  - Bàn chân 27cm sẽ vào size 42 (Nam)
+  ┃  - Bàn chân 25cm sẽ vào size 39-40 (Nữ)
+  ┃  
+  ┃  Bạn muốn thử size của đôi giày nào trong danh sách vừa rồi không? Hoặc c
+  ┃  ần hỗ trợ đo size chính xác?
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 8391ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Đây là bảng size chuẩn để bạn dễ dàng chọn size phù hợp. Một số lưu ý:
+┃  - Đo chiều dài bàn chân từ gót đến mũi
+┃  - Thêm 1.5cm để chọn size vừa vặn
+┃  - Nam và nữ có bảng size khác nhau
+┃  
+┃  Ví dụ:
+┃  - Bàn chân 27cm sẽ vào size 42 (Nam)
+┃  - Bàn chân 25cm sẽ vào size 39-40 (Nữ)
+┃  
+┃  Bạn muốn thử size của đôi giày nào trong danh sách vừa rồi không? Hoặc c
+┃  ần hỗ trợ đo size chính xác?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:51:55.870]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Đây là bảng size chuẩn để bạn dễ dàng chọn size phù hợp. Một số lưu ý:
+║  - Đo chiều dài bàn chân từ gót đến mũi
+║  - Thêm 1.5cm để chọn size vừa vặn
+║  - Nam và nữ có bảng size khác nhau
+║  
+║  [PRODUCTS_JSON]
+║  [{"name":"ADIDAS X CRAZYFAST LEAGUE TF - IF0699 - ĐỎ/TRẮNG","brand":"ADIDA
+║  S","category":"Giày bóng đá","price":1750000,"priceFormatted":"1.750.000đ"
+║  ,"productId":"066685e7-f927-48f8-855e-646373d387f0","imageUrl":"/images/pr
+║  oducts/main_356427eb.jpg"},{"name":"ADIDAS PREDATOR 25 LEAGUE LƯỠI GÀ LẬT 
+║  TF - JS0384 - ĐỎ/TRẮNG","brand":"ADIDAS","category":"Giày bóng đá","price"
+║  :1750000,"priceFormatted":"1.750.000đ","productId":"4a44d3a9-024e-46df-94d
+║  f-801163aa1952","imageUrl":"/images/products/main_9266b7e5.jpg"},{"name":"
+║  ADIDAS X CRAZYFAST LEAGUE TF - IF0698 - VÀNG NEON/ĐEN","brand":"ADIDAS","c
+║  ategory":"Giày bóng đá","price":1260000,"priceFormatted":"1.260.000đ","pro
+║  ductId":"ae19a2e1-1c76-4cc3-8883-5462748f347a","imageUrl":"/images/product
+║  s/main_31aa37f2.jpg"},{"name":"NIKE ZOOM MERCURIAL SUPERFLY 10 ACADEMY TF 
+║  - FQ8331-800 - ĐỎ/TRẮNG","brand":"NIKE","category":"Giày bóng đá","price":
+║  1750000,"priceFormatted":"1.750.000đ","productId":"a5251601-73e3-49f9-9f0a
+║  -c28f1da55a25","imageUrl":"/images/products/main_be145f8a.jpg"},{"name":"A
+║  DIDAS PREDATOR 25 LEAGUE L TF - JI1134 - TRẮNG/ĐEN/VÀNG","brand":"ADIDAS",
+║  "category":"Giày bóng đá","price":1750000,"priceFormatted":"1.750.000đ","p
+║  roductId":"e98e6963-e311-4aee-9676-e9cf9a6f340b","imageUrl":"/images/produ
+║  cts/main_e50a683e.jpg"}]
+║  [/PRODUCTS_JSON]
+║  
+║  Ví dụ:
+║  - Bàn chân 27cm sẽ vào size 42 (Nam)
+║  - Bàn chân 25cm sẽ vào size 39-40 (Nữ)
+║  
+║  Bạn muốn thử size của đôi giày nào trong danh sách vừa rồi không? Hoặc cần
+║   hỗ trợ đo size chính xác?
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 8416ms                                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+

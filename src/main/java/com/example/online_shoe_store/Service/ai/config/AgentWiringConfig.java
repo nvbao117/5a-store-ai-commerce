@@ -65,12 +65,13 @@ public class AgentWiringConfig {
     public ProductExpertAgent productExpertAgent(
                 @Qualifier("workerModel") ChatModel baseModel,
                 ProductSearchTools productSearchTools,
-                InventoryTools inventoryTools
+                InventoryTools inventoryTools,
+                CartTools cartTools
         ) {
         return AgenticServices.agentBuilder(ProductExpertAgent.class)
                 .chatModel(baseModel)
                 .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(8))
-                .tools(productSearchTools, inventoryTools)
+                .tools(productSearchTools, inventoryTools, cartTools)
                 .outputKey("response")
                 .listener(eventLoggingAgentListener)
                 .build();

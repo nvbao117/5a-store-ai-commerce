@@ -1,0 +1,1734 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:26:52.932]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                           🚀 NEW CHAT SESSION                                ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  📋 Session : 5c860919-6eb4-4092-af05-855624810473                           ║
+║  👤 User    : unknown                                                        ║
+║  🕐 Time    : 2026-01-03T14:26:53.002554300                                  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:26:53.009                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     5c860919-6eb4-4092-af05-855624810473
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:26:54.332]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 1228ms                                                       │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: Tôi cần mua đôi giày beyond á hướng dẫn tô
+  │ i mua
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:26:54.334]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 256        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 261        tokens                                        │
+  │  Duration  : 1228       ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:26:54.349                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:26:57.507]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3138ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cf
+    │ dfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+    │ 🤖 [AI MESSAGE]
+    │ Để giúp bạn tìm đôi giày Beyond phù hợp, tôi sẽ sử dụng công cụ tìm kiếm
+    │  để tìm các sản phẩm liên quan.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày beyond",
+    │   "maxResults" : 5
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:26:57.512]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 3974       tokens                                        │
+    │  Output    : 134        tokens                                        │
+    │  Total     : 4108       tokens                                        │
+    │  Duration  : 3138       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:26:58.513 | Duration: 994ms                                 ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "query" : "giày beyond",
+    ┊     "maxResults" : 5
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYON...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:27:04.834]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 6324ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo","userId":"298e33a3-68ac-4d39-94fb-cdc27cf
+    │ dfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+    │ 🤖 [AI MESSAGE]
+    │ Để giúp bạn tìm đôi giày Beyond phù hợp, tôi sẽ sử dụng công cụ tìm kiếm
+    │  để tìm các sản phẩm liên quan.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày beyond",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYONO"
+    │ ,"category":"Giày bóng chuyền","price":899000,"priceFormatted":"899.000đ
+    │ ","productId":"a28b3929-8585-4eb5-8182-1693756f9baa","imageUrl":"/images
+    │ /products/main_861e2c2f.jpg"},{"name":"Giày bóng chuyền Beyono Limit V3"
+    │ ,"brand":"BEYONO","category":"Giày bóng chuyền","price":899000,"priceFor
+    │ matted":"899.000đ","productId":"e642bbf1-4164-4eb3-99ef-560836b9c0e4","i
+    │ mageUrl":"/images/prod...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ là hơi khác so với "B
+    │ eyond" bạn nói). Các mẫu này đều là giày bóng chuyền với mức giá từ 650.
+    │ 000đ đến 899.000đ. 
+    │ 
+    │ Để giúp bạn chọn được đôi giày phù hợp nhất, tôi có vài câu hỏi:
+    │ 1. Bạn muốn sử dụng giày cho môn thể thao nào? (Bóng chuyền, cầu lông, h
+    │ ay mục đích khác?)
+    │ 2. Bạn quan tâm đến mức giá như thế nào?
+    │ 3. Bạn có size giày cụ thể không?
+    │ 
+    │ Nếu bạn muốn xem chi tiết của từng mẫu giày, tôi có thể giúp bạn tra cứu
+    │  thêm thông tin. Mong bạn cung cấp thêm thông tin để tôi tư vấn chính xá
+    │ c hơn!
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:27:04.841]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4659       tokens                                        │
+    │  Output    : 311        tokens                                        │
+    │  Total     : 4970       tokens                                        │
+    │  Duration  : 6324       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 10528ms                                       ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ là hơi khác so với "B
+  ┃  eyond" bạn nói). Các mẫu này đều là giày bóng chuyền với mức giá từ 650.
+  ┃  000đ đến 899.000đ. 
+  ┃  
+  ┃  Để giúp bạn chọn được đôi giày phù hợp nhất, tôi có vài câu hỏi:
+  ┃  1. Bạn muốn sử dụng giày cho môn thể thao nào? (Bóng chuyền, cầu lông, h
+  ┃  ay mục đích khác?)
+  ┃  2. Bạn quan tâm đến mức giá như thế nào?
+  ┃  3. Bạn có size giày cụ thể không?
+  ┃  
+  ┃  Nếu bạn muốn xem chi tiết của từng mẫu giày, tôi có thể giúp bạn tra cứu
+  ┃   thêm thông tin. Mong bạn cung cấp thêm thông tin để tôi tư vấn chính xá
+  ┃  c hơn!
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 11893ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ là hơi khác so với "B
+┃  eyond" bạn nói). Các mẫu này đều là giày bóng chuyền với mức giá từ 650.
+┃  000đ đến 899.000đ. 
+┃  
+┃  Để giúp bạn chọn được đôi giày phù hợp nhất, tôi có vài câu hỏi:
+┃  1. Bạn muốn sử dụng giày cho môn thể thao nào? (Bóng chuyền, cầu lông, h
+┃  ay mục đích khác?)
+┃  2. Bạn quan tâm đến mức giá như thế nào?
+┃  3. Bạn có size giày cụ thể không?
+┃  
+┃  Nếu bạn muốn xem chi tiết của từng mẫu giày, tôi có thể giúp bạn tra cứu
+┃   thêm thông tin. Mong bạn cung cấp thêm thông tin để tôi tư vấn chính xá
+┃  c hơn!
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:27:04.915]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ là hơi khác so với "Bey
+║  ond" bạn nói). Các mẫu này đều là giày bóng chuyền với mức giá từ 650.000đ
+║   đến 899.000đ. 
+║  
+║  [PRODUCTS_JSON]
+║  [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYONO","
+║  category":"Giày bóng chuyền","price":899000,"priceFormatted":"899.000đ","p
+║  roductId":"a28b3929-8585-4eb5-8182-1693756f9baa","imageUrl":"/images/produ
+║  cts/main_861e2c2f.jpg"},{"name":"Giày bóng chuyền Beyono Limit V3","brand"
+║  :"BEYONO","category":"Giày bóng chuyền","price":899000,"priceFormatted":"8
+║  99.000đ","productId":"e642bbf1-4164-4eb3-99ef-560836b9c0e4","imageUrl":"/i
+║  mages/products/main_2eb698fd.jpg"},{"name":"Giày cầu lông Beyono Fire","br
+║  and":"BEYONO","category":"Giày bóng chuyền","price":650000,"priceFormatted
+║  ":"650.000đ","productId":"45f74bf2-a09b-4b26-8dfa-c551f5519c79","imageUrl"
+║  :"/images/products/main_d791cb1c.jpg"},{"name":"Giày bóng chuyền Beyono Li
+║  mit V1","brand":"BEYONO","category":"Giày bóng chuyền","price":750000,"pri
+║  ceFormatted":"750.000đ","productId":"7b40a175-5878-453f-9fe4-e98ab15ad25b"
+║  ,"imageUrl":"/images/products/main_2e4f5a2f.jpg"},{"name":"Giày bóng chuyề
+║  n Beyono Sky","brand":"BEYONO","category":"Giày bóng chuyền","price":79000
+║  0,"priceFormatted":"790.000đ","productId":"db779f49-0b67-49bd-887c-74edba9
+║  952f5","imageUrl":"/images/products/main_60110f45.jpg"}]
+║  [/PRODUCTS_JSON]
+║  
+║  Để giúp bạn chọn được đôi giày phù hợp nhất, tôi có vài câu hỏi:
+║  1. Bạn muốn sử dụng giày cho môn thể thao nào? (Bóng chuyền, cầu lông, hay
+║   mục đích khác?)
+║  2. Bạn quan tâm đến mức giá như thế nào?
+║  3. Bạn có size giày cụ thể không?
+║  
+║  Nếu bạn muốn xem chi tiết của từng mẫu giày, tôi có thể giúp bạn tra cứu t
+║  hêm thông tin. Mong bạn cung cấp thêm thông tin để tôi tư vấn chính xác hơ
+║  n!
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 12045ms                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:28:15.406]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:28:15.425                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyo
+┃     no (có vẻ... | Tôi cần mua đôi giày beyond á hướng dẫn tôi mua","userId"
+┃     :"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     5c860919-6eb4-4092-af05-855624810473
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:28:16.921]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 1494ms                                                       │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: Giày bóng chuyền Beyono Eagle 8 - Version 
+  │ II Tôi mua đôi này
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:28:16.922]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 260        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 265        tokens                                        │
+  │  Duration  : 1494       ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:28:16.925                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyo
+  ┃     no (có vẻ... | Tôi cần mua đôi giày beyond á hướng dẫn tôi mua","userId"
+  ┃     :"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:16.928 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYON...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:28:19.779]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2851ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 👤 [USER MESSAGE]
+    │ Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+    │ 🤖 [AI MESSAGE]
+    │ Để giúp bạn tìm đôi giày Beyond phù hợp, tôi sẽ sử dụng công cụ tìm kiếm
+    │  để tìm các sản phẩm liên quan.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày beyond",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYONO"
+    │ ,"category":"Giày bóng chuyền","price":899000,"priceFormatted":"899.000đ
+    │ ","productId":"a28b3929-8585-4eb5-8182-1693756f9baa","imageUrl":"/images
+    │ /products/main_861e2c2f.jpg"},{"name":"Giày bóng chuyền Beyono Limit V3"
+    │ ,"brand":"BEYONO","category":"Giày bóng chuyền","price":899000,"priceFor
+    │ matted":"899.000đ","productId":"e642bbf1-4164-4eb3-99ef-560836b9c0e4","i
+    │ mageUrl":"/images/prod...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ là hơi khác so với "B
+    │ eyond" bạn nói). Các mẫu này đều là giày bóng chuyền với mức giá từ 650.
+    │ 000đ đến 899.000đ. 
+    │ 
+    │ Để giúp bạn chọn được đôi giày phù hợp nhất, tôi có vài câu hỏi:
+    │ 1. Bạn muốn sử dụng giày cho môn thể thao nào? (Bóng chuyền, cầu lông, h
+    │ ay mục đích khác?)
+    │ 2. Bạn quan tâm đến mức giá như thế nào?
+    │ 3. Bạn có size giày cụ thể không?
+    │ 
+    │ Nếu bạn muốn xem chi tiết của từng mẫu giày, tôi có thể giúp bạn tra cứu
+    │  thêm thông tin. Mong bạn cung cấp thêm thông tin để tôi tư vấn chính xá
+    │ c hơn!
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi thấy có 5 mẫu 
+    │ giày Beyono (có vẻ... | Tôi cần mua đôi giày beyond á hướng dẫn tôi mua"
+    │ ,"userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi sẽ giúp bạn xem chi tiết sản phẩm và kiểm tra size.
+    │ 📞 Tool Calls:
+    │   → getProductDetail({
+    │   "nameOrId" : "Giày bóng chuyền Beyono Eagle 8 - Version II"
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:28:19.780]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 5075       tokens                                        │
+    │  Output    : 114        tokens                                        │
+    │  Total     : 5189       tokens                                        │
+    │  Duration  : 2851       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: semanticSearch                                                   ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:19.822 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Tìm thấy 5 sản phẩm phù hợp:
+    ┊   
+    ┊   [PRODUCTS_JSON]
+    ┊   [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYON...
+    ┊   [/PRODUCTS_JSON]
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getProductDetail                                                 ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:28:19.822 | Duration: 42ms                                  ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "nameOrId" : "Giày bóng chuyền Beyono Eagle 8 - Version II"
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    ┊   
+    ┊   Thương hiệu: BEYONO
+    ┊   Danh mục: Giày bóng chuyền
+    ┊   Giá: 899.000đ
+    ┊   Ảnh: /images/products/main_861e2c2f.jpg
+    ┊   
+    ┊   Mô tả: Đây là giày bóng chuyền
+    ┊   
+    ┊   Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:28:22.258]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2436ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 👤 [USER MESSAGE]
+    │ Tôi cần mua đôi giày beyond á hướng dẫn tôi mua
+    │ 🤖 [AI MESSAGE]
+    │ Để giúp bạn tìm đôi giày Beyond phù hợp, tôi sẽ sử dụng công cụ tìm kiếm
+    │  để tìm các sản phẩm liên quan.
+    │ 📞 Tool Calls:
+    │   → semanticSearch({
+    │   "query" : "giày beyond",
+    │   "maxResults" : 5
+    │ })
+    │ 🔧 [TOOL RESULT: semanticSearch]
+    │ Tìm thấy 5 sản phẩm phù hợp:
+    │ 
+    │ [PRODUCTS_JSON]
+    │ [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYONO"
+    │ ,"category":"Giày bóng chuyền","price":899000,"priceFormatted":"899.000đ
+    │ ","productId":"a28b3929-8585-4eb5-8182-1693756f9baa","imageUrl":"/images
+    │ /products/main_861e2c2f.jpg"},{"name":"Giày bóng chuyền Beyono Limit V3"
+    │ ,"brand":"BEYONO","category":"Giày bóng chuyền","price":899000,"priceFor
+    │ matted":"899.000đ","productId":"e642bbf1-4164-4eb3-99ef-560836b9c0e4","i
+    │ mageUrl":"/images/prod...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ là hơi khác so với "B
+    │ eyond" bạn nói). Các mẫu này đều là giày bóng chuyền với mức giá từ 650.
+    │ 000đ đến 899.000đ. 
+    │ 
+    │ Để giúp bạn chọn được đôi giày phù hợp nhất, tôi có vài câu hỏi:
+    │ 1. Bạn muốn sử dụng giày cho môn thể thao nào? (Bóng chuyền, cầu lông, h
+    │ ay mục đích khác?)
+    │ 2. Bạn quan tâm đến mức giá như thế nào?
+    │ 3. Bạn có size giày cụ thể không?
+    │ 
+    │ Nếu bạn muốn xem chi tiết của từng mẫu giày, tôi có thể giúp bạn tra cứu
+    │  thêm thông tin. Mong bạn cung cấp thêm thông tin để tôi tư vấn chính xá
+    │ c hơn!
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi thấy có 5 mẫu 
+    │ giày Beyono (có vẻ... | Tôi cần mua đôi giày beyond á hướng dẫn tôi mua"
+    │ ,"userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi sẽ giúp bạn xem chi tiết sản phẩm và kiểm tra size.
+    │ 📞 Tool Calls:
+    │   → getProductDetail({
+    │   "nameOrId" : "Giày bóng chuyền Beyono Eagle 8 - Version II"
+    │ })
+    │ 🔧 [TOOL RESULT: getProductDetail]
+    │ **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    │ 
+    │ Thương hiệu: BEYONO
+    │ Danh mục: Giày bóng chuyền
+    │ Giá: 899.000đ
+    │ Ảnh: /images/products/main_861e2c2f.jpg
+    │ 
+    │ Mô tả: Đây là giày bóng chuyền
+    │ 
+    │ Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa"
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:28:22.261]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 5335       tokens                                        │
+    │  Output    : 80         tokens                                        │
+    │  Total     : 5415       tokens                                        │
+    │  Duration  : 2436       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getProductDetail                                                 ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:22.271 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    ┊   
+    ┊   Thương hiệu: BEYONO
+    ┊   Danh mục: Giày bóng chuyền
+    ┊   Giá: 899.000đ
+    ┊   Ảnh: /images/products/main_861e2c2f.jpg
+    ┊   
+    ┊   Mô tả: Đây là giày bóng chuyền
+    ┊   
+    ┊   Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getAvailableSizes                                                ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:28:22.272 | Duration: 11ms                                  ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa"
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size còn hàng: 43 (10), 42 (10), 41 (10), 38 (10), 39 (10), 44 (10), 4...
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:28:27.061]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 4790ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 🤖 [AI MESSAGE]
+    │ Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ là hơi khác so với "B
+    │ eyond" bạn nói). Các mẫu này đều là giày bóng chuyền với mức giá từ 650.
+    │ 000đ đến 899.000đ. 
+    │ 
+    │ Để giúp bạn chọn được đôi giày phù hợp nhất, tôi có vài câu hỏi:
+    │ 1. Bạn muốn sử dụng giày cho môn thể thao nào? (Bóng chuyền, cầu lông, h
+    │ ay mục đích khác?)
+    │ 2. Bạn quan tâm đến mức giá như thế nào?
+    │ 3. Bạn có size giày cụ thể không?
+    │ 
+    │ Nếu bạn muốn xem chi tiết của từng mẫu giày, tôi có thể giúp bạn tra cứu
+    │  thêm thông tin. Mong bạn cung cấp thêm thông tin để tôi tư vấn chính xá
+    │ c hơn!
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi thấy có 5 mẫu 
+    │ giày Beyono (có vẻ... | Tôi cần mua đôi giày beyond á hướng dẫn tôi mua"
+    │ ,"userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi sẽ giúp bạn xem chi tiết sản phẩm và kiểm tra size.
+    │ 📞 Tool Calls:
+    │   → getProductDetail({
+    │   "nameOrId" : "Giày bóng chuyền Beyono Eagle 8 - Version II"
+    │ })
+    │ 🔧 [TOOL RESULT: getProductDetail]
+    │ **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    │ 
+    │ Thương hiệu: BEYONO
+    │ Danh mục: Giày bóng chuyền
+    │ Giá: 899.000đ
+    │ Ảnh: /images/products/main_861e2c2f.jpg
+    │ 
+    │ Mô tả: Đây là giày bóng chuyền
+    │ 
+    │ Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa"
+    │ })
+    │ 🔧 [TOOL RESULT: getAvailableSizes]
+    │ Size còn hàng: 43 (10), 42 (10), 41 (10), 38 (10), 39 (10), 44 (10), 45 
+    │ (10), 40 (10)
+    │ 🤖 [AI MESSAGE]
+    │ Bạn muốn mua giày Beyono Eagle 8 - Version II với giá 899.000đ. Hiện tại
+    │  sản phẩm có đầy đủ các size từ 38 đến 45. 
+    │ 
+    │ Để hoàn tất việc mua hàng, tôi cần bạn cho biết:
+    │ 1. Size giày bạn muốn chọn là gì?
+    │ 2. Số lượng bạn muốn mua?
+    │ 
+    │ Sau khi bạn xác nhận, tôi sẽ giúp bạn thêm sản phẩm vào giỏ hàng ngay lậ
+    │ p tức.
+    │ 
+    │ Bạn có thể tham khảo bảng size tiêu chuẩn để chọn size phù hợp:
+    │ 📞 Tool Calls:
+    │   → sizeGuide({ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:28:27.062]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4776       tokens                                        │
+    │  Output    : 252        tokens                                        │
+    │  Total     : 5028       tokens                                        │
+    │  Duration  : 4790       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getProductDetail                                                 ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:27.063 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    ┊   
+    ┊   Thương hiệu: BEYONO
+    ┊   Danh mục: Giày bóng chuyền
+    ┊   Giá: 899.000đ
+    ┊   Ảnh: /images/products/main_861e2c2f.jpg
+    ┊   
+    ┊   Mô tả: Đây là giày bóng chuyền
+    ┊   
+    ┊   Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getAvailableSizes                                                ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:27.063 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size còn hàng: 43 (10), 42 (10), 41 (10), 38 (10), 39 (10), 44 (10), 4...
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: sizeGuide                                                        ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:28:27.065 | Duration: 2ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   { }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   # Bảng Size Giày Chuẩn Việt Nam
+    ┊   
+    ┊   ## 👨 Nam
+    ┊   | Chân(CM) | VN | US | EU   | UK  |
+    ┊   |----------|----|----|------|-----|
+    ┊   | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    ┊   | 25.0     | 40 | 7  | 40   | 6½  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    ┊   | 27.0     | 42 | 9  | 42   | 8½  |
+    ┊   | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    ┊   
+    ┊   ## 👩 Nữ
+    ┊   | Chân(CM) | VN | US | EU   | UK |
+    ┊   |----------|----|----|------|----|
+    ┊   | 23.0     | 36 | 5½ | 36   | 3  |
+    ┊   | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    ┊   | 25.0     | 39 | 7  | 39   | 5½ |
+    ┊   | 25.5     | 40 | 7½ | 40   | 6  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7  |
+    ┊   
+    ┊   **📏 Đo chân: Chiều dài gót→mũi + 1.5cm**
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:28:29.280]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2217ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Xin chào Bảo! Tôi thấy có 5 mẫu 
+    │ giày Beyono (có vẻ... | Tôi cần mua đôi giày beyond á hướng dẫn tôi mua"
+    │ ,"userId":"298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ Giày bóng chuyền Beyono Eagle 8 - Version II Tôi mua đôi này
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi sẽ giúp bạn xem chi tiết sản phẩm và kiểm tra size.
+    │ 📞 Tool Calls:
+    │   → getProductDetail({
+    │   "nameOrId" : "Giày bóng chuyền Beyono Eagle 8 - Version II"
+    │ })
+    │ 🔧 [TOOL RESULT: getProductDetail]
+    │ **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    │ 
+    │ Thương hiệu: BEYONO
+    │ Danh mục: Giày bóng chuyền
+    │ Giá: 899.000đ
+    │ Ảnh: /images/products/main_861e2c2f.jpg
+    │ 
+    │ Mô tả: Đây là giày bóng chuyền
+    │ 
+    │ Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa"
+    │ })
+    │ 🔧 [TOOL RESULT: getAvailableSizes]
+    │ Size còn hàng: 43 (10), 42 (10), 41 (10), 38 (10), 39 (10), 44 (10), 45 
+    │ (10), 40 (10)
+    │ 🤖 [AI MESSAGE]
+    │ Bạn muốn mua giày Beyono Eagle 8 - Version II với giá 899.000đ. Hiện tại
+    │  sản phẩm có đầy đủ các size từ 38 đến 45. 
+    │ 
+    │ Để hoàn tất việc mua hàng, tôi cần bạn cho biết:
+    │ 1. Size giày bạn muốn chọn là gì?
+    │ 2. Số lượng bạn muốn mua?
+    │ 
+    │ Sau khi bạn xác nhận, tôi sẽ giúp bạn thêm sản phẩm vào giỏ hàng ngay lậ
+    │ p tức.
+    │ 
+    │ Bạn có thể tham khảo bảng size tiêu chuẩn để chọn size phù hợp:
+    │ 📞 Tool Calls:
+    │   → sizeGuide({ })
+    │ 🔧 [TOOL RESULT: sizeGuide]
+    │ # Bảng Size Giày Chuẩn Việt Nam
+    │ 
+    │ ## 👨 Nam
+    │ | Chân(CM) | VN | US | EU   | UK  |
+    │ |----------|----|----|------|-----|
+    │ | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    │ | 25.0     | 40 | 7  | 40   | 6½  |
+    │ | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    │ | 27.0     | 42 | 9  | 42   | 8½  |
+    │ | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    │ 
+    │ ## 👩 Nữ
+    │ | Chân(CM) | VN | US | EU   | UK |
+    │ |----------|----|----|------|----|
+    │ | 23.0     | 36 | 5½ | 36   | 3  |
+    │ | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    │ | 25.0     | 39 | 7  | 39   | 5½ |
+    │ | 25.5     | 40 | 7½...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ trợ bạn chọn size và hoàn tất 
+    │ đơn hàng!
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:28:29.280]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 5107       tokens                                        │
+    │  Output    : 57         tokens                                        │
+    │  Total     : 5164       tokens                                        │
+    │  Duration  : 2217       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 12355ms                                       ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ trợ bạn chọn size và hoàn tất 
+  ┃  đơn hàng!
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 13857ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ trợ bạn chọn size và hoàn tất 
+┃  đơn hàng!
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:28:29.282]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ trợ bạn chọn size và hoàn tất đơ
+║  n hàng!
+║  
+║  [PRODUCTS_JSON]
+║  [{"name":"Giày bóng chuyền Beyono Eagle 8 - Version II","brand":"BEYONO","
+║  category":"Giày bóng chuyền","price":899000,"priceFormatted":"899.000đ","p
+║  roductId":"a28b3929-8585-4eb5-8182-1693756f9baa","imageUrl":"/images/produ
+║  cts/main_861e2c2f.jpg"},{"name":"Giày bóng chuyền Beyono Limit V3","brand"
+║  :"BEYONO","category":"Giày bóng chuyền","price":899000,"priceFormatted":"8
+║  99.000đ","productId":"e642bbf1-4164-4eb3-99ef-560836b9c0e4","imageUrl":"/i
+║  mages/products/main_2eb698fd.jpg"},{"name":"Giày cầu lông Beyono Fire","br
+║  and":"BEYONO","category":"Giày bóng chuyền","price":650000,"priceFormatted
+║  ":"650.000đ","productId":"45f74bf2-a09b-4b26-8dfa-c551f5519c79","imageUrl"
+║  :"/images/products/main_d791cb1c.jpg"},{"name":"Giày bóng chuyền Beyono Li
+║  mit V1","brand":"BEYONO","category":"Giày bóng chuyền","price":750000,"pri
+║  ceFormatted":"750.000đ","productId":"7b40a175-5878-453f-9fe4-e98ab15ad25b"
+║  ,"imageUrl":"/images/products/main_2e4f5a2f.jpg"},{"name":"Giày bóng chuyề
+║  n Beyono Sky","brand":"BEYONO","category":"Giày bóng chuyền","price":79000
+║  0,"priceFormatted":"790.000đ","productId":"db779f49-0b67-49bd-887c-74edba9
+║  952f5","imageUrl":"/images/products/main_60110f45.jpg"}]
+║  [/PRODUCTS_JSON]
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 13884ms                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [14:28:43.037]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  size 40 nhé
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 🤖 [MAIN] chat                                                      ┃
+┃   ID: chat                                                                 ┃
+┃   ⏰ Started: 14:28:43.054                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     size 40 nhé
+┃
+┃ 📌 context:
+┃     {"context":"Tên: Bảo. Lịch sử: Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ
+┃      trợ bạn ... | Giày bóng chuyền Beyono Eagle 8 - Version II Tôi m... | X
+┃     in chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ...","userId":"298e33a3
+┃     -68ac-4d39-94fb-cdc27cfdfb39"}
+┃
+┃ 📌 sessionId:
+┃     5c860919-6eb4-4092-af05-855624810473
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [14:28:43.877]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 822ms                                                        │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Phân loại intent từ tin nhắn: size 40 nhé
+  │ 
+  │ Trả về DUY NHẤT 1 enum sau:
+  │ PRODUCT | ORDER | POLICY | SMALL_TALK | UNKNOWN
+  │ 
+  │ Ví dụ output:
+  │ 1.PRODUCT
+  │ 2.ORDER
+  │ 👤 [USER MESSAGE]
+  │ size 40 nhé
+  │ You must answer strictly with one of these enums:
+  │ PRODUCT - Tư vấn sản phẩm, giày, size, brand
+  │ ORDER - Tra đơn, hủy đơn, mã đơn
+  │ POLICY - Chính sách đổi trả, bảo hành , vận chuyển và thông tin liên lạc
+  │ SMALL_TALK - Chào hỏi, cảm ơn, xã giao
+  │ UNKNOWN - Không thuộc loại nào
+  │ 🤖 [AI MESSAGE]
+  │ PRODUCT
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [14:28:43.878]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 214        tokens                                        │
+  │  Output    : 5          tokens                                        │
+  │  Total     : 219        tokens                                        │
+  │  Duration  : 822        ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+  ┃ 👟 [PRODUCT] advise                                                    ┃
+  ┃   ID: advise$0$1                                                           ┃
+  ┃   ⏰ Started: 14:28:43.879                                                ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📥 INPUTS (Full Context Window):                                            ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃ 📌 request:
+  ┃     size 40 nhé
+  ┃
+  ┃ 📌 context:
+  ┃     {"context":"Tên: Bảo. Lịch sử: Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ
+  ┃      trợ bạn ... | Giày bóng chuyền Beyono Eagle 8 - Version II Tôi m... | X
+  ┃     in chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ...","userId":"298e33a3
+  ┃     -68ac-4d39-94fb-cdc27cfdfb39"}
+  ┃
+  ┃ 📌 userId:
+  ┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  ┃
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ ⏳ Processing...                                                             ┃
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getProductDetail                                                 ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:43.880 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    ┊   
+    ┊   Thương hiệu: BEYONO
+    ┊   Danh mục: Giày bóng chuyền
+    ┊   Giá: 899.000đ
+    ┊   Ảnh: /images/products/main_861e2c2f.jpg
+    ┊   
+    ┊   Mô tả: Đây là giày bóng chuyền
+    ┊   
+    ┊   Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: getAvailableSizes                                                ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:43.881 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size còn hàng: 43 (10), 42 (10), 41 (10), 38 (10), 39 (10), 44 (10), 4...
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: sizeGuide                                                        ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:43.884 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   # Bảng Size Giày Chuẩn Việt Nam
+    ┊   
+    ┊   ## 👨 Nam
+    ┊   | Chân(CM) | VN | US | EU   | UK  |
+    ┊   |----------|----|----|------|-----|
+    ┊   | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    ┊   | 25.0     | 40 | 7  | 40   | 6½  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    ┊   | 27.0     | 42 | 9  | 42   | 8½  |
+    ┊   | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    ┊   
+    ┊   ## 👩 Nữ
+    ┊   | Chân(CM) | VN | US | EU   | UK |
+    ┊   |----------|----|----|------|----|
+    ┊   | 23.0     | 36 | 5½ | 36   | 3  |
+    ┊   | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    ┊   | 25.0     | 39 | 7  | 39   | 5½ |
+    ┊   | 25.5     | 40 | 7½ | 40   | 6  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7  |
+    ┊   
+    ┊   **📏 Đo chân: Chiều dài gót→mũi + 1.5cm**
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:28:46.548]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2668ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi sẽ giúp bạn xem chi tiết sản phẩm và kiểm tra size.
+    │ 📞 Tool Calls:
+    │   → getProductDetail({
+    │   "nameOrId" : "Giày bóng chuyền Beyono Eagle 8 - Version II"
+    │ })
+    │ 🔧 [TOOL RESULT: getProductDetail]
+    │ **Giày bóng chuyền Beyono Eagle 8 - Version II**
+    │ 
+    │ Thương hiệu: BEYONO
+    │ Danh mục: Giày bóng chuyền
+    │ Giá: 899.000đ
+    │ Ảnh: /images/products/main_861e2c2f.jpg
+    │ 
+    │ Mô tả: Đây là giày bóng chuyền
+    │ 
+    │ Xem chi tiết: /product-detail/a28b3929-8585-4eb5-8182-1693756f9baa
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → getAvailableSizes({
+    │   "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa"
+    │ })
+    │ 🔧 [TOOL RESULT: getAvailableSizes]
+    │ Size còn hàng: 43 (10), 42 (10), 41 (10), 38 (10), 39 (10), 44 (10), 45 
+    │ (10), 40 (10)
+    │ 🤖 [AI MESSAGE]
+    │ Bạn muốn mua giày Beyono Eagle 8 - Version II với giá 899.000đ. Hiện tại
+    │  sản phẩm có đầy đủ các size từ 38 đến 45. 
+    │ 
+    │ Để hoàn tất việc mua hàng, tôi cần bạn cho biết:
+    │ 1. Size giày bạn muốn chọn là gì?
+    │ 2. Số lượng bạn muốn mua?
+    │ 
+    │ Sau khi bạn xác nhận, tôi sẽ giúp bạn thêm sản phẩm vào giỏ hàng ngay lậ
+    │ p tức.
+    │ 
+    │ Bạn có thể tham khảo bảng size tiêu chuẩn để chọn size phù hợp:
+    │ 📞 Tool Calls:
+    │   → sizeGuide({ })
+    │ 🔧 [TOOL RESULT: sizeGuide]
+    │ # Bảng Size Giày Chuẩn Việt Nam
+    │ 
+    │ ## 👨 Nam
+    │ | Chân(CM) | VN | US | EU   | UK  |
+    │ |----------|----|----|------|-----|
+    │ | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    │ | 25.0     | 40 | 7  | 40   | 6½  |
+    │ | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    │ | 27.0     | 42 | 9  | 42   | 8½  |
+    │ | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    │ 
+    │ ## 👩 Nữ
+    │ | Chân(CM) | VN | US | EU   | UK |
+    │ |----------|----|----|------|----|
+    │ | 23.0     | 36 | 5½ | 36   | 3  |
+    │ | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    │ | 25.0     | 39 | 7  | 39   | 5½ |
+    │ | 25.5     | 40 | 7½...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ trợ bạn chọn size và hoàn tất 
+    │ đơn hàng!
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Bạn có thắc mắc gì không? Tôi sẵ
+    │ n sàng hỗ trợ bạn ... | Giày bóng chuyền Beyono Eagle 8 - Version II Tôi
+    │  m... | Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ...","userId":
+    │ "298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ size 40 nhé
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → checkStock({
+    │   "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa",
+    │   "size" : "40"
+    │ })
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:28:46.548]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 5189       tokens                                        │
+    │  Output    : 92         tokens                                        │
+    │  Total     : 5281       tokens                                        │
+    │  Duration  : 2668       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: sizeGuide                                                        ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:46.558 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   # Bảng Size Giày Chuẩn Việt Nam
+    ┊   
+    ┊   ## 👨 Nam
+    ┊   | Chân(CM) | VN | US | EU   | UK  |
+    ┊   |----------|----|----|------|-----|
+    ┊   | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    ┊   | 25.0     | 40 | 7  | 40   | 6½  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    ┊   | 27.0     | 42 | 9  | 42   | 8½  |
+    ┊   | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    ┊   
+    ┊   ## 👩 Nữ
+    ┊   | Chân(CM) | VN | US | EU   | UK |
+    ┊   |----------|----|----|------|----|
+    ┊   | 23.0     | 36 | 5½ | 36   | 3  |
+    ┊   | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    ┊   | 25.0     | 39 | 7  | 39   | 5½ |
+    ┊   | 25.5     | 40 | 7½ | 40   | 6  |
+    ┊   | 26.0     | 41 | 8  | 41⅓  | 7  |
+    ┊   
+    ┊   **📏 Đo chân: Chiều dài gót→mũi + 1.5cm**
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: checkStock                                                       ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:28:46.559 | Duration: 10ms                                  ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa",
+    ┊     "size" : "40"
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size 40 chỉ còn 10 đôi. Đặt ngay!
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:28:50.541]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 3982ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 🤖 [AI MESSAGE]
+    │ Bạn muốn mua giày Beyono Eagle 8 - Version II với giá 899.000đ. Hiện tại
+    │  sản phẩm có đầy đủ các size từ 38 đến 45. 
+    │ 
+    │ Để hoàn tất việc mua hàng, tôi cần bạn cho biết:
+    │ 1. Size giày bạn muốn chọn là gì?
+    │ 2. Số lượng bạn muốn mua?
+    │ 
+    │ Sau khi bạn xác nhận, tôi sẽ giúp bạn thêm sản phẩm vào giỏ hàng ngay lậ
+    │ p tức.
+    │ 
+    │ Bạn có thể tham khảo bảng size tiêu chuẩn để chọn size phù hợp:
+    │ 📞 Tool Calls:
+    │   → sizeGuide({ })
+    │ 🔧 [TOOL RESULT: sizeGuide]
+    │ # Bảng Size Giày Chuẩn Việt Nam
+    │ 
+    │ ## 👨 Nam
+    │ | Chân(CM) | VN | US | EU   | UK  |
+    │ |----------|----|----|------|-----|
+    │ | 24.0     | 38 | 6  | 38⅔  | 5½  |
+    │ | 25.0     | 40 | 7  | 40   | 6½  |
+    │ | 26.0     | 41 | 8  | 41⅓  | 7½  |
+    │ | 27.0     | 42 | 9  | 42   | 8½  |
+    │ | 28.0     | 44 | 10 | 44⅓  | 9½  |
+    │ 
+    │ ## 👩 Nữ
+    │ | Chân(CM) | VN | US | EU   | UK |
+    │ |----------|----|----|------|----|
+    │ | 23.0     | 36 | 5½ | 36   | 3  |
+    │ | 24.0     | 38 | 6½ | 38⅔  | 4½ |
+    │ | 25.0     | 39 | 7  | 39   | 5½ |
+    │ | 25.5     | 40 | 7½...[truncated]
+    │ 🤖 [AI MESSAGE]
+    │ Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ trợ bạn chọn size và hoàn tất 
+    │ đơn hàng!
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Bạn có thắc mắc gì không? Tôi sẵ
+    │ n sàng hỗ trợ bạn ... | Giày bóng chuyền Beyono Eagle 8 - Version II Tôi
+    │  m... | Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ...","userId":
+    │ "298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ size 40 nhé
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → checkStock({
+    │   "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa",
+    │   "size" : "40"
+    │ })
+    │ 🔧 [TOOL RESULT: checkStock]
+    │ Size 40 chỉ còn 10 đôi. Đặt ngay!
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi sẽ giúp bạn thêm giày Beyono Eagle 8 - Version II size 40
+    │  vào giỏ hàng ngay:
+    │ 📞 Tool Calls:
+    │   → addToCart({
+    │   "userId" : "298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+    │   "productId" : "a28b3929-8585-4eb5-8182-16...[truncated])
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:28:50.541]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4910       tokens                                        │
+    │  Output    : 204        tokens                                        │
+    │  Total     : 5114       tokens                                        │
+    │  Duration  : 3982       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: checkStock                                                       ┊
+    ┊    Called by: Unknown                                                     ┊
+    ┊    Time: 14:28:50.555 | Duration: 0ms                                   ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   (unknown)
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Size 40 chỉ còn 10 đôi. Đặt ngay!
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╮
+    ┊ 🔧 TOOL: addToCart                                                        ┊
+    ┊    Called by: Agent                                                       ┊
+    ┊    Time: 14:28:50.558 | Duration: 17ms                                  ┊
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📥 Input:                                                                   ┊
+    ┊   {
+    ┊     "userId" : "298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+    ┊     "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa",
+    ┊     "size" : "40",
+    ┊     "quantity" : 1
+    ┊   }
+    ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┤
+    ┊ 📤 Output:                                                                  ┊
+    ┊   Thành công! Đã thêm sản phẩm vào giỏ hàng với size 40.
+    ╰┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄╯
+
+    ╭────────────────────────────────────────────────────────────────────────────╮
+    │ 🧠 LLM CALL [14:28:53.091]                                               │
+    │    Model: claude-3-5-haiku-20241022                                       │
+    │    Duration: 2537ms                                                       │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+    ├────────────────────────────────────────────────────────────────────────────┤
+    │ 🤖 [AI MESSAGE]
+    │ Bạn có thắc mắc gì không? Tôi sẵn sàng hỗ trợ bạn chọn size và hoàn tất 
+    │ đơn hàng!
+    │ 📋 [SYSTEM MESSAGE]
+    │ Bạn là nhân viên tư vấn giày 5A Store chuyên nghiệp, thân thiện.
+    │ 
+    │ CONTEXT: {"context":"Tên: Bảo. Lịch sử: Bạn có thắc mắc gì không? Tôi sẵ
+    │ n sàng hỗ trợ bạn ... | Giày bóng chuyền Beyono Eagle 8 - Version II Tôi
+    │  m... | Xin chào Bảo! Tôi thấy có 5 mẫu giày Beyono (có vẻ...","userId":
+    │ "298e33a3-68ac-4d39-94fb-cdc27cfdfb39"}
+    │ USER_ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+    │ 
+    │ TOOLS:
+    │ - semanticSearch(query, maxResults): Tìm theo mô tả
+    │ - filterProducts(brand, category, minPrice, maxPrice, maxResults): Lọc t
+    │ heo tiêu chí
+    │ - getProductDetail(name): Xem chi tiết sản phẩm
+    │ - sizeGuide(): Bảng size giày
+    │ - addToCart(userId, productId, size, quantity): Thêm sản phẩm vào giỏ hà
+    │ ng
+    │ 
+    │ CÁCH TRẢ LỜI & QUY TRÌNH MUA HÀNG:
+    │ 1. Khi khách muốn mua (vd: "Mua cái này", "Lấy đôi này", "Tôi thích nó")
+    │ :
+    │    - THỨ NHẤT: Xác định productId từ ngữ cảnh hoặc tìm kiếm.
+    │    - THỨ HAI: Nếu khách chưa nói size, hãy hỏi size hoặc kiểm tra size k
+    │ hách thường dùng.
+    │    - THỨ BA: Gọi tool `addToCart` với userId="298e33a3-68ac-4d39-94fb-cd
+    │ c27cfdfb39".
+    │    - THỨ TƯ: Sau khi thêm thành công, hãy phản hồi xác nhận và thêm link
+    │  điều hướng:
+    │      "Tuyệt vời! Mình đã thêm [Tên sản phẩm] vào giỏ hàng cho bạn.
+    │ 
+    │      [REDIRECT]/checkout/step1[/REDIRECT]"
+    │ 
+    │ 2. Khi tool trả về [PRODUCTS_JSON]...[/PRODUCTS_JSON]:
+    │    - Thêm lời giới thiệu thân thiện TRƯỚC block.
+    │    - COPY NGUYÊN VĂN block [PRODUCTS_JSON]...[/PRODUCTS_JSON].
+    │    - Có thể thêm lời tư vấn/khuyên SAU block.
+    │ 
+    │ 3. Format response:
+    │    - Luôn thân thiện, chuyên nghiệp.
+    │    - Giữ nguyên JSON block nếu có.
+    │ 
+    │ LƯU Ý:
+    │ - Thẻ [REDIRECT]/checkout[/REDIRECT] chỉ dùng KHI ĐÃ THỰC THI addToCart 
+    │ thành công.
+    │ - Tập trung vào việc chốt đơn và hỗ trợ khách hàng.
+    │ 👤 [USER MESSAGE]
+    │ size 40 nhé
+    │ 🤖 [AI MESSAGE]
+    │ 
+    │ 📞 Tool Calls:
+    │   → checkStock({
+    │   "productId" : "a28b3929-8585-4eb5-8182-1693756f9baa",
+    │   "size" : "40"
+    │ })
+    │ 🔧 [TOOL RESULT: checkStock]
+    │ Size 40 chỉ còn 10 đôi. Đặt ngay!
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Tôi sẽ giúp bạn thêm giày Beyono Eagle 8 - Version II size 40
+    │  vào giỏ hàng ngay:
+    │ 📞 Tool Calls:
+    │   → addToCart({
+    │   "userId" : "298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+    │   "productId" : "a28b3929-8585-4eb5-8182-16...[truncated])
+    │ 🔧 [TOOL RESULT: addToCart]
+    │ Thành công! Đã thêm sản phẩm vào giỏ hàng với size 40.
+    │ 🤖 [AI MESSAGE]
+    │ Tuyệt vời! Mình đã thêm giày Beyono Eagle 8 - Version II size 40 vào giỏ
+    │  hàng cho bạn.
+    │ 
+    │ [REDIRECT]/checkout/step1[/REDIRECT]
+    │ 
+    │ Bạn có muốn tiếp tục mua sắm hay thanh toán luôn không?
+    ╰────────────────────────────────────────────────────────────────────────────╯
+    ╭─────────────────────────────────────────────────────────────────────────────╮
+    │ 📊 TOKEN USAGE [14:28:53.092]                                             │
+    ├─────────────────────────────────────────────────────────────────────────────┤
+    │  Model     : claude-3-5-haiku-20241022                                      │
+    │  Input     : 4502       tokens                                        │
+    │  Output    : 93         tokens                                        │
+    │  Total     : 4595       tokens                                        │
+    │  Duration  : 2537       ms                                            │
+    ╰─────────────────────────────────────────────────────────────────────────────╯
+  ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+  ┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 9215ms                                        ┃
+  ┃──────────────────────────────────────────────────────────────────────────────┃
+  ┃  Tuyệt vời! Mình đã thêm giày Beyono Eagle 8 - Version II size 40 vào giỏ
+  ┃   hàng cho bạn.
+  ┃  
+  ┃  [REDIRECT]/checkout/step1[/REDIRECT]
+  ┃  
+  ┃  Bạn có muốn tiếp tục mua sắm hay thanh toán luôn không?
+  ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 10042ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Tuyệt vời! Mình đã thêm giày Beyono Eagle 8 - Version II size 40 vào giỏ
+┃   hàng cho bạn.
+┃  
+┃  [REDIRECT]/checkout/step1[/REDIRECT]
+┃  
+┃  Bạn có muốn tiếp tục mua sắm hay thanh toán luôn không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [14:28:53.097]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ 🤖 Answered by: chat (chat)                                                  ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Tuyệt vời! Mình đã thêm giày Beyono Eagle 8 - Version II size 40 vào giỏ h
+║  àng cho bạn.
+║  
+║  [REDIRECT]/checkout/step1[/REDIRECT]
+║  
+║  Bạn có muốn tiếp tục mua sắm hay thanh toán luôn không?
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 10067ms                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+
