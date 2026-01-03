@@ -26,17 +26,5 @@ public class ChatBotAPIController {
         return ResponseEntity.ok(response);
     }
 
-    @GetMapping(value = "/stream", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public SseEmitter streamMessage(
-           @RequestParam String message,
-            @RequestParam(required = false) String sessionId) {
-        
-        log.info("Received streaming chat request: message='{}', sessionId='{}'", message, sessionId);
-        
-        SseEmitter emitter = new SseEmitter(60000L);
-        
-        chatBotService.processMessageStreaming(message, sessionId, emitter);
 
-        return emitter;
-    }
 }

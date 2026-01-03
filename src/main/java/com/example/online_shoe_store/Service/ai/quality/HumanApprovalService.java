@@ -20,16 +20,8 @@ public class HumanApprovalService {
     private final ConcurrentMap<String, CompletableFuture<String>> pendingApprovals = new ConcurrentHashMap<>();
     private final ConcurrentMap<String, PendingApprovalDto> pendingRequests = new ConcurrentHashMap<>();
     
-    // Timeout for approval (5 minutes)
     private static final long APPROVAL_TIMEOUT_MINUTES = 5;
-    
-    /**
-     * Queue a request for human approval
-     * @param actionType Type of action (CANCEL_ORDER, REFUND, etc.)
-     * @param sessionId Current chat session
-     * @param payload Action payload (orderId, amount, etc.)
-     * @return Request ID for tracking
-     */
+
     public String queueForApproval(String actionType, String sessionId, Map<String, Object> payload) {
         String requestId = UUID.randomUUID().toString();
         
@@ -52,12 +44,7 @@ public class HumanApprovalService {
         
         return requestId;
     }
-    
-    /**
-     * Wait for approval with timeout
-     * @param requestId Request ID to wait for
-     * @return Approval response or timeout message
-     */
+
     public String waitForApproval(String requestId) {
         CompletableFuture<String> future = pendingApprovals.get(requestId);
         if (future == null) {
@@ -76,12 +63,7 @@ public class HumanApprovalService {
             return "Có lỗi xảy ra khi chờ phê duyệt. Vui lòng thử lại.";
         }
     }
-    
-    /**
-     * Approve a pending request (called by admin)
-     * @param requestId Request ID
-     * @param approverNote Optional note from approver
-     */
+
     public void approve(String requestId, String approverNote) {
         CompletableFuture<String> future = pendingApprovals.get(requestId);
         if (future != null) {

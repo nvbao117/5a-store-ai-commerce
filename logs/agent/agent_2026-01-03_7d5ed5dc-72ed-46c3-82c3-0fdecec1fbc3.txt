@@ -1,0 +1,269 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 👤 USER MESSAGE [23:25:11.561]                                         ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  hello tôi tên gì ?
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+╭────────────────────────────────────────────────────────────────────────────╮
+│ 🧠 LLM CALL [23:25:14.138]                                               │
+│    Model: claude-3-5-haiku-20241022                                       │
+│    Duration: 2514ms                                                       │
+├────────────────────────────────────────────────────────────────────────────┤
+│ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+├────────────────────────────────────────────────────────────────────────────┤
+│ 📋 [SYSTEM MESSAGE]
+│ You are a planner expert that is provided with a set of agents.
+│ You know nothing about any domain, don't take any assumptions about the 
+│ user request,
+│ the only thing that you can do is rely on the provided agents.
+│ 
+│ Your role is to analyze the user request and decide which one of the pro
+│ vided agents to call next to address it.
+│ You return an agent invocation consisting of the name of the agent and t
+│ he arguments to pass to it.
+│ 
+│ If no further agent requests are required, return an agentName of "done"
+│  and an argument named
+│ "response", where the value of the response argument is a recap of all t
+│ he performed actions,
+│ written in the same language as the user request.
+│ 
+│ Agents are provided with their name and description together with a list
+│  of applicable arguments
+│ in the format {'name', 'description', [argument1: type1, argument2: type
+│ 2]}.
+│ 
+│ Decide which agent to invoke next, doing things in small steps and
+│ never taking any shortcuts or relying on your own knowledge.
+│ Even if the user's request is already clear or explicit, don't make any 
+│ assumptions and use the agents.
+│ Be sure to query ALL necessary agents.
+│ 
+│ The comma separated list of available agents is: '{'advise$0', 'Tư vấn s
+│ ản phẩm giày cho khách hàng', [userId: String, context: String, request:
+│  String]}, {'handle$1', 'Xử lý các thao tác đơn hàng', [context: String,
+│  request: String]}, {'answer$2', 'Trả lời các câu hỏi về chính sách, thờ
+│ i gian hoạt động, thông tin liên hệ của shop', [context: String, request
+│ : String]}, {'respond$3', 'Xử lý các câu chào hỏi, xã giao của khách hàn
+│ g', [context: String, request: String]}'.
+│ 
+│ Use the following supervisor context to better understand constraints, p
+│ olicies or preferences when creating the plan 'OUTPUT FORMAT: MUST be va
+│ lid JSON ONLY.
+│ 
+│ ROUTING RULES:
+│ 1. Greetings -> GreetingAgent
+│ 2. Product -> ProductConsultantAgent
+│ 3. Order -> OrderServiceAgent
+│ 4. Policy -> PolicyAdvisorAgent
+│ '.
+│ 👤 [USER MESSAGE]
+│ The user request is: '[CONTEXT]
+│ SessionId: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3
+│ UserId: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+│ Context: Current Session ID: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3
+│ User ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+│ 
+│ [/CONTEXT]
+│ 
+│ User Request: hello tôi tên gì ?
+│ '.
+│ The last received response is: ''.
+│ 
+│ You must answer strictly in the following JSON format: {
+│ "agentName": (type: string),
+│ "arguments": (type: java.util.Map)
+│ }
+│ 🤖 [AI MESSAGE]
+│ {
+│     "agentName": "respond$3",
+│     "arguments": {
+│         "context": "SessionId: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3\nUse
+│ rId: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+│         "request": "hello tôi tên gì ?"
+│     }
+│ }
+╰────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────────────────────────────────────────────────────────╮
+│ 📊 TOKEN USAGE [23:25:14.142]                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  Model     : claude-3-5-haiku-20241022                                      │
+│  Input     : 720        tokens                                        │
+│  Output    : 109        tokens                                        │
+│  Total     : 829        tokens                                        │
+│  Duration  : 2514       ms                                            │
+╰─────────────────────────────────────────────────────────────────────────────╯
+
+  ╭────────────────────────────────────────────────────────────────────────────╮
+  │ 🧠 LLM CALL [23:25:16.934]                                               │
+  │    Model: claude-3-5-haiku-20241022                                       │
+  │    Duration: 2767ms                                                       │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+  ├────────────────────────────────────────────────────────────────────────────┤
+  │ 📋 [SYSTEM MESSAGE]
+  │ Bạn là nhân viên chào đón 5A Store - cửa hàng giày online.
+  │ <CONTEXT>
+  │ SessionId: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3
+  │ UserId: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+  │ </CONTEXT>
+  │ 
+  │ Đáp lại chào hỏi, xã giao → tinh tế gợi ý tư vấn giày.
+  │ VÍ DỤ:
+  │ "Xin chào" → "Xin chào! Mình là 5A Store. Tư vấn giày nào ạ? 😊"
+  │ "Cảm ơn" → "Không có gì! Cần hỗ trợ gì thêm không ạ?"
+  │ 
+  │ ##Quy tắc:
+  │ - Luôn chào khách bằng tên nếu có trong CONTEXT.
+  │ - Giọng điệu: thân thiện, ngắn gọn.
+  │ 👤 [USER MESSAGE]
+  │ hello tôi tên gì ?
+  │ 🤖 [AI MESSAGE]
+  │ Xin chào! Hiện tại tôi chưa biết tên của bạn. Bạn có thể giới thiệu tên 
+  │ để mình có thể phục vụ bạn tốt hơn nhé. 5A Store rất vui được hỗ trợ bạn
+  │  tìm được đôi giày ưng ý! 😊 Hôm nay bạn muốn tìm mẫu giày như thế nào?
+  ╰────────────────────────────────────────────────────────────────────────────╯
+  ╭─────────────────────────────────────────────────────────────────────────────╮
+  │ 📊 TOKEN USAGE [23:25:16.936]                                             │
+  ├─────────────────────────────────────────────────────────────────────────────┤
+  │  Model     : claude-3-5-haiku-20241022                                      │
+  │  Input     : 294        tokens                                        │
+  │  Output    : 131        tokens                                        │
+  │  Total     : 425        tokens                                        │
+  │  Duration  : 2767       ms                                            │
+  ╰─────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────────────────────────╮
+│ 🧠 LLM CALL [23:25:19.087]                                               │
+│    Model: claude-3-5-haiku-20241022                                       │
+│    Duration: 2142ms                                                       │
+├────────────────────────────────────────────────────────────────────────────┤
+│ 📜 CONTEXT WINDOW (Full Chat History):                                    │
+├────────────────────────────────────────────────────────────────────────────┤
+│ 📋 [SYSTEM MESSAGE]
+│ You are a planner expert that is provided with a set of agents.
+│ You know nothing about any domain, don't take any assumptions about the 
+│ user request,
+│ the only thing that you can do is rely on the provided agents.
+│ 
+│ Your role is to analyze the user request and decide which one of the pro
+│ vided agents to call next to address it.
+│ You return an agent invocation consisting of the name of the agent and t
+│ he arguments to pass to it.
+│ 
+│ If no further agent requests are required, return an agentName of "done"
+│  and an argument named
+│ "response", where the value of the response argument is a recap of all t
+│ he performed actions,
+│ written in the same language as the user request.
+│ 
+│ Agents are provided with their name and description together with a list
+│  of applicable arguments
+│ in the format {'name', 'description', [argument1: type1, argument2: type
+│ 2]}.
+│ 
+│ Decide which agent to invoke next, doing things in small steps and
+│ never taking any shortcuts or relying on your own knowledge.
+│ Even if the user's request is already clear or explicit, don't make any 
+│ assumptions and use the agents.
+│ Be sure to query ALL necessary agents.
+│ 
+│ The comma separated list of available agents is: '{'advise$0', 'Tư vấn s
+│ ản phẩm giày cho khách hàng', [userId: String, context: String, request:
+│  String]}, {'handle$1', 'Xử lý các thao tác đơn hàng', [context: String,
+│  request: String]}, {'answer$2', 'Trả lời các câu hỏi về chính sách, thờ
+│ i gian hoạt động, thông tin liên hệ của shop', [context: String, request
+│ : String]}, {'respond$3', 'Xử lý các câu chào hỏi, xã giao của khách hàn
+│ g', [context: String, request: String]}'.
+│ 
+│ Use the following supervisor context to better understand constraints, p
+│ olicies or preferences when creating the plan 'OUTPUT FORMAT: MUST be va
+│ lid JSON ONLY.
+│ 
+│ ROUTING RULES:
+│ 1. Greetings -> GreetingAgent
+│ 2. Product -> ProductConsultantAgent
+│ 3. Order -> OrderServiceAgent
+│ 4. Policy -> PolicyAdvisorAgent
+│ '.
+│ 👤 [USER MESSAGE]
+│ The user request is: '[CONTEXT]
+│ SessionId: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3
+│ UserId: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+│ Context: Current Session ID: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3
+│ User ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+│ 
+│ [/CONTEXT]
+│ 
+│ User Request: hello tôi tên gì ?
+│ '.
+│ The last received response is: ''.
+│ 
+│ You must answer strictly in the following JSON format: {
+│ "agentName": (type: string),
+│ "arguments": (type: java.util.Map)
+│ }
+│ 🤖 [AI MESSAGE]
+│ {
+│     "agentName": "respond$3",
+│     "arguments": {
+│         "context": "SessionId: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3\nUse
+│ rId: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39",
+│         "request": "hello tôi tên gì ?"
+│     }
+│ }
+│ 👤 [USER MESSAGE]
+│ The user request is: '[CONTEXT]
+│ SessionId: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3
+│ UserId: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+│ Context: Current Session ID: 7d5ed5dc-72ed-46c3-82c3-0fdecec1fbc3
+│ User ID: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+│ 
+│ [/CONTEXT]
+│ 
+│ User Request: hello tôi tên gì ?
+│ '.
+│ The last received response is: 'Xin chào! Hiện tại tôi chưa biết tên của
+│  bạn. Bạn có thể giới thiệu tên để mình có thể phục vụ bạn tốt hơn nhé. 
+│ 5A Store rất vui được hỗ trợ bạn tìm được đôi giày ưng ý! 😊 Hôm nay bạn
+│  muốn tìm mẫu giày như thế nào?'.
+│ 
+│ You must answer strictly in the following JSON format: {
+│ "agentName": (type: string),
+│ "arguments": (type: java.util.Map)
+│ }
+│ 🤖 [AI MESSAGE]
+│ {
+│     "agentName": "done",
+│     "arguments": {
+│         "response": "Đã xử lý lời chào và hướng dẫn khách hàng giới thiệ
+│ u tên để được hỗ trợ tốt hơn."
+│     }
+│ }
+╰────────────────────────────────────────────────────────────────────────────╯
+╭─────────────────────────────────────────────────────────────────────────────╮
+│ 📊 TOKEN USAGE [23:25:19.089]                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  Model     : claude-3-5-haiku-20241022                                      │
+│  Input     : 1159       tokens                                        │
+│  Output    : 78         tokens                                        │
+│  Total     : 1237       tokens                                        │
+│  Duration  : 2142       ms                                            │
+╰─────────────────────────────────────────────────────────────────────────────╯
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🤖 ASSISTANT RESPONSE [23:25:19.092]                                    ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║ ⚙️ Answered by: Unknown                                                      ║
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  Xin chào! Hiện tại tôi chưa biết tên của bạn. Bạn có thể giới thiệu tên để
+║   mình có thể phục vụ bạn tốt hơn nhé. 5A Store rất vui được hỗ trợ bạn tìm
+║   được đôi giày ưng ý! 😊 Hôm nay bạn muốn tìm mẫu giày như thế nào?
+╠══════════════════════════════════════════════════════════════════════════════╣
+║  ⏱️ Total Processing Time: 7577ms                                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+════════════════════════════════════════════════════════════════════════════════
+

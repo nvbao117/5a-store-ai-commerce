@@ -12,13 +12,9 @@ public class DirectContextService {
 
     private final ProductJsonHolder productJsonHolder;
 
-    /**
-     * Chuẩn bị context cho AI model (Simplified for stability)
-     */
     public String prepareContext(String sessionId, String userId, String userMessage) {
         StringBuilder context = new StringBuilder();
 
-        // 1. Inject Product JSON if available
         String productJson = productJsonHolder.getJsonForSession(sessionId);
         if (productJson != null && !productJson.isEmpty()) {
             context.append("Product Information (JSON):\n")

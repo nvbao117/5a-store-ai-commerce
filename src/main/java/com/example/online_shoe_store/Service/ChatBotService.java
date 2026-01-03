@@ -44,9 +44,9 @@ public class ChatBotService {
 
         String userId = getAuthenticatedUserId();
         User user = "guest".equals(userId) ? null : userRepository.findById(userId).orElse(null);
-        
+
         String sessionId = (request.getSessionId() != null && !request.getSessionId().isBlank())
-                ? request.getSessionId() 
+                ? request.getSessionId()
                 : UUID.randomUUID().toString();
 
         String userMessage = request.getMessage();
@@ -55,8 +55,7 @@ public class ChatBotService {
 
         // Log vào file
         agentFileLogger.logUserMessage(sessionId, userMessage);
-        
-        // Set session ID for thread-local correlation with ChatModelListener
+
         ToolLoggingChatModelListener.setCurrentSession(sessionId);
 
         // 1.Lấy hoặc tạo hội thoại mới
@@ -83,12 +82,9 @@ public class ChatBotService {
         String context = directContextService.prepareContext(sessionId, userId, userMessage);
         log.info("Context prepared in {}ms", System.currentTimeMillis() - contextStart);
 
-        // 4. Call agent with pre-fetched context
         String answer;
         try {
             answer = shopAssistantAgent.chat(sessionId, userId, userMessage, context);
-            
-            // Post-process: Ensure JSON block is in response (inject if LLM forgot)
             answer = productJsonHolder.ensureJsonBlock(sessionId, answer);
         } catch (Exception e) {
             log.error("Agent error: {}", e.getMessage(), e);
@@ -98,7 +94,6 @@ public class ChatBotService {
             productJsonHolder.clearSession(sessionId);
         }
 
-        // 4. Save bot response
         long duration = System.currentTimeMillis() - startTime;
         ConversationMessage botMsg = ConversationMessage.builder()
                 .conversation(conversation)
@@ -109,7 +104,6 @@ public class ChatBotService {
         messageRepository.save(botMsg);
         conversation.setMessageCount(conversation.getMessageCount() + 1);
 
-        // Log assistant response to file
         agentFileLogger.logAssistantResponse(sessionId, answer, duration);
 
         log.info("Chat completed: {}ms, session={}", duration, sessionId);
@@ -121,82 +115,18 @@ public class ChatBotService {
                 .build();
     }
 
-    /**
-     * Lấy userId (UUID) từ authenticated user, hoặc "guest" nếu chưa đăng nhập
-     */
     private String getAuthenticatedUserId() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        
+
         if (auth == null || !auth.isAuthenticated() || auth instanceof AnonymousAuthenticationToken) {
             return "guest";
         }
-        
+
         String username = auth.getName();
-        
-        // Query database để lấy UUID userId
+
         return userRepository.findByUsername(username)
                 .map(user -> user.getUserId())
                 .orElse("guest");
     }
-
-
-    /**
-     * NEW: Streaming chat response
-     * NOTE: Currently uses word-by-word fake streaming.
-     * Guaranteed to work regardless of library versions.
-     */
-    public void processMessageStreaming(String message, String sessionId,
-                                       org.springframework.web.servlet.mvc.method.annotation.SseEmitter emitter) {
-        final String finalMessage = message;
-        final String initialSessionId = sessionId;
-        
-        java.util.concurrent.CompletableFuture.runAsync(() -> {
-            try {
-                String userId = getAuthenticatedUserId();
-                String currentSessionId = (initialSessionId != null && !initialSessionId.isBlank())
-                    ? initialSessionId
-                    : UUID.randomUUID().toString();
-                
-                long contextStart = System.currentTimeMillis();
-                String context = directContextService.prepareContext(currentSessionId, userId, finalMessage);
-                log.info("Context prepared in {}ms", System.currentTimeMillis() - contextStart);
-                
-                emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
-                    .event()
-                    .name("thinking")
-                    .data("AI đang suy nghĩ..."));
-                
-                // Get full response from agent (Synchronous)
-                String fullResponse = shopAssistantAgent.chat(currentSessionId, userId, finalMessage, context);
-                
-                // Stream word by word for better UX (Fake Streaming)
-                String[] words = fullResponse.split(" ");
-                for (String word : words) {
-                    emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
-                        .event()
-                        .name("message")
-                        .data(word + " "));
-                    Thread.sleep(15); // Fast typing 15ms
-                }
-                
-                emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
-                    .event()
-                    .name("done")
-                    .data(Map.of("sessionId", currentSessionId)));
-                
-                emitter.complete();
-                log.info("Streaming completed for session: {}", currentSessionId);
-                
-            } catch (Exception e) {
-                log.error("Streaming error: {}", e.getMessage(), e);
-                try {
-                    emitter.send(org.springframework.web.servlet.mvc.method.annotation.SseEmitter
-                        .event()
-                        .name("error")
-                        .data("Xin lỗi, có lỗi xảy ra: " + e.getMessage()));
-                } catch (Exception ignored) {}
-                emitter.completeWithError(e);
-            }
-        });
-    }
 }
+

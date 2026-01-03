@@ -18,27 +18,21 @@ public class ProductJsonHolder {
     private static final Pattern JSON_BLOCK_PATTERN = 
         Pattern.compile("\\[PRODUCTS_JSON\\]([\\s\\S]*?)\\[/PRODUCTS_JSON\\]");
     
-    // Thread-safe storage for JSON blocks per session
     private final ConcurrentHashMap<String, String> jsonBlocks = new ConcurrentHashMap<>();
     
-    /**
-     * Capture JSON block from tool result
-     */
+
     public void captureFromToolResult(String sessionId, String toolResult) {
         if (toolResult == null || sessionId == null) return;
         
         Matcher matcher = JSON_BLOCK_PATTERN.matcher(toolResult);
         if (matcher.find()) {
-            String jsonBlock = matcher.group(0); // Full match including tags
+            String jsonBlock = matcher.group(0);
             jsonBlocks.put(sessionId, jsonBlock);
             log.debug("[ProductJsonHolder] Captured JSON block for session {}: {} chars", 
                      sessionId, jsonBlock.length());
         }
     }
-    
-    /**
-     * Ensure response contains JSON block - inject if missing
-     */
+
     public String ensureJsonBlock(String sessionId, String response) {
         if (response == null || sessionId == null) return response;
         
@@ -49,13 +43,11 @@ public class ProductJsonHolder {
             return response;
         }
         
-        // Get stored JSON block
         String storedBlock = jsonBlocks.remove(sessionId);
         if (storedBlock == null) {
-            return response; // No block to inject
+            return response;
         }
         
-        // Inject JSON block after the first paragraph
         log.info("[ProductJsonHolder] Injecting JSON block into response for session {}", sessionId);
         
         // Find good injection point - after first line or paragraph

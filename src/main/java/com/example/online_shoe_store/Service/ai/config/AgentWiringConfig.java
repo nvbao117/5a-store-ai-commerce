@@ -44,7 +44,6 @@ public class AgentWiringConfig {
                 .build();
     }
 
-    // ====== EXPERT AGENTS ======
 
     @Bean
     public ProductConsultantAgent productConsultantAgent(
@@ -83,7 +82,7 @@ public class AgentWiringConfig {
     ) {
         return AgenticServices.agentBuilder(PolicyAdvisorAgent.class)
                 .chatModel(baseModel)
-                .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(4))
+                .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(6))
                 .contentRetriever(policyRetriever)
                 .outputKey("response")
                 .listener(eventLoggingAgentListener)
@@ -96,14 +95,13 @@ public class AgentWiringConfig {
     ) {
         return AgenticServices.agentBuilder(GreetingAgent.class)
                 .chatModel(baseModel)
-                .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(4))
+                .chatMemoryProvider(id -> MessageWindowChatMemory.withMaxMessages(6))
                 .outputKey("response")
                 .listener(eventLoggingAgentListener)
                 .build();
     }
 
-    // ====== SUPERVISOR ORCHESTRATOR ======
-    
+
     @Bean
     public SupervisorAgent shopSupervisorAgent(
             @Qualifier("workerModel") ChatModel supervisorModel,
@@ -160,8 +158,7 @@ public class AgentWiringConfig {
         };
     }
     
-    // ====== QUALITY AGENTS ======
-    
+
     @Bean
     public ResponseReviewerAgent responseReviewerAgent(
             @Qualifier("workerModel") ChatModel baseModel
@@ -180,8 +177,4 @@ public class AgentWiringConfig {
                 .chatModel(baseModel)
                 .build();
     }
-    
-    // ====== LEGACY BEANS (Forward Compatibility) ======
-    
-
 }
