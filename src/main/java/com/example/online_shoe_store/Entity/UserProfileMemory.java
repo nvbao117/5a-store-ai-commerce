@@ -28,6 +28,12 @@ public class UserProfileMemory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     
+    /**
+     * Optimistic locking để tránh race condition khi nhiều async job cập nhật cùng lúc
+     */
+    @Version
+    private Long version;
+    
     @Column(nullable = false, unique = true)
     private String userId;
     

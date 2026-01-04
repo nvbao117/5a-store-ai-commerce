@@ -10,7 +10,7 @@ import dev.langchain4j.service.V;
  * Agent xử lý các thao tác đơn hàng
  * Sử dụng OrderTools để tương tác với hệ thống đơn hàng
  */
-public interface OrderExpertAgent {
+public interface OrderServiceAgent {
 
     @SystemMessage("""
         Bạn là nhân viên CSKH của shop giày 5A Store, chuyên xử lý đơn hàng.

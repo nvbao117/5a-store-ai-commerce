@@ -41,21 +41,15 @@ public class CartService {
         return "/images/products/" + v;
     }
 
-    // --- 2. ADD TO CART (Có hỗ trợ Test User) ---
+    // --- 2. ADD TO CART (Hỗ trợ userId) ---
     @Transactional
-    public void addProductToCart(String username, String productId, String size, int quantity) {
-        // [TEST MODE] Tự tạo user giả nếu "testuser" chưa tồn tại
-        User user = userRepository.findByUsername(username).orElseGet(() -> {
-            if(username.equals("testuser")) {
-                User newUser = new User();
-                newUser.setUsername("testuser");
-                newUser.setName("Khách trải nghiệm");
-                newUser.setPassword("123");
-                newUser.setEmail("test@gmail.com");
-                return userRepository.save(newUser);
-            }
-            throw new RuntimeException("User không tồn tại");
-        });
+    public void addProductToCartById(String userId, String productId, String size, int quantity) {
+        User user = "guest".equals(userId) ? null : userRepository.findById(userId).orElse(null);
+        
+        // Nếu là khách vãng lai, có thể xử lý qua session/cookie (hiện tại throw error hoặc xử lý guest cart)
+        if (user == null) {
+            throw new RuntimeException("Vui lòng đăng nhập để thực hiện mua hàng.");
+        }
 
         Cart cart = user.getCart();
         if (cart == null) {
@@ -70,7 +64,7 @@ public class CartService {
         ProductVariant targetVariant = variants.stream()
                 .filter(v -> v.getSize() != null && v.getSize().equalsIgnoreCase(size))
                 .findFirst()
-                .orElseThrow(() -> new RuntimeException("Size '" + size + "' không tồn tại!"));
+                .orElseThrow(() -> new RuntimeException("Size '" + size + "' cho sản phẩm này không có sẵn!"));
 
         Optional<CartItem> existingItemOpt = cart.getCartItems().stream()
                 .filter(item -> item.getProductVariant().getVariantId().equals(targetVariant.getVariantId()))
@@ -78,30 +72,29 @@ public class CartService {
 
         if (existingItemOpt.isPresent()) {
             CartItem existingItem = existingItemOpt.get();
-            
-            // Logic mới: Nếu sản phẩm đang bị ẩn (đã xóa), thì coi như thêm mới -> Reset số lượng
-            // Nếu sản phẩm đang hiện (đang mua), thì cộng dồn số lượng
             if (Boolean.FALSE.equals(existingItem.getIsActive())) {
                  existingItem.setQuantity(quantity);
                  existingItem.setIsActive(true);
             } else {
                  existingItem.setQuantity(existingItem.getQuantity() + quantity);
             }
-            
             cartItemRepository.save(existingItem);
         } else {
             CartItem newItem = new CartItem();
-            // newItem.setCartItemId(UUID.randomUUID().toString()); // Để JPA tự gen ID để tránh lỗi detach
             newItem.setCart(cart);
             newItem.setProductVariant(targetVariant);
             newItem.setQuantity(quantity);
-            
-            // Fix: Sử dụng instance đã save (managed) để add vào list
             CartItem savedItem = cartItemRepository.save(newItem);
-            
-            // Cập nhật list in-memory để tính toán lại số lượng chính xác ngay lập tức (do OSIV)
             cart.getCartItems().add(savedItem);
         }
+    }
+
+    // --- 2b. ADD TO CART (Compatibility với username-based API) ---
+    @Transactional
+    public void addProductToCart(String username, String productId, String size, int quantity) {
+        User user = userRepository.findByUsername(username)
+                .orElseThrow(() -> new RuntimeException("Không tìm thấy user: " + username));
+        addProductToCartById(user.getUserId(), productId, size, quantity);
     }
 
     // --- 3. LẤY LIST GIỎ HÀNG (Áp dụng fix ảnh) ---

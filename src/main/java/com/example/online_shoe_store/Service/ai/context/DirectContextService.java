@@ -1,131 +1,123 @@
 package com.example.online_shoe_store.Service.ai.context;
 
+import com.example.online_shoe_store.Entity.Conversation;
 import com.example.online_shoe_store.Entity.ConversationMessage;
-import com.example.online_shoe_store.Entity.UserProfileMemory;
+import com.example.online_shoe_store.Entity.User;
 import com.example.online_shoe_store.Repository.ConversationMessageRepository;
-import com.example.online_shoe_store.Repository.UserProfileMemoryRepository;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.online_shoe_store.Repository.ConversationRepository;
+import com.example.online_shoe_store.Repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.CompletableFuture;
-import java.util.stream.Collectors;
 
-/**
- * Direct Context Service - Fetch context trực tiếp KHÔNG qua LLM
- * Giảm từ 3 LLM calls (6s) → 0 LLM calls (~50ms)
- */
+
 @Service
 @Slf4j
 @RequiredArgsConstructor
 public class DirectContextService {
 
-    private final ConversationMessageRepository messageRepo;
-    private final UserProfileMemoryRepository userProfileRepo;
-    private final ObjectMapper objectMapper;
+    private final ProductJsonHolder productJsonHolder;
+    private final ConversationMessageRepository messageRepository;
+    private final ConversationRepository conversationRepository;
+    private final UserRepository userRepository;
+    
+    private static final int RECENT_MESSAGES_TO_KEEP = 4;
 
     public String prepareContext(String sessionId, String userId, String userMessage) {
-        long start = System.currentTimeMillis();
+        StringBuilder context = new StringBuilder();
+
         
-        // Parallel fetch both data sources
-        CompletableFuture<String> profileFuture = CompletableFuture.supplyAsync(() -> 
-                fetchUserProfile(userId));
-        CompletableFuture<String> historyFuture = CompletableFuture.supplyAsync(() -> 
-                fetchSessionHistory(sessionId, 5));
-        
-        // Wait for both
-        String profile = profileFuture.join();
-        String history = historyFuture.join();
-        
-        // Build context JSON
-        Map<String, Object> contextMap = new HashMap<>();
-        contextMap.put("userId", userId != null ? userId : "guest");
-        
-        StringBuilder contextBuilder = new StringBuilder();
-        
-        // Add profile info
-        if (profile != null && !profile.contains("Không có") && !profile.contains("Chưa có")) {
-            contextBuilder.append(profile);
+        context.append(buildStaticContext(userId, sessionId));
+
+        //Product context (từ tool calls trước đó)
+        String productJson = productJsonHolder.getJsonForSession(sessionId);
+        if (productJson != null && !productJson.isEmpty()) {
+            context.append("<PRODUCTS>\n")
+                   .append(productJson)
+                   .append("\n</PRODUCTS>\n\n");
         }
         
-        // Add history summary (if any)
-        if (history != null && !history.contains("Không có")) {
-            if (contextBuilder.length() > 0) {
-                contextBuilder.append(". ");
-            }
-            contextBuilder.append("Lịch sử: ").append(history);
+        //Conversation history (summary + recent từ DB)
+        String history = getDynamicConversationHistory(sessionId);
+        if (history != null && !history.isEmpty()) {
+            context.append("<HISTORY>\n")
+                   .append(history)
+                   .append("</HISTORY>\n\n");
         }
+        return context.toString();
+    }
+
+    //Thông tin quan trọng luôn cần
+    private String buildStaticContext(String userId, String sessionId) {
+        StringBuilder sb = new StringBuilder();
         
-        if (contextBuilder.length() == 0) {
-            contextBuilder.append("User mới, chưa có lịch sử");
+        sb.append("<STATIC>\n");
+        
+        String userName = getUserDisplayName(userId);
+        sb.append("user_id: ").append(userId != null ? userId : "guest").append("\n");
+        if (userName != null) {
+            sb.append("user_name: ").append(userName).append("\n");
         }
+        sb.append("</STATIC>\n\n");
         
-        contextMap.put("context", contextBuilder.toString());
-        
+        return sb.toString();
+    }
+
+    /**
+     * DYNAMIC: Fetch conversation history từ DB
+     */
+    private String getDynamicConversationHistory(String sessionId) {
         try {
-            String result = objectMapper.writeValueAsString(contextMap);
-            long duration = System.currentTimeMillis() - start;
-            log.info("[DirectContext] Prepared in {}ms for user={}", duration, userId);
-            return result;
+            var conversationOpt = conversationRepository.findBySessionIdAndIsActiveTrue(sessionId);
+            if (conversationOpt.isEmpty()) {
+                return null;
+            }
+            
+            Conversation conversation = conversationOpt.get();
+            StringBuilder result = new StringBuilder();
+            
+            // Pre-computed summary (nếu có)
+            String summary = conversation.getSummary();
+            if (summary != null && !summary.isBlank()) {
+                result.append("[SUMMARY]\n")
+                      .append(summary)
+                      .append("\n\n");
+            }
+            
+            // Recent messages
+            List<ConversationMessage> recentMessages = messageRepository
+                    .findRecentBySessionId(sessionId, RECENT_MESSAGES_TO_KEEP);
+            
+            if (recentMessages != null && !recentMessages.isEmpty()) {
+                java.util.Collections.reverse(recentMessages);
+                
+                result.append("[RECENT]\n");
+                for (ConversationMessage msg : recentMessages) {
+                    result.append(msg.getRole()).append(": ")
+                          .append(msg.getContent()).append("\n");
+                }
+            }
+            
+            return result.toString();
+            
         } catch (Exception e) {
-            log.error("Failed to serialize context", e);
-            return String.format("{\"userId\": \"%s\", \"context\": \"Error preparing context\"}", 
-                    userId != null ? userId : "guest");
+            log.error("[DirectContextService] Error: {}", e.getMessage());
+            return null;
         }
     }
 
-    private String fetchUserProfile(String userId) {
-        if (userId == null || userId.isBlank()) {
+    private String getUserDisplayName(String userId) {
+        if (userId == null || userId.isBlank() || "guest".equals(userId)) {
             return null;
         }
-        
-        return userProfileRepo.findByUserId(userId)
-                .map(profile -> {
-                    StringBuilder sb = new StringBuilder();
-                    if (profile.getProfileJson() != null && !profile.getProfileJson().equals("{}")) {
-                        try {
-                            Map<String, Object> profileMap = objectMapper.readValue(
-                                    profile.getProfileJson(), 
-                                    new com.fasterxml.jackson.core.type.TypeReference<Map<String, Object>>() {});
-                            if (profileMap.containsKey("name")) {
-                                sb.append("Tên: ").append(profileMap.get("name"));
-                            }
-                            if (profileMap.containsKey("preferredSize")) {
-                                sb.append(", Size: ").append(profileMap.get("preferredSize"));
-                            }
-                            if (profileMap.containsKey("preferredBrand")) {
-                                sb.append(", Thích: ").append(profileMap.get("preferredBrand"));
-                            }
-                        } catch (Exception e) {
-                            sb.append(profile.getProfileJson());
-                        }
-                    }
-                    if (profile.getInteractionSummary() != null) {
-                        if (sb.length() > 0) sb.append(". ");
-                        sb.append(profile.getInteractionSummary());
-                    }
-                    return sb.length() > 0 ? sb.toString() : null;
-                })
-                .orElse(null);
-    }
-
-    private String fetchSessionHistory(String sessionId, int limit) {
-        List<ConversationMessage> messages = messageRepo.findRecentBySessionId(sessionId, limit);
-        
-        if (messages.isEmpty()) {
+        try {
+            return userRepository.findById(userId)
+                    .map(User::getName)
+                    .orElse(null);
+        } catch (Exception e) {
             return null;
         }
-        
-        // Summarize recent messages
-        return messages.stream()
-                .limit(3)
-                .map(m -> m.getContent().length() > 50 
-                        ? m.getContent().substring(0, 50) + "..." 
-                        : m.getContent())
-                .collect(Collectors.joining(" | "));
     }
 }

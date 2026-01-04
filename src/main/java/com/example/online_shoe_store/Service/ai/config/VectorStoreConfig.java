@@ -14,7 +14,6 @@ public class VectorStoreConfig {
     @Value("${chroma.base.url}")
     private String chromaBaseUrl;
 
-
     @Bean("productEmbeddingStore")
     public EmbeddingStore<TextSegment> productEmbeddingStore() {
         log.info("Initializing product embedding store...");

@@ -1,0 +1,155 @@
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 👟 [PRODUCT] advise                                                    ┃
+┃   ID: advise$0                                                             ┃
+┃   ⏰ Started: 10:10:33.740                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Giày bóng đá
+┃
+┃ 📌 context:
+┃     <HISTORY>[RECENT]
+┃     ASSISTANT: Xin lỗi, nhưng tôi không thể tự quyết định mua giày cho bạn. 
+┃     Là nhân viên tư vấn, tôi sẽ giúp bạn chọn giày phù hợp nhất theo sở thíc
+┃     h và nhu cầu của bạn. 
+┃     
+┃     Để tôi có thể gợi ý được, tôi cần bạn cho biết:
+┃     1. Bạn muốn đôi giày này để làm gì? (Chạy bộ, đi học, đi chơi, v.v.)
+┃     2. Bạn có mức ngân sách dự kiến là bao nhiêu?
+┃     
+┃     Nếu bạn không có ý kiến cụ thể, tôi có thể gợi ý một số mẫu giày phổ biế
+┃     n và đa năng. Bạn có thể chia sẻ thêm để tôi hỗ trợ tốt hơn không?
+┃     USER: Giày bóng đá
+┃     </HISTORY>
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [✅ OK] Duration: 4717ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Tôi hiểu bạn đang tìm giày bóng đá. Để giúp bạn chọn được đôi giày phù h
+┃  ợp nhất, tôi cần thêm một số thông tin:
+┃  
+┃  1. Bạn đang tìm giày bóng đá để chơi ở mức độ nào? (Chuyên nghiệp, nghiệ
+┃  p dư, tập luyện, hay chơi vui)
+┃  2. Bạn có mức ngân sách dự kiến là bao nhiêu? 
+┃  
+┃  Việc biết rõ mục đích sử dụng và ngân sách sẽ giúp tôi gợi ý những mẫu g
+┃  iày bóng đá phù hợp nhất với bạn. Bạn có thể chia sẻ thêm không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 👟 [PRODUCT] advise                                                    ┃
+┃   ID: advise$0                                                             ┃
+┃   ⏰ Started: 10:10:43.546                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Giày bóng đá
+┃
+┃ 📌 context:
+┃     Tôi hiểu bạn đang tìm giày bóng đá. Để giúp bạn chọn được đôi giày phù h
+┃     ợp nhất, tôi cần thêm một số thông tin:
+┃     
+┃     1. Bạn đang tìm giày bóng đá để chơi ở mức độ nào? (Chuyên nghiệp, nghiệ
+┃     p dư, tập luyện, hay chơi vui)
+┃     2. Bạn có mức ngân sách dự kiến là bao nhiêu? 
+┃     
+┃     Việc biết rõ mục đích sử dụng và ngân sách sẽ giúp tôi gợi ý những mẫu g
+┃     iày bóng đá phù hợp nhất với bạn. Bạn có thể chia sẻ thêm không?
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 12125ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Tôi có một số mẫu giày bóng đá để bạn tham khảo:
+┃  
+┃  1. Nike Phantom GX 2 Pro TF (Xám/Xanh Chuối) - 1.260.000đ
+┃  2. Nike Phantom GX 2 Pro TF (Xanh Biển) - 1.750.000đ
+┃  3. Zocker Inspire Pro TF SNS 005 (Xanh Ngọc) - 665.000đ
+┃  4. Zocker Inspire Pro TF SNS 005 (Đen Hồng) - 665.000đ
+┃  5. Zocker Inspire Pro TF SNS 005 (Hồng/Xanh) - 665.000đ
+┃  
+┃  Để giúp bạn chọn được đôi giày phù hợp nhất, tôi cần bạn cho biết thêm:
+┃  1. Bạn sẽ sử dụng giày này cho mục đích gì? (Thi đấu, tập luyện, sân cỏ 
+┃  nhân tạo...)
+┃  2. Bạn có sở thích về màu sắc hoặc thương hiệu không?
+┃  3. Ngân sách của bạn là bao nhiêu?
+┃  
+┃  Bạn có thể chia sẻ thêm để tôi tư vấn chính xác hơn không?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 👟 [PRODUCT] advise                                                    ┃
+┃   ID: advise$0                                                             ┃
+┃   ⏰ Started: 10:11:02.706                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Giày bóng đá
+┃
+┃ 📌 context:
+┃     Tôi có một số mẫu giày bóng đá để bạn tham khảo:
+┃     
+┃     1. Nike Phantom GX 2 Pro TF (Xám/Xanh Chuối) - 1.260.000đ
+┃     2. Nike Phantom GX 2 Pro TF (Xanh Biển) - 1.750.000đ
+┃     3. Zocker Inspire Pro TF SNS 005 (Xanh Ngọc) - 665.000đ
+┃     4. Zocker Inspire Pro TF SNS 005 (Đen Hồng) - 665.000đ
+┃     5. Zocker Inspire Pro TF SNS 005 (Hồng/Xanh) - 665.000đ
+┃     
+┃     Để giúp bạn chọn được đôi giày phù hợp nhất, tôi cần bạn cho biết thêm:
+┃     1. Bạn sẽ sử dụng giày này cho mục đích gì? (Thi đấu, tập luyện, sân cỏ 
+┃     nhân tạo...)
+┃     2. Bạn có sở thích về màu sắc hoặc thương hiệu không?
+┃     3. Ngân sách của bạn là bao nhiêu?
+┃     
+┃     Bạn có thể chia sẻ thêm để tôi tư vấn chính xác hơn không?
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 7205ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Tôi nhận thấy bạn vẫn chưa cung cấp thêm thông tin cụ thể về nhu cầu già
+┃  y bóng đá. Để hỗ trợ bạn tốt nhất, tôi sẽ hướng dẫn cụ thể hơn.
+┃  
+┃  Hiện tại, tôi có thể giúp bạn chọn giày bóng đá dựa trên các tiêu chí sa
+┃  u:
+┃  
+┃  🏟️ Loại sân chơi:
+┃  - Sân cỏ nhân tạo (TF)
+┃  - Sân cỏ tự nhiên (FG)
+┃  - Sân trong nhà (IC)
+┃  
+┃  💰 Mức giá:
+┃  - Dưới 500.000đ
+┃  - Từ 500.000đ - 1.000.000đ
+┃  - Từ 1.000.000đ - 2.000.000đ
+┃  - Trên 2.000.000đ
+┃  
+┃  🏷️ Thương hiệu:
+┃  - Nike
+┃  - Zocker
+┃  - Các hãng khác
+┃  
+┃  Bạn có thể cho tôi biết:
+┃  1. Bạn muốn chơi ở loại sân nào?
+┃  2. Ngân sách của bạn khoảng bao nhiêu?
+┃  3. Bạn thích màu sắc như thế nào?
+┃  
+┃  Chia sẻ thêm để tôi tư vấn chính xác nhất nhé!
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛

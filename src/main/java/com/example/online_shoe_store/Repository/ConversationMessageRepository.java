@@ -104,5 +104,16 @@ public interface ConversationMessageRepository extends JpaRepository<Conversatio
      */
     Page<ConversationMessage> findByConversationIdOrderByCreatedAtDesc(String conversationId, Pageable pageable);
 
+    /**
+     * Count messages by session ID (for hybrid memory summarization threshold)
+     */
+    @Query("SELECT COUNT(m) FROM ConversationMessage m WHERE m.conversation.sessionId = :sessionId")
+    int countBySessionId(@Param("sessionId") String sessionId);
+    
+    /**
+     * Find all messages by session ID ordered by created time (for summarization)
+     */
+    @Query("SELECT m FROM ConversationMessage m WHERE m.conversation.sessionId = :sessionId ORDER BY m.createdAt DESC")
+    List<ConversationMessage> findAllBySessionIdOrderByCreatedAtDesc(@Param("sessionId") String sessionId);
 
 }

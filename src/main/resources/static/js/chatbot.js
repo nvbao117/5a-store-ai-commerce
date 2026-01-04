@@ -307,6 +307,19 @@ class ShoeStoreChatbot {
             }
         }
 
+        // Detect REDIRECT tag
+        const redirectMatch = text.match(/\[REDIRECT\](.*?)\[\/REDIRECT\]/);
+        if (redirectMatch && redirectMatch[1]) {
+            const redirectUrl = redirectMatch[1].trim();
+            // Remove the tag from the text that will be displayed
+            text = text.replace(redirectMatch[0], "");
+
+            // Perform redirection in a NEW TAB after a short delay so user can read the confirmation
+            setTimeout(() => {
+                window.open(redirectUrl, '_blank');
+            }, 1500);
+        }
+
         let formatted = text
             // Bold: **text** or __text__
             .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')

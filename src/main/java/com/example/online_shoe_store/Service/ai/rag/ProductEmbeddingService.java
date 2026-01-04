@@ -53,10 +53,10 @@ public class ProductEmbeddingService {
     @Async
     public void onApplicationReady() {
         if (Boolean.TRUE.equals(forceReingest)) {
-            log.info("🚀 [ProductRAG] Force re-ingesting all products...");
+            log.info("[ProductRAG] Force re-ingesting all products...");
             ingestAllProducts();
         } else {
-            log.info("⏭️ [ProductRAG] Product ingestion skipped (force-reingest=false)");
+            log.info("[ProductRAG] Product ingestion skipped (force-reingest=false)");
         }
     }
 
@@ -90,16 +90,13 @@ public class ProductEmbeddingService {
                 }
             }
 
-            log.info("[ProductRAG] ✅ Ingestion completed! Success: {}, Errors: {}", successCount, errorCount);
+            log.info("[ProductRAG] Ingestion completed! Success: {}, Errors: {}", successCount, errorCount);
 
         } catch (Exception e) {
             log.error("[ProductRAG] Error during ingestion: {}", e.getMessage(), e);
         }
     }
 
-    /**
-     * Ingest một sản phẩm vào vector store
-     */
     public void ingestProduct(Product product) {
         // Build text content cho embedding
         String textContent = buildProductText(product);
