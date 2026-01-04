@@ -1,13 +1,14 @@
 package com.example.online_shoe_store.Service.ai.agent.quality;
 
 import com.example.online_shoe_store.dto.quality.ReviewResult;
-import dev.langchain4j.agentic.Agent;
 import dev.langchain4j.service.SystemMessage;
+import dev.langchain4j.service.UserMessage;
 import dev.langchain4j.service.V;
 
 /**
  * LLM-as-a-Judge Agent
  * Kiểm duyệt response trước khi gửi cho khách hàng
+ * Sử dụng structured output với ReviewResult record
  */
 public interface ResponseReviewerAgent {
 
@@ -30,22 +31,22 @@ public interface ResponseReviewerAgent {
            - Response có thân thiện, chuyên nghiệp?
            - Có giải quyết được vấn đề của khách?
         
-        ## INPUT:
-        - Response cần kiểm tra: {{response}}
-        - Context gốc: {{context}}
-        - User request: {{userRequest}}
-        
-        ## OUTPUT FORMAT:
-        Trả về định dạng JSON:
-        {
-            "approved": true/false,
-            "issues": ["issue1", "issue2"],
-            "suggestion": "Gợi ý sửa nếu có issue"
-        }
-        
-        Nếu approved = true, issues và suggestion có thể để trống.
+        ## QUY TẮC OUTPUT:
+        - Nếu response OK -> approved=true, issues=[], suggestion=""
+        - Nếu có vấn đề -> approved=false, liệt kê issues và đưa gợi ý sửa
         """)
-    @Agent(description = "Kiểm tra chất lượng response trước khi gửi khách hàng", outputKey = "reviewResult")
+    @UserMessage("""
+        Kiểm tra response sau đây:
+        
+        [RESPONSE CẦN KIỂM TRA]
+        {{response}}
+        
+        [CONTEXT GỐC]
+        {{context}}
+        
+        [YÊU CẦU CỦA USER]
+        {{userRequest}}
+        """)
     ReviewResult review(
             @V("response") String response, 
             @V("context") String context,

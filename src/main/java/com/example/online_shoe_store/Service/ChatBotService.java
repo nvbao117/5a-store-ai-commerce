@@ -8,37 +8,54 @@ import com.example.online_shoe_store.Repository.ConversationMessageRepository;
 import com.example.online_shoe_store.Repository.ConversationRepository;
 import com.example.online_shoe_store.Repository.UserRepository;
 import com.example.online_shoe_store.Service.ai.agent.ShopAssistantAgent;
+import com.example.online_shoe_store.Service.ai.agent.quality.ResponseReviewerAgent;
 import com.example.online_shoe_store.Service.ai.context.DirectContextService;
 import com.example.online_shoe_store.Service.ai.context.ProductJsonHolder;
+import com.example.online_shoe_store.Service.ai.memory.AsyncSummarizationService;
+import com.example.online_shoe_store.Service.ai.memory.MemoryConsolidationService;
 import com.example.online_shoe_store.Service.ai.monitoring.AgentFileLogger;
 import com.example.online_shoe_store.Service.ai.monitoring.ToolLoggingChatModelListener;
+import com.example.online_shoe_store.dto.quality.ReviewResult;
 import com.example.online_shoe_store.dto.request.ApiChatRequest;
 import com.example.online_shoe_store.dto.response.ChatResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Map;
 import java.util.UUID;
 
+/**
+ * ChatBotService - Xử lý tin nhắn chat với AI
+ * 
+ * Transaction scope tách biệt:
+ * - saveUserMessage(): @Transactional
+ * - AI Agent calls: KHÔNG transaction
+ * - saveBotMessage(): @Transactional
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class ChatBotService {
 
     private final ShopAssistantAgent shopAssistantAgent;
+    private final ResponseReviewerAgent responseReviewerAgent;
     private final UserRepository userRepository;
     private final ConversationRepository conversationRepository;
     private final ConversationMessageRepository messageRepository;
     private final AgentFileLogger agentFileLogger;
-    private final com.example.online_shoe_store.Service.ai.context.DirectContextService directContextService;
+    private final DirectContextService directContextService;
     private final ProductJsonHolder productJsonHolder;
+    private final AsyncSummarizationService asyncSummarizationService;
+    private final MemoryConsolidationService memoryConsolidationService;
 
-    @Transactional
+    @Value("${ai.response-review.enabled:false}")
+    private boolean responseReviewEnabled;
+
     public ChatResponse processMessage(ApiChatRequest request) {
         long startTime = System.currentTimeMillis();
 
@@ -52,39 +69,19 @@ public class ChatBotService {
         String userMessage = request.getMessage();
 
         log.debug("Chat: userId={}, sessionId={}, message={}", userId, sessionId, userMessage);
-
-        // Log vào file
         agentFileLogger.logUserMessage(sessionId, userMessage);
-
         ToolLoggingChatModelListener.setCurrentSession(sessionId);
 
-        // 1.Lấy hoặc tạo hội thoại mới
-        Conversation conversation = conversationRepository.findBySessionIdAndIsActiveTrue(sessionId)
-                .orElseGet(() -> {
-                    Conversation newConv = Conversation.builder()
-                            .sessionId(sessionId)
-                            .user(user)
-                            .build();
-                    return conversationRepository.save(newConv);
-                });
+        // 1. Lưu message user (TRANSACTION 1)
+        Conversation conversation = saveUserMessage(sessionId, user, userMessage);
 
-        // 2. Lưu message
-        ConversationMessage userMsg = ConversationMessage.builder()
-                .conversation(conversation)
-                .role(MessageRole.USER)
-                .content(userMessage)
-                .build();
-        messageRepository.save(userMsg);
-        conversation.setMessageCount(conversation.getMessageCount() + 1);
-
-        // 3. DIRECT context fetch
-        long contextStart = System.currentTimeMillis();
+        // 2. Chuẩn bị context (NO TRANSACTION - chỉ đọc)
         String context = directContextService.prepareContext(sessionId, userId, userMessage);
-        log.info("Context prepared in {}ms", System.currentTimeMillis() - contextStart);
 
+        // 3. Gọi AI Agent (NO TRANSACTION - external call)
         String answer;
         try {
-            answer = shopAssistantAgent.chat(sessionId, userId, userMessage, context);
+            answer = generateResponse(sessionId, userId, userMessage, context);
             answer = productJsonHolder.ensureJsonBlock(sessionId, answer);
         } catch (Exception e) {
             log.error("Agent error: {}", e.getMessage(), e);
@@ -94,17 +91,15 @@ public class ChatBotService {
             productJsonHolder.clearSession(sessionId);
         }
 
+        // 4. Lưu response bot
         long duration = System.currentTimeMillis() - startTime;
-        ConversationMessage botMsg = ConversationMessage.builder()
-                .conversation(conversation)
-                .role(MessageRole.ASSISTANT)
-                .content(answer)
-                .processingTimeMs((int) duration)
-                .build();
-        messageRepository.save(botMsg);
-        conversation.setMessageCount(conversation.getMessageCount() + 1);
+        saveBotMessage(conversation, answer, duration);
 
         agentFileLogger.logAssistantResponse(sessionId, answer, duration);
+
+        // 5. Background tasks (async)
+        asyncSummarizationService.triggerSummarizationIfNeeded(sessionId);
+        memoryConsolidationService.consolidateMemory(userId, userMessage, answer);
 
         log.info("Chat completed: {}ms, session={}", duration, sessionId);
 
@@ -113,6 +108,78 @@ public class ChatBotService {
                 .response(answer)
                 .type("TEXT")
                 .build();
+    }
+
+    /**
+     Lưu message user
+     */
+    @Transactional
+    public Conversation saveUserMessage(String sessionId, User user, String userMessage) {
+        Conversation conversation = conversationRepository.findBySessionIdAndIsActiveTrue(sessionId)
+                .orElseGet(() -> {
+                    Conversation newConv = Conversation.builder()
+                            .sessionId(sessionId)
+                            .user(user)
+                            .build();
+                    return conversationRepository.save(newConv);
+                });
+
+        ConversationMessage userMsg = ConversationMessage.builder()
+                .conversation(conversation)
+                .role(MessageRole.USER)
+                .content(userMessage)
+                .build();
+        messageRepository.save(userMsg);
+        conversation.setMessageCount(conversation.getMessageCount() + 1);
+        
+        return conversation;
+    }
+
+    /**
+     * TRANSACTION 2: Lưu response bot
+     */
+    @Transactional
+    public void saveBotMessage(Conversation conversation, String answer, long duration) {
+        ConversationMessage botMsg = ConversationMessage.builder()
+                .conversation(conversation)
+                .role(MessageRole.ASSISTANT)
+                .content(answer)
+                .processingTimeMs((int) duration)
+                .build();
+        messageRepository.save(botMsg);
+        conversation.setMessageCount(conversation.getMessageCount() + 1);
+    }
+
+    /**
+     * Gọi Agent và review response (nếu bật)
+     */
+    private String generateResponse(String sessionId, String userId, String userMessage, String context) {
+        // Gọi ShopAssistantAgent
+        String response = shopAssistantAgent.chat(sessionId, userId, userMessage, context);
+
+        // Nếu tắt review hoặc response rỗng -> trả về luôn
+        if (!responseReviewEnabled || response == null || response.isBlank()) {
+            return response;
+        }
+
+        // Review response
+        try {
+            long reviewStart = System.currentTimeMillis();
+            ReviewResult reviewResult = responseReviewerAgent.review(response, context, userMessage);
+
+            log.info("[ResponseReviewerAgent] Review: {}ms, approved: {}",
+                    System.currentTimeMillis() - reviewStart,
+                    reviewResult != null ? reviewResult.approved() : "null");
+
+            if (reviewResult != null && !reviewResult.approved()) {
+                log.warn("[ResponseReviewerAgent] REJECTED. Issues: {}", reviewResult.issues());
+                // Log only, không retry để tránh latency và context bloat
+            }
+        } catch (Exception e) {
+            log.warn("[ResponseReviewerAgent] Error: {}", e.getMessage());
+        }
+
+        return response;
     }
 
     private String getAuthenticatedUserId() {
@@ -125,8 +192,7 @@ public class ChatBotService {
         String username = auth.getName();
 
         return userRepository.findByUsername(username)
-                .map(user -> user.getUserId())
+                .map(User::getUserId)
                 .orElse("guest");
     }
 }
-

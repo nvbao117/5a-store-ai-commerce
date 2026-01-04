@@ -1,0 +1,120 @@
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 💬 [TALK] respond                                                   ┃
+┃   ID: respond$3                                                            ┃
+┃   ⏰ Started: 09:58:11.058                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Hello chào bạn, bạn có thể giúp gì ho tôi, có thể mua giày không , hãy h
+┃     ướng dẫn tôi tốt nhất
+┃
+┃ 📌 context:
+┃     user_id: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39, user_name: Nguyễn Vũ Bảo
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 5019ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Xin chào Nguyễn Vũ Bảo! 👋
+┃  
+┃  Chắc chắn rồi ạ! 5A Store rất vui được hỗ trợ bạn mua giày. Hiện tại chú
+┃  ng tôi có nhiều dòng giày đa dạng như:
+┃  - Giày thể thao 
+┃  - Giày sneaker
+┃  - Giày nam/nữ
+┃  - Giày chạy bộ
+┃  - Giày văn phòng
+┃  
+┃  Bạn đang tìm kiếm loại giày nào cụ thể không? Mình sẽ tư vấn chi tiết và
+┃   giúp bạn chọn được đôi giày ưng ý nhất! 😊🥾
+┃  
+┃  Mong bạn cho mình biết thêm thông tin để hỗ trợ tốt nhất nhé!
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 👟 [PRODUCT] advise                                                    ┃
+┃   ID: advise$0                                                             ┃
+┃   ⏰ Started: 09:58:20.729                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Hello chào bạn, bạn có thể giúp gì ho tôi, có thể mua giày không , hãy h
+┃     ướng dẫn tôi tốt nhất
+┃
+┃ 📌 context:
+┃     user_id: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39, user_name: Nguyễn Vũ Bảo
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 8403ms                                        ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Chào Nguyễn Vũ Bảo! Rất vui được phục vụ bạn hôm nay. 5A Store chuyên cu
+┃  ng cấp các dòng giày thể thao, sneaker chất lượng cao. Tôi có thể giúp b
+┃  ạn tìm được đôi giày phù hợp nhất với nhu cầu của mình.
+┃  
+┃  Để tư vấn tốt nhất, tôi muốn hỏi bạn một số câu:
+┃  1. Bạn đang tìm giày cho mục đích gì? (Chạy bộ, đi học, đi chơi, tập gym
+┃  ...)
+┃  2. Bạn thích các thương hiệu nào? (Nike, Adidas, Puma...)
+┃  3. Ngân sách của bạn khoảng bao nhiêu?
+┃  
+┃  Nếu bạn chưa rõ, tôi có thể gợi ý một số mẫu giày hot và phổ biến nhất h
+┃  iện nay. Bạn có thể cho tôi biết thêm thông tin để được tư vấn chính xác
+┃   nhất nhé!
+┃  
+┃  Ngoài ra, tôi có thể:
+┃  - Tìm kiếm giày theo yêu cầu
+┃  - Hiển thị chi tiết sản phẩm
+┃  - Kiểm tra size và tồn kho
+┃  - Hỗ trợ bạn mua hàng
+┃  
+┃  Bạn quan tâm điều gì ạ?
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ 👟 [PRODUCT] advise                                                    ┃
+┃   ID: advise$0                                                             ┃
+┃   ⏰ Started: 09:58:34.610                                                ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📥 INPUTS (Full Context Window):                                            ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃ 📌 request:
+┃     Tôi muốn được tư vấn thêm về các loại giày phù hợp với nhu cầu của tôi
+┃
+┃ 📌 context:
+┃     user_id: 298e33a3-68ac-4d39-94fb-cdc27cfdfb39, user_name: Nguyễn Vũ Bảo
+┃
+┃ 📌 userId:
+┃     298e33a3-68ac-4d39-94fb-cdc27cfdfb39
+┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ ⏳ Processing...                                                             ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫
+┃ 📤 OUTPUT: [⚠️ SLOW] Duration: 12119ms                                       ┃
+┃──────────────────────────────────────────────────────────────────────────────┃
+┃  Tôi nhận thấy kết quả trên chủ yếu là giày bóng đá. Để hiểu rõ hơn nhu c
+┃  ầu của bạn, tôi muốn hỏi thêm một số câu:
+┃  
+┃  1. Bạn sử dụng giày cho mục đích gì? 
+┃     - Chạy bộ
+┃     - Đi học/đi làm
+┃     - Tập gym
+┃     - Chơi thể thao
+┃     - Đi chơi thường ngày
+┃  
+┃  2. Bạn có sở thích về màu sắc hoặc thương hiệu không?
+┃  
+┃  3. Ngân sách của bạn khoảng bao nhiêu? (Dưới 1 triệu, 1-2 triệu, hay trê
+┃  n 2 triệu)
+┃  
+┃  Nếu bạn cho tôi biết thêm thông tin, tôi sẽ tìm được những đôi giày hoàn
+┃   hảo nhất cho bạn. Mong bạn chia sẻ thêm để tôi hỗ trợ tốt nhất!
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
