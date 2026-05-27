@@ -10,6 +10,10 @@
 
 Project phù hợp để thể hiện năng lực backend/full-stack với các bài toán thực tế: thiết kế domain e-commerce, xử lý checkout/thanh toán, bảo mật JWT, tích hợp OAuth2/email, quản lý dữ liệu sản phẩm có biến thể, và ứng dụng AI/RAG vào trải nghiệm mua sắm.
 
+## Video demo
+
+Xem video demo project tại: [Google Drive](https://drive.google.com/file/d/18cRu3Oq981LGP84frsLjJMgjys66yIEt/view?usp=drive_link)
+
 ## Điểm nổi bật kỹ thuật
 
 - **E-commerce end-to-end**: danh mục sản phẩm, thương hiệu, biến thể size/màu/tồn kho, giỏ hàng, checkout nhiều bước, đơn hàng, hủy đơn, đổi trả, voucher và đánh giá.
